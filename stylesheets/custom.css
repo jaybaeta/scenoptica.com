@@ -1,0 +1,122 @@
+/* BODY */
+
+body {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  color: #2D2D2D;
+}
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  height: 200px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* LINKS */
+
+a:focus, a:hover {
+  color: #014c8c;
+  text-decoration: none;
+}
+
+/* FONTS */
+
+.mont {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+/* BACKGROUNDS */
+
+.bg-primary {
+  background-color: #DAD7BE !important;
+}
+
+.bg-film {
+  background-color: #48C648;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+/* CARD TYPES */
+
+/* BLOG */
+
+.card-blog {
+	background-color: #FFFFFF;
+	border: 0;
+}
+
+.card-blog a {
+	color: #2D2D2D;
+	transition: all 0.35s linear;
+}
+
+.card-blog a:hover {
+	color: #6D6D6D;
+}
+
+/* FILM */
+
+.card-film img {
+  -webkit-filter: saturate(100%) contrast(100%);
+  filter: saturate(100%);
+  transition: all 0.35s ease-in-out;
+}
+
+.card-film:hover img {
+  opacity: 0.5;
+  -webkit-filter: saturate(200%) contrast(200%);
+  filter: saturate(200%);
+}
+
+.card-film > span {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  text-align: center;
+  font-size: 50px;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 300ms 0ms linear;
+  padding-right: 10px;
+}
+
+.card-film:hover > span {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 300ms 100ms linear;
+}
+
+.card-film > span > a {
+  color: #FFFFFF;
+  transition: all 0.35s linear;
+}
+
+.card-film > span > a:hover {
+  color: #DAD7BE;
+  opacity: 0.80;
+}
+
+/* PAGES */
+
+/* BLOG */
+
+.blog > .container {
+  padding: 0 10%;
+}
+
+.blog p {
+  font-size: 1.1rem;
+  font-weight: 400;
+} 
+
+.title {
+
+}
+
+.article-footer p {
+	font-size: 95%;
+}
