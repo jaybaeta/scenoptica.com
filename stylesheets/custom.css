@@ -5,6 +5,14 @@ body {
   color: #2D2D2D;
 }
 
+/* HOMEPAGE */
+
+@media (max-width: 767px) {
+  .mont {
+    font-size: 13vw;
+  }
+}
+
 /* FOOTER */
 
 .footer {
