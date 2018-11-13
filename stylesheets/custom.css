@@ -1,40 +1,55 @@
-/* BODY */
+
+
+/* Table of contents
+
+1.......Main
+2.......Typography
+3.......Colours
+  3.1...Text colours
+  3.2...Background colours
+4.......Page elements
+  4.1...Footer
+5.......Page-specific
+  5.1...Homepage
+  5.2...Blog
+
+*/
+
+/* 1. Main */
 
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: #2D2D2D;
 }
 
-/* HOMEPAGE */
+/* 2. Typography */
 
-@media (max-width: 767px) {
-  .mont {
-    font-size: 11.5vw;
-  }
+.mont {
+  font-family: "Montserrat Alternates", sans-serif;
 }
-
-/* FOOTER */
-
-.footer {
-  width: 100%;
-  height: 200px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-/* LINKS */
 
 a:focus, a:hover {
   color: #014c8c;
   text-decoration: none;
 }
 
-/* FONTS */
+/* 3. Colours */
 
-.mont {
-  font-family: "Montserrat Alternates", sans-serif;
+/* 3.1 Text colours */
+
+/* 3.2 Background colours*/
+
+.bg-white {
+  background-color: #FFFFFF;
 }
 
-/* BACKGROUNDS */
+.bg-dark {
+  background-color: #2d2d2d !important;
+}
+
+.bg-darker {
+  background-color: #1f1f1f;
+}
 
 .bg-primary {
   background-color: #DAD7BE !important;
@@ -44,9 +59,50 @@ a:focus, a:hover {
   background-color: #48C648;
 }
 
-.bg-white {
-  background-color: #FFFFFF;
+/* 4. Page elements */
+
+/* 4.1 Footer */
+
+footer h5 {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #DAD7BE;
 }
+
+/* 5. Page-specific */
+
+/* 5.1. Homepage */
+
+@media (max-width: 767px) {
+  .mont {
+    font-size: 11.5vw;
+  }
+}
+
+/* 5.2. Blog */
+
+.blog > .container {
+  padding: 0 10%;
+}
+
+.blog p {
+  font-size: 1.1rem;
+  font-weight: 400;
+} 
+
+.title {
+
+}
+
+.article-footer p {
+  font-size: 95%;
+}
+
+
+
+
+
+
+
 
 /* CARD TYPES */
 
@@ -108,23 +164,5 @@ a:focus, a:hover {
   opacity: 0.80;
 }
 
-/* PAGES */
 
-/* BLOG */
 
-.blog > .container {
-  padding: 0 10%;
-}
-
-.blog p {
-  font-size: 1.1rem;
-  font-weight: 400;
-} 
-
-.title {
-
-}
-
-.article-footer p {
-	font-size: 95%;
-}
