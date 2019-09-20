@@ -18,19 +18,26 @@
 /* 1. Main */
 
 body {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: #2D2D2D;
+  font-family: "KoHo", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  color: #E2E8E6;
+  background-color: #2a2b2d;
 }
 
 /* 2. Typography */
 
 .mont {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat Alternates", "Source Sans Pro", sans-serif;
 }
 
 a:focus, a:hover {
   color: #014c8c;
   text-decoration: none;
+}
+
+.blog p {
+  font-size: 1.1rem;
+  /*font-family: 'Quicksand', sans-serif;*/
+  font-family: 'KoHo', sans-serif;
 }
 
 /* 3. Colours */
@@ -44,19 +51,15 @@ a:focus, a:hover {
 }
 
 .bg-dark {
-  background-color: #2d2d2d !important;
+  background-color: #2A2B2D !important;
 }
 
 .bg-darker {
-  background-color: #1f1f1f;
+  background-color: #1f1f1f !important;
 }
 
 .bg-primary {
   background-color: #DAD7BE !important;
-}
-
-.bg-film {
-  background-color: #48C648;
 }
 
 /* 4. Page elements */
@@ -96,13 +99,6 @@ footer h5 {
 .article-footer p {
   font-size: 95%;
 }
-
-
-
-
-
-
-
 
 /* CARD TYPES */
 
