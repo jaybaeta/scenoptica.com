@@ -12,19 +12,19 @@
     <link rel="stylesheet" href="fonts/font-awesome/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700|Source+Sans+Pro:300,300i,400,400i" rel="stylesheet">
 
-    <!-- STYLESHEETS -->
+    <!-- CSS -->
     <link href="stylesheets/bootstrap.css" rel="stylesheet" />
     <link href="stylesheets/custom.css" rel="stylesheet" />
     <link href="stylesheets/animate.css" rel="stylesheet" />
 
-    <!-- JAVASCRIPTS -->
+    <!-- JS -->
     <script src="javascripts/bootstrap.js"></script>
 
   </head>
 
   <body class="index">
     <!-- JUMBOTRON -->
-    <div id="jumbotron" class="jumbotron d-flex animated fadeIn" style="background: url('images/jumbotron/venice-gull.jpg') center center fixed no-repeat; background-size: cover; border-radius: 0; margin-bottom: 0; height: 100vh; box-shadow: inset 0 0 200px #2A2B2D; -webkit-animation-delay: 0.3s; animation-delay: 0.3s;">
+    <div id="jumbotron" class="jumbotron d-flex animated fadeIn" style="border-radius: 0; margin-bottom: 0; height: 100vh; box-shadow: inset 0 0 200px #2A2B2D; -webkit-animation-delay: 0.3s; animation-delay: 0.3s;">
       <div class="container align-self-center">
         <div class="row h-75" style="padding-top: 25vh; padding-bottom: 25vh; border: 1px solid #ffffffaa;">
           <div class="col-12 h-75 ">
@@ -146,21 +146,23 @@
         </div>
       </div>
     </footer>
-
-    <!-- JUMBOTRON BACKGROUNDS -->
-    <script type="text/javascript">
-    // <![CDATA[
-    var image_array = new Array();
-        image_array[0] = "images/jumbotron/borobudur-relief.jpg";
-        image_array[1] = "images/jumbotron/chair.jpg";
-        image_array[2] = "images/jumbotron/plants.jpg";
-        image_array[3] = "images/jumbotron/venice-gull.jpg";
-
-        var rand_path = image_array[Math.floor(Math.random() * image_array.length)];
-     
-        $(document).ready(function() {
-            $("#jumbotron").css('background', 'url('+rand_path+') center center fixed no-repeat', 'background-size': "cover");
-        });
-    // ]]></script>
   </body>
+
+  <!-- JUMBOTRON BACKGROUNDS -->
+  <script type="text/javascript">
+  // <![CDATA[
+  var image_array = new Array();
+      image_array[0] = "images/jumbotron/borobudur-relief.jpg";
+      image_array[1] = "images/jumbotron/chair.jpg";
+      image_array[2] = "images/jumbotron/plants.jpg";
+      image_array[3] = "images/jumbotron/venice-gull.jpg";
+
+  var rand_path = image_array[Math.floor(Math.random() * image_array.length)];
+   
+  $(document).ready(function() {
+      $("#jumbotron").css("background", "url("+rand_path+") center center fixed no-repeat");
+      $(".jumbotron").css("background-size", "cover");
+      });
+  // ]]>
+  </script>
 </html>
