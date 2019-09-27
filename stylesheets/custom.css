@@ -29,6 +29,14 @@ body {
   font-family: "Montserrat Alternates", "Source Sans Pro", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  -webkit-transition: all ease-in-out .25s;
+  -moz-transition: all ease-in-out .25s;
+  -o-transition: all ease-in-out .25s;
+  transition: all ease-in-out .25s;
+}
+
 a:focus, a:hover {
   color: #014c8c;
   text-decoration: none;
@@ -38,6 +46,14 @@ a:focus, a:hover {
   font-size: 1.1rem;
   /*font-family: 'Quicksand', sans-serif;*/
   font-family: 'KoHo', sans-serif;
+}
+
+footer a {
+  color: #a1fc93;
+}
+
+footer a:hover {
+  color: #f7f598;
 }
 
 /* 3. Colours */
@@ -55,7 +71,11 @@ a:focus, a:hover {
 }
 
 .bg-darker {
-  background-color: #1f1f1f !important;
+  background-color: #1e1f20 !important;
+}
+
+.bg-darkest {
+  background-color: #111213 !important;
 }
 
 .bg-primary {
