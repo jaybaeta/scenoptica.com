@@ -42,6 +42,12 @@ a:focus, a:hover {
   text-decoration: none;
 }
 
+.index .card-title {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.75rem;
+  text-shadow: #00000080 3px 3px 0px;
+}
+
 .blog p {
   font-size: 1.1rem;
   /*font-family: 'Quicksand', sans-serif;*/
@@ -60,26 +66,21 @@ footer a:hover {
 
 /* 3.1 Text colours */
 
+
+.text-gradient {
+  background-image: linear-gradient(to right, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e, #fddb83, #fece7d, #febe79, #fdb076, #fda172);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* 3.2 Background colours*/
 
-.bg-white {
-  background-color: #FFFFFF;
+.bg-light {
+  background-color: #fff;
 }
 
 .bg-dark {
-  background-color: #2A2B2D !important;
-}
-
-.bg-darker {
-  background-color: #1e1f20 !important;
-}
-
-.bg-darkest {
-  background-color: #111213 !important;
-}
-
-.bg-primary {
-  background-color: #DAD7BE !important;
+  background-color: #000 !important;
 }
 
 /* 4. Page elements */
@@ -87,8 +88,9 @@ footer a:hover {
 /* 4.1 Footer */
 
 footer h5 {
-  font-family: "Montserrat Alternates", sans-serif;
-  color: #DAD7BE;
+  /*font-family: "Montserrat Alternates", sans-serif;*/
+  color: #83868B;
+  font-size: 1.1rem;
 }
 
 /* 5. Page-specific */
@@ -101,6 +103,28 @@ footer h5 {
   }
 }
 
+.index .card-img {
+  opacity: 0.4;
+  transition: all 0.2s linear;
+}
+
+.index .card:hover .card-img {
+  opacity: 0.2;
+}
+
+.explore-full {
+  font-family: 'Share Tech Mono';
+  text-transform: uppercase;
+}
+
+.explore-full > .text-gradient {
+  transition: all 0.3s ease-in-out;
+}
+
+.explore-full:hover > .text-gradient, .explore-full > .text-gradient:hover {
+  margin-left: 5px;
+}
+
 /* 5.2. Blog */
 
 .blog > .container {
@@ -111,10 +135,6 @@ footer h5 {
   font-size: 1.1rem;
   font-weight: 400;
 } 
-
-.title {
-
-}
 
 .article-footer p {
   font-size: 95%;
