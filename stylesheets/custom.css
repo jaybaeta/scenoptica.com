@@ -1,35 +1,39 @@
+/* ====================================================
 
+   Scenoptica
+   v0.5 11 May 2020
+   (c) 2014-2020 Joaquim Baeta <mail@joaquimbaeta.com>
 
-/* Table of contents
+   ----------------------------------------------------
 
-1.......Main
-2.......Typography
-3.......Colours
-  3.1...Text colours
-  3.2...Background colours
-4.......Page elements
-  4.1...Footer
-5.......Page-specific
-  5.1...Homepage
-  5.2...Blog
+   Table of contents
 
-*/
+   1......Typography
+   2......Colours
+   2.1....Text colours
+   2.2....Background colours
+   3......Styling
+   3.1....Buttons
+   4......Global
+   4.1....Footer 
+   5......Page-specific
+   5.1....Homepage
+   5.2....Blog
+   5.3....Film
+   6......Tools
+   6.1....Video.js
 
-/* 1. Main */
+   ==================================================== */
 
-body {
-  font-family: "KoHo", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: #E2E8E6;
-  background-color: #2a2b2d;
-}
+/* 1. Typography */
 
-/* 2. Typography */
-
-.mont {
-  font-family: "Montserrat Alternates", "Source Sans Pro", sans-serif;
+h1 {
+  font-family: 'Share Tech', "Source Sans Pro", "Noto", "Helvetica Neue", sans-serif;
+  font-size: 2.5rem !important;
 }
 
 a {
+  color: #a1fc93;
   text-decoration: none;
   -webkit-transition: all ease-in-out .25s;
   -moz-transition: all ease-in-out .25s;
@@ -37,21 +41,102 @@ a {
   transition: all ease-in-out .25s;
 }
 
-a:focus, a:hover {
-  color: #014c8c;
+a:hover, a:focus {
+  color: #f7f598;
   text-decoration: none;
 }
 
-.index .card-title {
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 1.75rem;
-  text-shadow: #00000080 3px 3px 0px;
+a:active {
+  color: #fda172;
 }
 
-.blog p {
+/* 2. Colours */
+
+/* 2.1 Text colours */
+
+.text-gradient {
+  background-image: linear-gradient(to right, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e, #fddb83, #fece7d, #febe79, #fdb076, #fda172);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-muted { 
+  color: #959595;
+}
+
+/* 2.2 Background colours*/
+
+.bg-light {
+  background-color: #fff;
+}
+
+.bg-dark {
+  background-color: #000 !important;
+}
+
+/* 3. Styling */
+
+/* 3.1 Buttons */
+
+.btn {
+  font-family: 'Share Tech Mono', sans-serif;
+}
+
+.btn-secondary {
+  background: none;
+  border: 1px solid;
+  border-radius: 0;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(100deg, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e, #fddb83, #fece7d, #febe79, #fdb076, #fda172);
+}
+
+.btn-secondary:hover {
+  border-image-source: linear-gradient(100deg, #ebff9e, #f7f598, #fae88e, #fddb83, #fece7d, #febe79);
+  background-color: #000;
+}
+
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
+  border-image-source: linear-gradient(100deg, #fddb83, #fece7d, #febe79, #fdb076, #fda172);
+  background-color: #000;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus, .btn-secondary:focus, .btn-secondary.focus {
+    color: #FFF;
+    background-color: #000;
+    border-color: none;
+    box-shadow: none;
+}
+
+.download .dropdown-toggle::after {
+  font-family: "Font Awesome\ 5 Free" !important;
+  font-weight: 900 !important;
+  content: '\f0dd' !important;
+  border: 0;
+  /*padding-right: 15px;*/
+}
+
+/* 3.2 Other */
+
+.fa-heart {
+  color: #c12a5c;
+}
+
+/* 4. Global */
+
+body {
+  font-family: "KoHo", "Source Sans Pro", "Noto", "Helvetica Neue", sans-serif;
+  /*color: #E2E8E6;*/
+  color: #FFF;
+  background-color: #2a2b2d;
+}
+
+/* 4.1 Footer */
+
+footer h5 {
+  /*font-family: "Montserrat Alternates", sans-serif;*/
+  color: #83868B;
   font-size: 1.1rem;
-  /*font-family: 'Quicksand', sans-serif;*/
-  font-family: 'KoHo', sans-serif;
 }
 
 footer a {
@@ -62,76 +147,63 @@ footer a:hover {
   color: #f7f598;
 }
 
-/* 3. Colours */
-
-/* 3.1 Text colours */
-
-
-.text-gradient {
-  background-image: linear-gradient(to right, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e, #fddb83, #fece7d, #febe79, #fdb076, #fda172);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* 3.2 Background colours*/
-
-.bg-light {
-  background-color: #fff;
-}
-
-.bg-dark {
-  background-color: #000 !important;
-}
-
-/* 4. Page elements */
-
-/* 4.1 Footer */
-
-footer h5 {
-  /*font-family: "Montserrat Alternates", sans-serif;*/
-  color: #83868B;
-  font-size: 1.1rem;
-}
-
 /* 5. Page-specific */
 
-/* 5.1. Homepage */
+/* 5.1 Homepage */
+
+.jumbotron h1 {
+  font-family: "Montserrat Alternates", "Source Sans Pro", sans-serif;
+  font-size: 6rem !important;
+}
+
+@media (max-width: 991px) {
+  .jumbotron h1 {
+    font-size: 4rem !important;
+  }
+}
 
 @media (max-width: 767px) {
-  .mont {
-    font-size: 11.5vw;
+  .jumbotron h1 {
+    font-size: 2.7rem !important;
   }
 }
 
 .index .card-img {
   opacity: 0.4;
-  transition: all 0.2s linear;
+  transition: all .2s linear;
 }
 
 .index .card:hover .card-img {
   opacity: 0.2;
 }
 
+.index .card-title {
+  font-family: 'Share Tech', monospace;
+  font-size: 1.75rem;
+  text-shadow: #00000080 3px 3px 0px;
+}
+
 .explore-full {
-  font-family: 'Share Tech Mono';
+  font-family: 'Share Tech';
   text-transform: uppercase;
 }
 
 .explore-full > .text-gradient {
-  transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .explore-full:hover > .text-gradient, .explore-full > .text-gradient:hover {
   margin-left: 5px;
 }
 
-/* 5.2. Blog */
+/* 5.2 BLOG */
 
 .blog > .container {
   padding: 0 10%;
 }
 
 .blog p {
+  font-family: 'KoHo', sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
 } 
@@ -140,65 +212,121 @@ footer h5 {
   font-size: 95%;
 }
 
-/* CARD TYPES */
+/* 5.3 FILM */
 
-/* BLOG */
-
-.card-blog {
-	background-color: #FFFFFF;
-	border: 0;
+.film p {
+  font-family: 'Share Tech Mono', sans-serif;
 }
 
-.card-blog a {
-	color: #2D2D2D;
-	transition: all 0.35s linear;
+.film p.description {
+  font-family: 'Share Tech', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
-.card-blog a:hover {
-	color: #6D6D6D;
+.film p.license {
+  font-family: 'Share Tech', sans-serif;
+  font-size: 1rem;
 }
 
-/* FILM */
+/* 6. TOOLS */
 
-.card-film img {
-  -webkit-filter: saturate(100%) contrast(100%);
-  filter: saturate(100%);
-  transition: all 0.35s ease-in-out;
+/* 6.1 VIDEO.JS */
+
+.video-js, .vjs-time-tooltip {
+  font-family: 'Share Tech Mono' !important;
+  font-size: 15px !important;
+  color: #fff;
 }
 
-.card-film:hover img {
-  opacity: 0.5;
-  -webkit-filter: saturate(200%) contrast(200%);
-  filter: saturate(200%);
+.vjs-scenoptica-skin .vjs-big-play-button {
+  font-size: 9em !important;
+  width: 0 !important; 
+  border: none !important;
+  left: 50% !important;
+  top: 50% !important;
+  margin-top: -0.751em !important;
+  margin-left: -0.44em !important;
+  color: #a1fc93;
+  /*text-shadow: #00000080 5px 5px 0px;*/
+  transition: all ease-in-out .25s;
 }
 
-.card-film > span {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  text-align: center;
-  font-size: 50px;
-  -webkit-transform: translate(-50%, -50%) scale(0);
-  transform: translate(-50%, -50%) scale(0);
-  transition: all 300ms 0ms linear;
-  padding-right: 10px;
+.vjs-scenoptica-skin .vjs-big-play-button:hover {
+  color: #f7f598;
 }
 
-.card-film:hover > span {
-  -webkit-transform: translate(-50%, -50%) scale(1);
-  transform: translate(-50%, -50%) scale(1);
-  transition: all 300ms 100ms linear;
+.vjs-icon-play::before, .video-js .vjs-play-control .vjs-icon-placeholder::before, .video-js .vjs-big-play-button .vjs-icon-placeholder::before {
+  font-family: "Font Awesome\ 5 Free" !important;
+  font-weight: 900 !important;
+  content: '\f04b' !important;
 }
 
-.card-film > span > a {
-  color: #FFFFFF;
-  transition: all 0.35s linear;
+.vjs-icon-pause::before, .video-js .vjs-play-control.vjs-playing .vjs-icon-placeholder::before {
+  font-family: "Font Awesome\ 5 Free" !important;
+  font-weight: 900 !important;
+  content: '\f04c' !important;
 }
 
-.card-film > span > a:hover {
-  color: #DAD7BE;
-  opacity: 0.80;
+.video-js .vjs-control-bar, .video-js .vjs-menu-button .vjs-menu-content {
+  background-color: transparent !important;
+  bottom: 10px !important;
 }
 
+.video-js .vjs-slider {
+  background-color: #f7f598 !important;
+}
 
+.video-js .vjs-volume-level, .video-js .vjs-play-progress, .video-js .vjs-slider-bar {
+  background: #fff;
+}
 
+.video-js .vjs-load-progress {
+  background: #febe79 !important;
+}
+
+.video-js .vjs-load-progress div {
+  background: #fda172 !important;
+}
+
+.vjs-icon-volume-high::before, .video-js .vjs-mute-control .vjs-icon-placeholder::before {
+  font-family: "Font Awesome\ 5 Free" !important;
+  font-weight: 900 !important;
+  content: '\f028' !important;
+}
+
+.vjs-remaining-time-display {
+  font-size: 1.25em !important;
+}
+
+.vjs-icon-fullscreen-enter::before, .video-js .vjs-fullscreen-control .vjs-icon-placeholder::before {
+  font-family: "Font Awesome\ 5 Free" !important;
+  font-weight: 900 !important;
+  content: '\f065' !important;
+}
+
+.vjs-quality-selector .vjs-icon-placeholder::before {
+  font-family: "Font Awesome\ 5 Free" !important;
+  font-weight: 900 !important;
+  content: '\f26c' !important;
+}
+
+.vjs-menu-button-popup .vjs-menu {
+  width: 8em !important;
+  left: -2em !important;
+  margin-bottom: 2em !important;
+}
+
+.vjs-menu li {
+  font-family: 'Share Tech Mono';
+}
+
+.vjs-menu li.vjs-menu-item:hover {
+  color: #fda172 !important;
+  background-color: transparent !important;
+}
+
+.vjs-menu li.vjs-selected, .vjs-menu li.vjs-selected:focus, .vjs-menu li.vjs-selected:hover, .js-focus-visible .vjs-menu li.vjs-selected:hover {
+    color: #f7f598 !important;
+    background-color: transparent !important;
+}
