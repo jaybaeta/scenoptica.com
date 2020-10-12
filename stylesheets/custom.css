@@ -351,22 +351,22 @@ footer a:hover {
   }
 }
 
-.index .card-img {
+.index .card-img, .film .card-img {
   opacity: 0.4;
   transition: all .2s linear;
 }
 
-.index .card:hover .card-img {
+.index .card:hover .card-img, .film .card:hover .card-img {
   opacity: 0.2;
 }
 
-.index .card-title {
+.index .card-title, .film .card-title {
   font-family: 'Share Tech', monospace;
   font-size: 1.75rem;
   text-shadow: #00000080 3px 3px 0px;
 }
 
-.index .card a {
+.index .card a, .film .card a {
   color: #fff;
 }
 
