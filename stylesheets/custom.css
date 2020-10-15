@@ -174,21 +174,14 @@ a:active {
 }
 
 
-
-
 .btn-download.btn {
   text-align: left;
 }
-
-
-
-
 
 .btn-download.mov {
   border-bottom: 0;
   padding: 14px 20px 6px 20px;
 }
-
 
 .btn-download.torrent {
   border-top: 0;
@@ -212,12 +205,6 @@ a:active {
   padding: 6px 20px 14px 20px;
 }
 
-
-
-
-
-
-
 .btn-download .fa-save {
   color: #000;
   transition: all ease-in-out .25s;
@@ -231,32 +218,12 @@ a:active {
   color: #f7f598;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .download .dropdown-toggle::after {
   font-family: "Font Awesome\ 5 Free" !important;
   font-weight: 900 !important;
   content: '\f0dd' !important;
   border: 0;
-  /*padding-right: 15px;*/
 }
-
 
 /* 3.2 Dropdowns */
 
@@ -274,7 +241,6 @@ a:active {
   color: #fff;
 }
 
-
 .dropdown-item:hover {
   background-color: #000;
   color: #fff;
@@ -285,7 +251,6 @@ a:active {
   border-image-slice: 1;
   border-image-source: linear-gradient(100deg, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e);
 }
-
 
 /* 3.3 Other */
 
@@ -310,17 +275,19 @@ body {
 
 /* 4.2 Footer */
 
+footer {
+  background: #000;
+}
+
 footer h5 {
   color: #83868B;
   font-size: 1.1rem;
 }
 
-
 footer p {
   font-family: 'Share Tech Mono'; 
   font-size: 0.85rem;
 }
-
 
 footer a {
   color: #a1fc93;
@@ -349,6 +316,10 @@ footer a:hover {
   .jumbotron h1 {
     font-size: 2.7rem !important;
   }
+}
+
+.index .card {
+  margin-bottom: 1.25rem;
 }
 
 .index .card-img, .film .card-img {
