@@ -1,11 +1,5 @@
 /* ====================================================
 
-   Scenoptica
-   v0.5 11 May 2020
-   (c) 2014-2020 Joaquim Baeta <mail@joaquimbaeta.com>
-
-   ----------------------------------------------------
-
    Table of contents
 
    1......Typography
@@ -24,7 +18,7 @@
    5.1.......Homepage
    5.2.......Blog
    5.3.......Film
-   5.4.......Tag
+   5.4.......Tag/location
    6......Tools
    6.1.......Video.js
 
@@ -246,26 +240,26 @@ a:active {
 
 /* 3.4 Cards */
 
-.index .card, .tag .card {
+.index .card, .tag .card, .location .card {
   margin-bottom: 1.25rem;
 }
 
-.index .card-img, .film .card-img, .tag .card-img {
+.index .card-img, .film .card-img, .tag .card-img, .location .card-img {
   opacity: 0.4;
   transition: all .2s linear;
 }
 
-.index .card:hover .card-img, .film .card:hover .card-img, .tag .card:hover .card-img {
+.index .card:hover .card-img, .film .card:hover .card-img, .tag .card:hover .card-img, .location .card:hover .card-img {
   opacity: 0.2;
 }
 
-.index .card-title, .film .card-title, .tag .card-title {
+.index .card-title, .film .card-title, .tag .card-title, .location .card-title {
   font-family: 'Share Tech', monospace;
   font-size: 1.75rem;
   text-shadow: #00000080 3px 3px 0px;
 }
 
-.index .card a, .film .card a, .tag .card a {
+.index .card a, .film .card a, .tag .card a, .location .card a {
   color: #fff;
 }
 
@@ -405,9 +399,9 @@ iframe.map {
   border-image-source: linear-gradient(100deg, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e, #fddb83, #fece7d, #febe79, #fdb076, #fda172);
 }
 
-/* 5.4 Tag */
+/* 5.4 Tag/location */
 
-.tag .card-columns {
+.tag .card-columns, .location .card-columns {
   column-count: 2;
 }
 
