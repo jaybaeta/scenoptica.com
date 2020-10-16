@@ -10,19 +10,23 @@
 
    1......Typography
    2......Colours
-   2.1....Text colours
-   2.2....Background colours
+   2.1.......Text colours
+   2.2.......Background colours
    3......Styling
-   3.1....Buttons
+   3.1.......Buttons
+   3.2.......Dropdowns
+   3.3.......Cards
+   3.4.......Other
    4......Global
-   4.1....Navbar
-   4.2....Footer 
+   4.1.......Navbar
+   4.2.......Footer 
    5......Page-specific
-   5.1....Homepage
-   5.2....Blog
-   5.3....Film
+   5.1.......Homepage
+   5.2.......Blog
+   5.3.......Film
+   5.4.......Tag
    6......Tools
-   6.1....Video.js
+   6.1.......Video.js
 
    ==================================================== */
 
@@ -135,16 +139,6 @@ a:active {
     box-shadow: none;
 }
 
-
-
-
-
-
-
-
-
-
-
 .btn-download {
   color: #FFF;
   text-align: left;
@@ -160,7 +154,6 @@ a:active {
   /*background-color: #000;*/
 }
 
-
 .btn-download:not(:disabled):not(.disabled):active, .btn-download:not(:disabled):not(.disabled).active, .show > .btn-download.dropdown-toggle {
   border-image-source: linear-gradient(100deg, #fddb83, #fece7d, #febe79, #fdb076, #fda172);
   background-color: #000;
@@ -172,7 +165,6 @@ a:active {
     border-color: none;
     box-shadow: none;
 }
-
 
 .btn-download.btn {
   text-align: left;
@@ -252,6 +244,31 @@ a:active {
   border-image-source: linear-gradient(100deg, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e);
 }
 
+/* 3.4 Cards */
+
+.index .card, .tag .card {
+  margin-bottom: 1.25rem;
+}
+
+.index .card-img, .film .card-img, .tag .card-img {
+  opacity: 0.4;
+  transition: all .2s linear;
+}
+
+.index .card:hover .card-img, .film .card:hover .card-img, .tag .card:hover .card-img {
+  opacity: 0.2;
+}
+
+.index .card-title, .film .card-title, .tag .card-title {
+  font-family: 'Share Tech', monospace;
+  font-size: 1.75rem;
+  text-shadow: #00000080 3px 3px 0px;
+}
+
+.index .card a, .film .card a, .tag .card a {
+  color: #fff;
+}
+
 /* 3.3 Other */
 
 .fa-heart {
@@ -318,29 +335,6 @@ footer a:hover {
   }
 }
 
-.index .card {
-  margin-bottom: 1.25rem;
-}
-
-.index .card-img, .film .card-img {
-  opacity: 0.4;
-  transition: all .2s linear;
-}
-
-.index .card:hover .card-img, .film .card:hover .card-img {
-  opacity: 0.2;
-}
-
-.index .card-title, .film .card-title {
-  font-family: 'Share Tech', monospace;
-  font-size: 1.75rem;
-  text-shadow: #00000080 3px 3px 0px;
-}
-
-.index .card a, .film .card a {
-  color: #fff;
-}
-
 .explore-full {
   font-family: 'Share Tech';
   text-transform: uppercase;
@@ -354,7 +348,7 @@ footer a:hover {
   margin-left: 5px;
 }
 
-/* 5.2 BLOG */
+/* 5.2 Blog */
 
 .blog > .container {
   padding: 0 10%;
@@ -370,7 +364,7 @@ footer a:hover {
   font-size: 95%;
 }
 
-/* 5.3 FILM */
+/* 5.3 Film */
 
 .film {
   font-family: 'Share Tech', sans-serif;
@@ -411,9 +405,15 @@ iframe.map {
   border-image-source: linear-gradient(100deg, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e, #fddb83, #fece7d, #febe79, #fdb076, #fda172);
 }
 
-/* 6. TOOLS */
+/* 5.4 Tag */
 
-/* 6.1 VIDEO.JS */
+.tag .card-columns {
+  column-count: 2;
+}
+
+/* 6. Tools */
+
+/* 6.1 Video.js */
 
 .video-js, .vjs-time-tooltip {
   font-family: 'Share Tech Mono' !important;
