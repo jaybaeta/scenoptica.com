@@ -19,6 +19,7 @@
    5.2.......Blog
    5.3.......Film
    5.4.......Tag/location
+   5.5.......Archive
    6......Tools
    6.1.......Video.js
 
@@ -145,7 +146,6 @@ a:active {
 
 .btn-download:hover {
   color: #FFF;
-  /*background-color: #000;*/
 }
 
 .btn-download:not(:disabled):not(.disabled):active, .btn-download:not(:disabled):not(.disabled).active, .show > .btn-download.dropdown-toggle {
@@ -204,7 +204,7 @@ a:active {
   color: #f7f598;
 }
 
-.download .dropdown-toggle::after {
+.download .dropdown-toggle::after, .btn-secondary.dropdown-toggle::after {
   font-family: "Font Awesome\ 5 Free" !important;
   font-weight: 900 !important;
   content: '\f0dd' !important;
@@ -213,8 +213,10 @@ a:active {
 
 /* 3.2 Dropdowns */
 
-.download .dropdown-menu.show {
+.dropdown-menu {
   margin: 10px auto;
+  max-height: 60vh;
+  overflow-y: auto;
   background-color: #000;
   border: 1px solid;
   border-radius: 0;
@@ -232,7 +234,7 @@ a:active {
   color: #fff;
 }
 
-.download .dropdown-divider {
+.dropdown-divider {
   border-top: 1px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(100deg, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e);
@@ -240,16 +242,16 @@ a:active {
 
 /* 3.4 Cards */
 
-.index .card, .tag .card, .location .card {
+.index .card, .tag .card, .location .card, .archive .card {
   margin-bottom: 1.25rem;
 }
 
-.index .card-img, .film .card-img, .tag .card-img, .location .card-img {
+.index .card-img, .film .card-img, .tag .card-img, .location .card-img, .archive .card-img {
   opacity: 0.4;
   transition: all .2s linear;
 }
 
-.index .card:hover .card-img, .film .card:hover .card-img, .tag .card:hover .card-img, .location .card:hover .card-img {
+.index .card:hover .card-img, .film .card:hover .card-img, .tag .card:hover .card-img, .location .card:hover .card-img, .archive .card:hover .card-img {
   opacity: 0.2;
 }
 
@@ -259,7 +261,7 @@ a:active {
   text-shadow: #00000080 3px 3px 0px;
 }
 
-.index .card a, .film .card a, .tag .card a, .location .card a {
+.index .card a, .film .card a, .tag .card a, .location .card a, .archive .card a {
   color: #fff;
 }
 
@@ -403,6 +405,113 @@ iframe.map {
 
 .tag .card-columns, .location .card-columns {
   column-count: 2;
+}
+
+/* 5.5 Archive */
+
+.btn-location, .btn-location .dropdown-menu {
+  border: 1px solid;
+  border-radius: 0;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(100deg, #a1fc93, #c9fd99, #ebff9e);
+}
+
+.btn-location:hover, .btn-location + .dropdown-menu, .btn-location + .dropdown-menu .dropdown-divider  {
+  border-image-source: linear-gradient(100deg, #ebff9e, #f7f598, #fae88e);
+  background-color: #000;
+}
+
+
+.btn-location:not(:disabled):not(.disabled):active, .btn-location:not(:disabled):not(.disabled).active, .show > .btn-location.dropdown-toggle {
+  border-image-source: linear-gradient(100deg, #ebff9e, #f7f598, #fae88e);
+  background-color: #000;
+}
+
+.btn-location:not(:disabled):not(.disabled):active:focus, .btn-location:not(:disabled):not(.disabled).active:focus, .show > .btn-location.dropdown-toggle:focus, .btn-location:focus, .btn-location.focus {
+    color: #FFF;
+    background-color: #000;
+    border-color: none;
+    box-shadow: none;
+}
+
+.btn-location + .dropdown-menu .is-checked {
+  background: #fff;
+  color: #000;
+}
+
+.btn-tag {
+  border: 1px solid;
+  border-radius: 0;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(100deg, #ebff9e, #f7f598, #fae88e);
+}
+
+.btn-tag:hover, .btn-tag + .dropdown-menu, .btn-tag + .dropdown-menu .dropdown-divider {
+  border-image-source: linear-gradient(100deg, #fae88e, #fddb83, #fece7d);
+  background-color: #000;
+}
+
+
+.btn-tag:not(:disabled):not(.disabled):active, .btn-tag:not(:disabled):not(.disabled).active, .show > .btn-tag.dropdown-toggle {
+  border-image-source: linear-gradient(100deg, #fae88e, #fddb83, #fece7d);
+  background-color: #000;
+}
+
+.btn-tag:not(:disabled):not(.disabled):active:focus, .btn-tag:not(:disabled):not(.disabled).active:focus, .show > .btn-tag.dropdown-toggle:focus, .btn-tag:focus, .btn-tag.focus {
+    color: #FFF;
+    background-color: #000;
+    border-color: none;
+    box-shadow: none;
+}
+
+.btn-tag + .dropdown-menu .is-checked {
+  background: #fff;
+  color: #000;
+}
+
+.btn-quality {
+  border: 1px solid;
+  border-radius: 0;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(100deg, #fae88e, #fddb83, #fece7d) !important;
+}
+
+.btn-quality:hover, .btn-quality + .dropdown-menu, .btn-quality + .dropdown-menu .dropdown-divider {
+  border-image-source: linear-gradient(100deg, #fece7d, #febe79, #fdb076);
+  background-color: #000;
+}
+
+.btn-quality:not(:disabled):not(.disabled):active, .btn-quality:not(:disabled):not(.disabled).active, .show > .btn-quality.dropdown-toggle {
+  border-image-source: linear-gradient(100deg, #fece7d, #febe79, #fdb076);
+  background-color: #000;
+}
+
+.btn-quality:not(:disabled):not(.disabled):active:focus, .btn-quality:not(:disabled):not(.disabled).active:focus, .show > .btn-quality.dropdown-toggle:focus, .btn-quality:focus, .btn-quality.focus {
+    color: #FFF;
+    background-color: #000;
+    border-color: none;
+    box-shadow: none;
+}
+
+.btn-quality + .dropdown-menu .is-checked {
+  background: #fff;
+  color: #000;
+}
+
+.archive .form-control {
+  font-family: 'Share Tech Mono', monospace;
+  height: calc(1.8em + 0.75rem + 2px);
+  color: rgba(255, 255, 255, 0.75);
+  background: #000;
+  border: 1px solid;
+  border-radius: 0;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(100deg, #fece7d, #febe79, #fdb076, #fda172);
+}
+
+
+.archive .card-title {
+  font-size: 1.5rem;
 }
 
 /* 6. Tools */
