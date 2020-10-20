@@ -336,11 +336,15 @@ footer a:hover {
   text-transform: uppercase;
 }
 
-.explore-full > .text-gradient {
+.explore-full a {
+  color: #FFF;
+}
+
+.explore-full a > .text-gradient {
   transition: all .3s ease-in-out;
 }
 
-.explore-full:hover > .text-gradient, .explore-full > .text-gradient:hover {
+.explore-full a:hover > .text-gradient, .explore-full > .text-gradient a:hover {
   margin-left: 5px;
 }
 
