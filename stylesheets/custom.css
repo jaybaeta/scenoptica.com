@@ -256,9 +256,21 @@ a:active {
 }
 
 .index .card-title, .film .card-title, .tag .card-title, .location .card-title {
-  font-family: 'Share Tech', monospace;
+  font-family: 'Share Tech', sans-serif;
   font-size: 1.75rem;
   text-shadow: #00000080 3px 3px 0px;
+}
+
+@media (max-width: 991px) {
+  .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+    font-size: 1.75rem !important;
+  }
 }
 
 .index .card a, .film .card a, .tag .card a, .location .card a, .archive .card a {
