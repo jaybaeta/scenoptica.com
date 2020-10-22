@@ -326,6 +326,10 @@ footer a:hover {
 
 /* 5.1 Homepage */
 
+.jumbotron {
+  background-color: #000;
+}
+
 .jumbotron h1 {
   font-family: 'Montserrat Alternates', 'Share Tech', sans-serif;
   font-size: 6rem !important;
