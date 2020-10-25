@@ -242,6 +242,38 @@ a:active {
 
 /* 3.4 Cards */
 
+@media (min-width: 576px) {
+  .index .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (min-width: 769px) {
+  .index .card-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media (min-width: 992px) {
+  .index .card-columns {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
+}
+
+@media (min-width: 576px) {
+  .film .card-columns, .tag .card-columns, .location .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
 .index .card, .tag .card, .location .card, .archive .card {
   margin-bottom: 1.25rem;
 }
@@ -255,26 +287,32 @@ a:active {
   opacity: 0.2;
 }
 
-.index .card-title, .film .card-title, .tag .card-title, .location .card-title {
+.index .card a, .film .card a, .tag .card a, .location .card a, .archive .card a {
+  color: #fff;
+}
+
+.index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
   font-family: 'Share Tech', sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.3rem;
   text-shadow: #00000080 3px 3px 0px;
 }
 
-@media (max-width: 991px) {
+@media (min-width: 576px) {
+  .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (min-width: 992px) {
   .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
     font-size: 1.3rem !important;
   }
 }
 
-@media (max-width: 575px) {
+@media (min-width: 1200px) {
   .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
     font-size: 1.75rem !important;
   }
-}
-
-.index .card a, .film .card a, .tag .card a, .location .card a, .archive .card a {
-  color: #fff;
 }
 
 /* 3.3 Other */
@@ -423,9 +461,7 @@ iframe.map {
 
 /* 5.4 Tag/location */
 
-.tag .card-columns, .location .card-columns {
-  column-count: 2;
-}
+
 
 /* 5.5 Archive */
 
@@ -527,11 +563,6 @@ iframe.map {
   border-radius: 0;
   border-image-slice: 1;
   border-image-source: linear-gradient(100deg, #fece7d, #febe79, #fdb076, #fda172);
-}
-
-
-.archive .card-title {
-  font-size: 1.5rem;
 }
 
 /* 6. Tools */
