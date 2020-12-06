@@ -390,6 +390,12 @@ footer a:hover {
   text-transform: uppercase;
 }
 
+@media (max-width: 767px) {
+  .explore-full {
+    font-size: 1.7rem !important;
+  }
+}
+
 .explore-full a {
   color: #FFF;
 }
