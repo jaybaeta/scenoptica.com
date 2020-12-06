@@ -401,11 +401,20 @@ footer a:hover {
 }
 
 .explore-full a > .text-gradient {
+  transition: all .5s ease-in-out;
+}
+
+.explore-full a > .stats {
+  opacity: 0.45;
   transition: all .3s ease-in-out;
 }
 
 .explore-full a:hover > .text-gradient, .explore-full > .text-gradient a:hover {
   margin-left: 5px;
+}
+
+.explore-full a:hover > .stats {
+  opacity: 0.15;
 }
 
 /* 5.2 Blog */
