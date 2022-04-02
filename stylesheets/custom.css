@@ -371,6 +371,7 @@ footer a:hover {
 .jumbotron h1 {
   font-family: 'Montserrat Alternates', 'Share Tech', sans-serif;
   font-size: 6rem !important;
+  font-weight: 700;
 }
 
 @media (max-width: 991px) {
