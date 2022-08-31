@@ -143,7 +143,24 @@
 
     <!-- JS -->
     <script src="../javascripts/jquery-3.5.1.min.js"></script>
-    <script src="../javascripts/popper.min.js"></script>
-    <script src="../javascripts/bootstrap.min.js"></script>
+    <script src="../javascripts/bootstrap.js"></script>
+    <script type="text/javascript">
+      // <![CDATA[
+      var image_array = new Array();
+          image_array[0] = "../images/jumbotron/borobudur-relief.jpg";
+          image_array[1] = "../images/jumbotron/plants.jpg";
+          image_array[2] = "../images/jumbotron/venice-gull.jpg";
+          image_array[3] = "../images/jumbotron/wave.jpg";
+          image_array[4] = "../images/jumbotron/mirror.jpg";
+
+      var rand_path = image_array[Math.floor(Math.random() * image_array.length)];
+       
+      $(document).ready(function() {
+          $("#jumbotron").css("background", "url("+rand_path+") center center fixed no-repeat");
+          $(".jumbotron").css("background-size", "cover");
+          $("#img-footer").css("background", "url("+rand_path+") center center no-repeat");
+          });
+      // ]]>
+    </script>
   </body>
 </html>
