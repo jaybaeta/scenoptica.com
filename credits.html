@@ -388,65 +388,8 @@
     </main>
 
     <script src="javascripts/jquery-3.6.1.min.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="javascripts/imagesloaded.js"></script>
-    <script src="javascripts/isotope.js"></script>
+    <script src="javascripts/popper.min.js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
-    <script> // Search
-    $(document).ready(function(){
-      $("#footage").on("keyup", function() {
-        var value = $(this).val().toLowerCase();
-        $("#footage *").filter(function() {
-          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
-      });
-    });
-    </script>
-    <script type="text/javascript">
-    // init Isotope
-    var $grid = $('.grid').isotope({
-      itemSelector: '.grid-item',
-      percentPosition: true,
-      masonry: {
-        columnWidth: '.grid-sizer'
-      }
-    });
-
-    // store filter for each group
-    var filters = {};
-
-    $('.filters').on( 'click', '.dropdown-item', function( event ) {
-      var $button = $( event.currentTarget );
-      // get group key
-      var $buttonGroup = $button.parents('.dropdown-menu');
-      var filterGroup = $buttonGroup.attr('data-filter-group');
-      // set filter for group
-      filters[ filterGroup ] = $button.attr('data-filter');
-      // combine filters
-      var filterValue = concatValues( filters );
-      // set filter for Isotope
-      $grid.isotope({ filter: filterValue });
-    });
-
-    // change is-checked class on buttons
-    $('.dropdown-menu').each( function( i, buttonGroup ) {
-      var $buttonGroup = $( buttonGroup );
-      $buttonGroup.on( 'click', 'button', function( event ) {
-        $buttonGroup.find('.is-checked').removeClass('is-checked');
-        var $button = $( event.currentTarget );
-        $button.addClass('is-checked');
-      });
-    });
-      
-    // flatten object by concatting values
-    function concatValues( obj ) {
-      var value = '';
-      for ( var prop in obj ) {
-        value += obj[ prop ];
-      }
-      return value;
-    }
-    </script>
   </body>
 </html>
 
