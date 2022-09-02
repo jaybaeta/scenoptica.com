@@ -69,93 +69,103 @@
         </div>
       </div>
 
-
-
-
-
-
       <div class="row filters">
-        <div class="col-md-4 col-lg-2 mb-3">
-          <div class="dropdown">
-            <button class="btn btn-block btn-secondary btn-location dropdown-toggle" type="button" id="location-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Location
-            </button>
-            <div class="dropdown-menu" data-filter-group="location" aria-labelledby="location-dropdown">
-              <button class="dropdown-item is-checked" data-filter="">All locations</button>
-              <div class="dropdown-divider"></div>
-              <button class="dropdown-item" data-filter=".england">England</button>
-              <button class="dropdown-item" data-filter=".germany">Germany</button>
-              <button class="dropdown-item" data-filter=".indonesia">Indonesia</button>
-              <button class="dropdown-item" data-filter=".italy">Italy</button>
+        <div class="col-12">
+          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mb-3">
+
+            <div class="dropdown pe-3">
+              <button class="btn btn-block btn-secondary btn-type dropdown-toggle" type="button" id="type-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Type
+              </button>
+              <div class="dropdown-menu" data-filter-group="type" aria-labelledby="type-dropdown">
+                <button class="dropdown-item is-checked" data-filter="">All types</button>
+                <div class="dropdown-divider"></div>
+                <button class="dropdown-item" data-filter=".documentary">Documentary</button>
+                <button class="dropdown-item" data-filter=".essay">Essay</button>
+                <button class="dropdown-item" data-filter=".film">Film</button>
+                <button class="dropdown-item" data-filter=".footage">Footage</button>
+                <button class="dropdown-item" data-filter=".lecture">Lecture</button>
+              </div>
+            </div>
+
+            <div class="dropdown pe-3">
+              <button class="btn btn-block btn-secondary btn-location dropdown-toggle" type="button" id="location-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Location
+              </button>
+              <div class="dropdown-menu" data-filter-group="location" aria-labelledby="location-dropdown">
+                <button class="dropdown-item is-checked" data-filter="">All locations</button>
+                <div class="dropdown-divider"></div>
+                <button class="dropdown-item" data-filter=".england">England</button>
+                <button class="dropdown-item" data-filter=".germany">Germany</button>
+                <button class="dropdown-item" data-filter=".indonesia">Indonesia</button>
+                <button class="dropdown-item" data-filter=".italy">Italy</button>
+              </div>
+            </div>
+
+            <div class="dropdown pe-3">
+              <button class="btn btn-block btn-secondary btn-tag dropdown-toggle" type="button" id="tag-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Tag
+              </button>
+              <div class="dropdown-menu" data-filter-group="tag" aria-labelledby="tag-dropdown">
+                <button class="dropdown-item is-checked" data-filter="">All tags</button>
+                <div class="dropdown-divider"></div>
+                <button class="dropdown-item" data-filter=".anas-platyrhynchos">anas platyrhynchos</button>
+                <button class="dropdown-item" data-filter=".animals">animals</button>
+                <button class="dropdown-item" data-filter=".ants">ants</button>
+                <button class="dropdown-item" data-filter=".beach">beach</button>
+                <button class="dropdown-item" data-filter=".birds">birds</button>
+                <button class="dropdown-item" data-filter=".bokeh">bokeh</button>
+                <button class="dropdown-item" data-filter=".city">city</button>
+                <button class="dropdown-item" data-filter=".ducks">ducks</button>
+                <button class="dropdown-item" data-filter=".field">field</button>
+                <button class="dropdown-item" data-filter=".flowers">flowers</button>
+                <button class="dropdown-item" data-filter=".forest">forest</button>
+                <button class="dropdown-item" data-filter=".graffiti">graffiti</button>
+                <button class="dropdown-item" data-filter=".house">house</button>
+                <button class="dropdown-item" data-filter=".insects">insects</button>
+                <button class="dropdown-item" data-filter=".light">light</button>
+                <button class="dropdown-item" data-filter=".monochrome">monochrome</button>
+                <button class="dropdown-item" data-filter=".moss">moss</button>
+                <button class="dropdown-item" data-filter=".mountain">mountain</button>
+                <button class="dropdown-item" data-filter=".ocean">ocean</button>
+                <button class="dropdown-item" data-filter=".pollution">pollution</button>
+                <button class="dropdown-item" data-filter=".rain">rain</button>
+                <button class="dropdown-item" data-filter=".river">river</button>
+                <button class="dropdown-item" data-filter=".sheep">sheep</button>
+                <button class="dropdown-item" data-filter=".shore">shore</button>
+                <button class="dropdown-item" data-filter=".sky">sky</button>
+                <button class="dropdown-item" data-filter=".snakes">snakes</button>
+                <button class="dropdown-item" data-filter=".spring">spring</button>
+                <button class="dropdown-item" data-filter=".stone">stone</button>
+                <button class="dropdown-item" data-filter=".sunrise">sunrise</button>
+                <button class="dropdown-item" data-filter=".sunset">sunset</button>
+                <button class="dropdown-item" data-filter=".trees">trees</button>
+                <button class="dropdown-item" data-filter=".vegetation">vegetation</button>
+                <button class="dropdown-item" data-filter=".water">water</button>
+                <button class="dropdown-item" data-filter=".waves">waves</button>
+                <button class="dropdown-item" data-filter=".wind">wind</button>
+                <button class="dropdown-item" data-filter=".winter">winter</button>
+              </div>
+            </div>
+
+            <div class="dropdown pe-3">
+              <button class="btn btn-block btn-secondary btn-quality dropdown-toggle" type="button" id="quality-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Resolution
+              </button>
+              <div class="dropdown-menu" data-filter-group="quality" aria-labelledby="quality-dropdown">
+                <button class="dropdown-item is-checked" data-filter="">All resolutions</button>
+                <div class="dropdown-divider"></div>
+                <button class="dropdown-item" data-filter=".q-1080">1080</button>
+                <button class="dropdown-item" data-filter=".q-720">720</button>
+                <button class="dropdown-item" data-filter=".q-480">480</button>
+              </div>
+            </div>
+            </div>
+            <div class="input-group mb-3">
+              <input class="form-control" id="footage" type="text" placeholder="Type here to search">
             </div>
           </div>
-        </div>
-
-        <div class="col-md-4 col-lg-2 mb-3">
-          <div class="dropdown">
-            <button class="btn btn-block btn-secondary btn-tag dropdown-toggle" type="button" id="tag-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Tag
-            </button>
-            <div class="dropdown-menu" data-filter-group="tag" aria-labelledby="tag-dropdown">
-              <button class="dropdown-item is-checked" data-filter="">All tags</button>
-              <div class="dropdown-divider"></div>
-              <button class="dropdown-item" data-filter=".anas-platyrhynchos">anas platyrhynchos</button>
-              <button class="dropdown-item" data-filter=".animals">animals</button>
-              <button class="dropdown-item" data-filter=".ants">ants</button>
-              <button class="dropdown-item" data-filter=".beach">beach</button>
-              <button class="dropdown-item" data-filter=".birds">birds</button>
-              <button class="dropdown-item" data-filter=".bokeh">bokeh</button>
-              <button class="dropdown-item" data-filter=".city">city</button>
-              <button class="dropdown-item" data-filter=".ducks">ducks</button>
-              <button class="dropdown-item" data-filter=".field">field</button>
-              <button class="dropdown-item" data-filter=".flowers">flowers</button>
-              <button class="dropdown-item" data-filter=".forest">forest</button>
-              <button class="dropdown-item" data-filter=".graffiti">graffiti</button>
-              <button class="dropdown-item" data-filter=".house">house</button>
-              <button class="dropdown-item" data-filter=".insects">insects</button>
-              <button class="dropdown-item" data-filter=".light">light</button>
-              <button class="dropdown-item" data-filter=".monochrome">monochrome</button>
-              <button class="dropdown-item" data-filter=".moss">moss</button>
-              <button class="dropdown-item" data-filter=".mountain">mountain</button>
-              <button class="dropdown-item" data-filter=".ocean">ocean</button>
-              <button class="dropdown-item" data-filter=".pollution">pollution</button>
-              <button class="dropdown-item" data-filter=".rain">rain</button>
-              <button class="dropdown-item" data-filter=".river">river</button>
-              <button class="dropdown-item" data-filter=".sheep">sheep</button>
-              <button class="dropdown-item" data-filter=".shore">shore</button>
-              <button class="dropdown-item" data-filter=".sky">sky</button>
-              <button class="dropdown-item" data-filter=".snakes">snakes</button>
-              <button class="dropdown-item" data-filter=".spring">spring</button>
-              <button class="dropdown-item" data-filter=".stone">stone</button>
-              <button class="dropdown-item" data-filter=".sunrise">sunrise</button>
-              <button class="dropdown-item" data-filter=".sunset">sunset</button>
-              <button class="dropdown-item" data-filter=".trees">trees</button>
-              <button class="dropdown-item" data-filter=".vegetation">vegetation</button>
-              <button class="dropdown-item" data-filter=".water">water</button>
-              <button class="dropdown-item" data-filter=".waves">waves</button>
-              <button class="dropdown-item" data-filter=".wind">wind</button>
-              <button class="dropdown-item" data-filter=".winter">winter</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-lg-2 mb-3">
-          <div class="dropdown">
-            <button class="btn btn-block btn-secondary btn-quality dropdown-toggle" type="button" id="quality-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Resolution
-            </button>
-            <div class="dropdown-menu" data-filter-group="quality" aria-labelledby="quality-dropdown">
-              <button class="dropdown-item is-checked" data-filter="">All resolutions</button>
-              <div class="dropdown-divider"></div>
-              <button class="dropdown-item" data-filter=".q-1080">1080</button>
-              <button class="dropdown-item" data-filter=".q-720">720</button>
-              <button class="dropdown-item" data-filter=".q-480">480</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-12 col-lg-6 mb-3">
-          <input class="form-control" id="footage" type="text" placeholder="Type here to search">
         </div>
       </div>
     </div>
@@ -164,7 +174,7 @@
       <div id="footage" class="grid">
         <div class="grid-sizer col-sm-6 col-md-4 col-lg-3"></div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item italy city sunrise q-720">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item italy city sunrise q-720 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white ">
               <a href="footage/morning-in-naples.html">
@@ -177,7 +187,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia animals snakes q-1080">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia animals snakes q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white ">
               <a href="footage/homalopsis-buccata.html">
@@ -190,7 +200,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item england animals field sheep spring winter q-1080">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item england animals field sheep spring winter q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white ">
               <a href="footage/the-sheep-of-stonehenge.html">
@@ -203,7 +213,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia pollution river vegetation water q-1080">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia pollution river vegetation water q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white ">
               <a href="footage/discarded-hat-on-bank-of-progo-river.html">
@@ -216,7 +226,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia animals ants insects moss stone q-1080">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia animals ants insects moss stone q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white ">
               <a href="footage/the-ants-of-borobudur-one.html">
@@ -229,7 +239,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia bokeh monochrome rain trees vegetation q-1080">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia bokeh monochrome rain trees vegetation q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white">
               <a href="footage/rain-jackfruit-tree-and-bokeh-one.html">
@@ -242,7 +252,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia animals flowers insects vegetation q-1080">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia animals flowers insects vegetation q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white">
               <a href="footage/butterfly-amongst-vegetation-one.html">
@@ -255,7 +265,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item germany graffiti monochrome q-720">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item germany graffiti monochrome q-720 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white">
               <a href="footage/fight.html">
@@ -268,7 +278,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item germany anas-platyrhynchos animals birds ducks vegetation water q-1080">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item germany anas-platyrhynchos animals birds ducks vegetation water q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white">
               <a href="footage/male-mallard-amongst-pond-vegetation.html">
@@ -281,7 +291,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia vegetation wind q-1080">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia vegetation wind q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white">
               <a href="footage/dry-banana-leaves-swaying-in-wind.html">
@@ -294,7 +304,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia light monochrome stone q-1080">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia light monochrome stone q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white">
               <a href="footage/reflections-on-stone-in-monochrome-one.html">
@@ -307,7 +317,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia rain vegetation q-1080">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia rain vegetation q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white">
               <a href="footage/tropical-rain-and-banana-leaves-one.html">
@@ -320,7 +330,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item germany monochrome river water waves q-720">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item germany monochrome river water waves q-720 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white">
               <a href="footage/waves-of-the-weser.html">
@@ -333,7 +343,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia forest mountain vegetation q-1080">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia forest mountain vegetation q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white">
               <a href="footage/plants-in-tropical-montane-forest-one.html">
@@ -346,7 +356,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia beach ocean shore water waves q-1080">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia beach ocean shore water waves q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white">
               <a href="footage/tumultuous-shore.html">
@@ -359,7 +369,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia house light monochrome trees q-1080">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia house light monochrome trees q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white">
               <a href="footage/crepuscular-rays-through-fig-tree-and-house-one.html">
@@ -372,7 +382,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item germany monochrome sky trees vegetation winter q-480">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item germany monochrome sky trees vegetation winter q-480 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white">
               <a href="footage/winter-tree-branches-below-cloudy-sky-in-monochrome-one.html">
@@ -385,7 +395,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia animals ants insects q-1080">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia animals ants insects q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white">
               <a href="footage/ants-transporting-object-two.html">
@@ -398,7 +408,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia rain trees vegetation wind q-1080">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia rain trees vegetation wind q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white">
               <a href="footage/wind-blowing-leaves-in-monochrome-one.html">
@@ -411,7 +421,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia sky sunset q-1080">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia sky sunset q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white">
               <a href="footage/orange-sunset-one.html">
@@ -424,7 +434,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia animals ants insects q-1080">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 archive-item indonesia animals ants insects q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white">
               <a href="footage/ants-transporting-object-one.html">
@@ -514,10 +524,7 @@
     // init Isotope
     var $grid = $('.grid').isotope({
       itemSelector: '.grid-item',
-      percentPosition: true,
-      masonry: {
-        columnWidth: '.grid-sizer'
-      }
+      layoutMode: 'fitRows',
     });
 
     // store filter for each group
