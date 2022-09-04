@@ -478,7 +478,29 @@ iframe.map {
 
 /* 5.4 Tag/location */
 
+/*  .items-list .col-md-10 {
+    display: grid;
+  }*/
 
+/*@media (min-width: 1200px) {
+  .items-list .col-lg-11 {
+    display: flex;
+    align-items: center;
+  }
+}*/
+
+.items-list p {
+  margin-top: 1rem;
+  color: #959595;
+}
+
+.items-list p a {
+  color: #fda172;
+}
+
+.items-list p a:hover {
+  color: #f7f598;
+}
 
 /* 5.5 Archive */
 
