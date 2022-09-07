@@ -412,11 +412,6 @@ footer a:hover {
   }
 }
 
-.explore-full {
-  font-family: 'Share Tech';
-  text-transform: uppercase;
-}
-
 .index .card p {
   color: #b5b5b5;
   text-shadow: #00000080 3px 3px 0px;
@@ -428,25 +423,76 @@ footer a:hover {
   }
 }
 
-.explore-full a {
-  color: #FFF;
-}
-
-.explore-full a > .text-gradient {
-  transition: all .5s ease-in-out;
-}
-
-.explore-full a > .stats {
-  opacity: 0.45;
+.explore-full-text {
+  text-transform: uppercase;
+  color: #959595;
   transition: all .3s ease-in-out;
 }
 
-.explore-full a:hover > .text-gradient, .explore-full > .text-gradient a:hover {
-  margin-left: 5px;
+.explore-full-text:hover {
+  color: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-.explore-full a:hover > .stats {
-  opacity: 0.15;
+.explore-full .fa-chevron-left {
+  background-image: linear-gradient(to right, #a1fc93, #c9fd99);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.explore-full .fa-angle-left {
+  background-image: linear-gradient(to right, #ebff9e, #f7f598);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.explore-full .fa-chevron-right {
+  background-image: linear-gradient(to right, #fece7d, #febe79);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.explore-full .fa-angle-right {
+  background-image: linear-gradient(to right, #fdb076, #fda172);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stats .fa-chart-simple {
+  background-image: linear-gradient(to right, #a1fc93, #c9fd99);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stats .fa-film {
+  background-image: linear-gradient(to right, #c9fd99, #ebff9e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stats .fa-leaf {
+  background-image: linear-gradient(to right, #f7f598, #fae88e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stats .fa-microphone-lines {
+  background-image: linear-gradient(to right, #fddb83, #fece7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stats .fa-tower-cell {
+  background-image: linear-gradient(to right, #febe79, #fdb076);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stats .fa-clapperboard {
+  background-image: linear-gradient(to right, #fdb076, #fda172);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* 5.2 Blog */
