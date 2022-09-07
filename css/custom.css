@@ -79,7 +79,7 @@ a:active {
 /* 3.1 Buttons */
 
 .btn {
-  font-family: 'Share Tech Mono', sans-serif;
+  font-family: 'Share Tech', sans-serif;
 }
 
 .btn-check:checked + .btn:focus, .btn-check:active + .btn:focus, .btn:active:focus, .btn.active:focus, .btn.show:focus {
@@ -252,7 +252,7 @@ a:active {
 }
 
 .dropdown-item {
-  font-family: 'Share Tech Mono', sans-serif;
+  font-family: 'Share Tech', sans-serif;
   color: #fff;
 }
 
