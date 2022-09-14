@@ -28,7 +28,7 @@
 /* 1. Typography */
 
 h1 {
-  font-family: 'Share Tech', "Source Sans Pro", "Noto", "Helvetica Neue", sans-serif;
+  font-family: 'Share Tech', "Source Sans Pro", sans-serif;
   font-size: 2.5rem !important;
 }
 
@@ -337,7 +337,6 @@ a:active {
 
 body {
   font-family: 'Share Tech', sans-serif;
-  /*color: #E2E8E6;*/
   color: #FFF;
   background-color: #2a2b2d;
 }
@@ -478,22 +477,6 @@ footer a:hover {
   -webkit-text-fill-color: transparent;
 }
 
-/* 5.2 Blog */
-
-.blog > .container {
-  padding: 0 10%;
-}
-
-.blog p {
-  font-family: 'KoHo', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-} 
-
-.article-footer p {
-  font-size: 0.9rem;
-}
-
 /* 5.3 Film */
 
 .film {
@@ -532,21 +515,6 @@ iframe.map {
   border-image-slice: 1;
   border-image-source: linear-gradient(100deg, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e, #fddb83, #fece7d, #febe79, #fdb076, #fda172);
 }
-
-/* 5.4 Tag/location */
-
-/*  .items-list .col-md-10 {
-    display: grid;
-  }*/
-
-/*@media (min-width: 1200px) {
-  .items-list .col-lg-11 {
-    display: flex;
-    align-items: center;
-  }
-}*/
-
-
 
 /* 5.5 Archive */
 
@@ -591,7 +559,6 @@ iframe.map {
   border-image-source: linear-gradient(100deg, #fae88e, #fddb83, #fece7d);
   background-color: #000;
 }
-
 
 .btn-tag:not(:disabled):not(.disabled):active, .btn-tag:not(:disabled):not(.disabled).active, .show > .btn-tag.dropdown-toggle {
   border-image-source: linear-gradient(100deg, #fae88e, #fddb83, #fece7d);
@@ -751,10 +718,3 @@ iframe.map {
     color: #f7f598 !important;
     background-color: transparent !important;
 }
-
-
-
-
-
-
-
