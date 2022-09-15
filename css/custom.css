@@ -201,6 +201,10 @@ a:active {
   border: 0;
 }
 
+.navbar .dropdown-toggle::after {
+  display: none;
+}
+
 .btn-link {
   font-family: 'Share Tech', sans-serif;
   bg: transparent;
@@ -243,9 +247,9 @@ a:active {
   color: #fff;
 }
 
-.dropdown-item:hover {
-  background-color: #000;
-  color: #fff;
+.dropdown-item:hover, .dropdown-item.active, .dropdown-item:active {
+  background-color: #fff;
+  color: #000;
 }
 
 .dropdown-divider {
