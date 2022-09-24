@@ -7,19 +7,19 @@
    2.1.......Text colours
    2.2.......Background colours
    3......Styling
-   3.1.......Buttons
-   3.2.......Dropdowns
-   3.3.......Cards
-   3.4.......Other
+   3.1.......Links
+   3.2.......Buttons
+   3.3.......Dropdowns
+   3.4.......Cards
+   3.5.......Other
    4......Global
    4.1.......Navbar
    4.2.......Footer 
    5......Page-specific
    5.1.......Homepage
-   5.2.......Blog
-   5.3.......Film
-   5.4.......Tag/location
-   5.5.......Archive
+   5.2.......Film
+   5.3.......Archive
+   5.4.......Meta pages
    6......Tools
    6.1.......Video.js
 
@@ -30,24 +30,6 @@
 h1 {
   font-family: 'Share Tech', "Source Sans Pro", sans-serif;
   font-size: 2.5rem !important;
-}
-
-a {
-  color: #a1fc93;
-  text-decoration: none;
-  -webkit-transition: all ease-in-out .25s;
-  -moz-transition: all ease-in-out .25s;
-  -o-transition: all ease-in-out .25s;
-  transition: all ease-in-out .25s;
-}
-
-a:hover, a:focus {
-  color: #f7f598;
-  text-decoration: none;
-}
-
-a:active {
-  color: #fda172;
 }
 
 /* 2. Colours */
@@ -76,7 +58,41 @@ a:active {
 
 /* 3. Styling */
 
-/* 3.1 Buttons */
+/* 3.1 Links */
+
+a {
+  color: #a1fc93;
+  text-decoration: none;
+  -webkit-transition: all ease-in-out .25s;
+  -moz-transition: all ease-in-out .25s;
+  -o-transition: all ease-in-out .25s;
+  transition: all ease-in-out .25s;
+}
+
+a:hover, a:focus {
+  color: #f7f598;
+  text-decoration: none;
+}
+
+a:active {
+  color: #fda172;
+}
+
+.items-list h6 a, footer a {
+  background-image: linear-gradient(to right, #a1fc93, #c9fd99, #ebff9e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.items-list h6 a:hover, footer a:hover {
+  background-image: linear-gradient(to right, #ebff9e, #f7f598, #fae88e);
+}
+
+.items-list h6 a:active, .items-list h6 a:focus, footer a:active, footer a:focus {
+  background-image: linear-gradient(to right, #fae88e, #fddb83, #fece7d);
+}
+
+/* 3.2 Buttons */
 
 .btn {
   font-family: 'Share Tech', sans-serif;
@@ -201,10 +217,6 @@ a:active {
   border: 0;
 }
 
-.navbar .dropdown-toggle::after {
-  display: none;
-}
-
 .btn-link {
   font-family: 'Share Tech', sans-serif;
   bg: transparent;
@@ -229,7 +241,7 @@ a:active {
   color: 
 }
 
-/* 3.2 Dropdowns */
+/* 3.3 Dropdowns */
 
 .dropdown-menu {
   margin: 10px auto;
@@ -256,28 +268,6 @@ a:active {
   border-top: 1px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(100deg, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e);
-}
-
-.items-list .dropdown {
-  margin-top: 0rem;
-  color: #959595;
-}
-
-.items-list .dropdown a {
-  color: #fff;
-  padding-left: 1rem;
-}
-
-.items-list .dropdown a:hover {
-  color: #f7f598;
-}
-
-.items-list .dropdown a:active, .items-list .dropdown a:focus {
-  color: #f7f598;
-}
-
-.items-list .dropdown-item {
-  font-family: 'Share Tech', sans-serif;
 }
 
 /* 3.4 Cards */
@@ -331,7 +321,7 @@ a:active {
   }
 }
 
-/* 3.3 Other */
+/* 3.5 Other */
 
 .fa-heart {
   color: #c12a5c;
@@ -349,6 +339,10 @@ body {
 
 .navbar-brand {
   font-family: 'Montserrat Alternates', 'Share Tech', sans-serif;
+}
+
+.navbar .dropdown-toggle::after {
+  display: none;
 }
 
 /* 4.2 Footer */
@@ -481,7 +475,7 @@ footer a:hover {
   -webkit-text-fill-color: transparent;
 }
 
-/* 5.3 Film */
+/* 5.2 Film */
 
 .film {
   font-family: 'Share Tech', sans-serif;
@@ -520,7 +514,7 @@ iframe.map {
   border-image-source: linear-gradient(100deg, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e, #fddb83, #fece7d, #febe79, #fdb076, #fda172);
 }
 
-/* 5.5 Archive */
+/* 5.3 Archive */
 
 .btn-location, .btn-location .dropdown-menu {
   border: 1px solid;
@@ -619,6 +613,22 @@ iframe.map {
   border-radius: 0;
   border-image-slice: 1;
   border-image-source: linear-gradient(100deg, #fece7d, #febe79, #fdb076, #fda172);
+}
+
+/* 5.4 Meta pages */
+
+.items-list .dropdown {
+  margin-top: 0rem;
+  color: #959595;
+}
+
+.items-list .btn {
+  color: #fff;
+  padding-left: 1rem;
+}
+
+.items-list .btn:hover, .items-list .btn:active, .items-list .btn:focus {
+  color: #959595 !important;
 }
 
 /* 6. Tools */
