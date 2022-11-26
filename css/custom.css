@@ -299,25 +299,61 @@ a:active {
 
 .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
   font-family: 'Share Tech', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-shadow: #00000080 3px 3px 0px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
-    font-size: 1.5rem !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media (min-width: 800px) {
+  .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media (min-width: 874px) {
+  .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (min-width: 948px) {
+  .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+    font-size: 1.4rem !important;
   }
 }
 
 @media (min-width: 992px) {
   .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
-    font-size: 1.3rem !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media (min-width: 1120px) {
+  .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+    font-size: 1.1rem !important;
   }
 }
 
 @media (min-width: 1200px) {
   .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
-    font-size: 1.75rem !important;
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+    font-size: 1.7rem !important;
   }
 }
 
