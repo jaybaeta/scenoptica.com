@@ -373,6 +373,12 @@ footer a:hover {
   background-color: #000;
 }
 
+.jumbotron .frame {
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+  border: 3px solid #ffffff;
+}
+
 .jumbotron h1 {
   font-family: 'Montserrat Alternates', 'Share Tech', sans-serif;
   font-size: 6rem !important;
@@ -389,6 +395,27 @@ footer a:hover {
 @media (max-width: 767px) {
   .jumbotron h1 {
     font-size: 2.7rem !important;
+  }
+}
+
+.index .navbar-nav {
+  flex-direction: row;
+}
+
+@media (max-width: 433px) {
+  .index .navbar-nav {
+    flex-direction: column;
+  }
+
+  .jumbotron h1 {
+    font-size: 2.4rem !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .jumbotron .frame, .jumbotron h3, .jumbotron .navbar {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
