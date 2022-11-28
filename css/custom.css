@@ -153,6 +153,33 @@ a:active {
     box-shadow: none;
 }
 
+.btn-empty, .jumbotron a, .jumbotron span {
+  font-size: 1.3rem;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+}
+
+.btn-empty:hover {
+  color: #959595;
+}
+
+.btn-empty:not(:disabled):not(.disabled):active, .btn-empty:not(:disabled):not(.disabled).active, .show > .btn-empty.dropdown-toggle {
+/*  border-image-source: linear-gradient(100deg, #fddb83, #fece7d, #febe79, #fdb076, #fda172);*/
+  color: #959595;
+}
+
+.btn-empty:not(:disabled):not(.disabled):active:focus, .btn-empty:not(:disabled):not(.disabled).active:focus, .show > .btn-empty.dropdown-toggle:focus, .btn-empty:focus, .btn-empty.focus {
+    color: #959595;
+    border-color: none;
+    box-shadow: none;
+}
+
+.btn-empty.dropdown-toggle::before {
+  content: none;
+}
+
 .btn-download {
   color: #FFF;
   text-align: left;
@@ -410,9 +437,11 @@ footer a:hover {
 }
 
 .jumbotron .frame {
-  padding-top: 25vh;
-  padding-bottom: 25vh;
+/*  padding-top: 25vh;*/
+/*  padding-bottom: 25vh;*/
+  height: 70vh;
   border: 3px solid #ffffff;
+  align-items: end;
 }
 
 .jumbotron h1 {
@@ -434,25 +463,29 @@ footer a:hover {
   }
 }
 
-.index .navbar-nav {
-  flex-direction: row;
-}
-
 @media (max-width: 433px) {
-  .index .navbar-nav {
-    flex-direction: column;
-  }
-
   .jumbotron h1 {
     font-size: 2.4rem !important;
   }
 }
 
 @media (max-width: 575px) {
-  .jumbotron .frame, .jumbotron h3, .jumbotron .navbar {
+  .jumbotron .frame, .jumbotron h3 {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+}
+
+.jumbotron .frame button {
+  text-align: right;
+}
+
+.index .dropdown-item {
+        font-size: 1rem !important;
+}
+
+.index .dropdown-menu {
+  max-height: 50vh;
 }
 
 .index .card p {
