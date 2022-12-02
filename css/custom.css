@@ -19,6 +19,7 @@
    5.2.......Film
    5.3.......Archive
    5.4.......Meta pages
+   5.5.......Support
    6......Tools
    6.1.......Video.js
 
@@ -722,6 +723,15 @@ iframe.map {
 
 .items-list .btn:hover, .items-list .btn:active, .items-list .btn:focus {
   color: #959595 !important;
+}
+
+/* 5.5 Support */
+
+.support-location .fa-solid {
+  background-image: linear-gradient(to right, #c9fd99ff, #fae88eff, #fece7dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 0.45rem;
 }
 
 /* 6. Tools */
