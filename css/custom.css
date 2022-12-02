@@ -11,7 +11,6 @@
    3.2.......Buttons
    3.3.......Dropdowns
    3.4.......Cards
-   3.5.......Other
    4......Global
    4.1.......Navbar
    4.2.......Footer 
@@ -44,6 +43,10 @@ h1 {
 
 .text-muted { 
   color: #959595;
+}
+
+.text-heart {
+  color: #c12a5c;
 }
 
 /* 2.2 Background colours*/
@@ -382,12 +385,6 @@ a:active {
   .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
     font-size: 1.7rem !important;
   }
-}
-
-/* 3.5 Other */
-
-.fa-heart {
-  color: #c12a5c;
 }
 
 /* 4. Global */
