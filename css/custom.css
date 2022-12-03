@@ -234,11 +234,15 @@ a:active {
 }
 
 .btn-download:hover .fa-save {
-  color: #a1fc93;
+  background-image: linear-gradient(to right, #a1fc93ff, #c9fd99ff, #ebff9eff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn-download .fa-save:hover {
-  color: #f7f598;
+  background-image: linear-gradient(to right, #ebff9eff, #f7f598ff, #fae88eff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .download .dropdown-toggle::after, .btn-secondary.dropdown-toggle::after {
@@ -246,6 +250,10 @@ a:active {
   font-weight: 900 !important;
   content: '\f0dd' !important;
   border: 0;
+}
+
+.btn-download.backup {
+  color: #959595;
 }
 
 .btn-link {
