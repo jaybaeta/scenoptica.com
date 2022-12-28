@@ -82,6 +82,16 @@ a:active {
   color: #fda172;
 }
 
+.index .nav-link {
+  padding: 0.5em;
+  color: #959595;
+  transition: all .3s ease-in-out;
+}
+
+.index .nav-link:hover {
+  color: #fff;
+}
+
 .items-list h6 a, footer a {
   background-image: linear-gradient(to right, #a1fc93, #c9fd99, #ebff9e);
   -webkit-background-clip: text;
@@ -410,7 +420,7 @@ body {
   font-family: 'Montserrat Alternates', 'Share Tech', sans-serif;
 }
 
-.navbar .dropdown-toggle::after {
+.navbar .dropdown-toggle::after, .nav .dropdown-toggle::after {
   display: none;
 }
 
