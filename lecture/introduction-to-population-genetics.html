@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Introduction to Population Genetics">
+    <meta name="author" content="Joaquim Baeta">
+    <meta name="monetization" content="$ilp.uphold.com/yJR4kFH4qPW8">
+
+    <title>Introduction to Population Genetics | Scenoptica</title>
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="../fonts/font-awesome/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Share+Tech&family=Share+Tech+Mono&display=swap" rel="stylesheet"> 
+
+    <!-- CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/custom.css" rel="stylesheet" />
+    <link href="../css/animate.css" rel="stylesheet" />
+    <link href="../css/video-js.css" rel="stylesheet" />
+    <link href="../css/quality-selector.css" rel="stylesheet"/>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body class="film bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <font class="animated fadeIn" style="color: #a1fc93ff; -webkit-animation-delay: 0.6s; animation-delay: 0.6s;">S</font><font class="animated fadeIn" style="color: #c9fd99ff; -webkit-animation-delay: 0.5s; animation-delay: 0.8s;">c</font><font class="animated fadeIn" style="color: #ebff9eff; -webkit-animation-delay: 0.5s; animation-delay: 0.5s;">e</font><font class="animated fadeIn" style="color: #f7f598ff; -webkit-animation-delay: 0.7s; animation-delay: 0.7s;">n</font><font class="animated fadeIn" style="color: #fae88eff; -webkit-animation-delay: 0.9s; animation-delay: 0.9s;">o</font><font class="animated fadeIn" style="color: #fddb83ff; -webkit-animation-delay: 0.6s; animation-delay: 0.6s;">p</font><font class="animated fadeIn" style="color: #fece7dff; -webkit-animation-delay: 0.8s; animation-delay: 0.8s;">t</font><font class="animated fadeIn" style="color: #febe79ff; -webkit-animation-delay: 0.5s; animation-delay: 0.5s;">i</font><font class="animated fadeIn" style="color: #fdb076ff; -webkit-animation-delay: 0.7s;1animation-delay: 0.7s;">c</font><font class="animated fadeIn" style="color: #fda172ff; -webkit-animation-delay: 0.9s; animation-delay: 0.9s;">a</font>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item animated fadeIn p-2" style="-webkit-animation-delay: 0.5s; animation-delay: 0.5s;">
+              browse by:
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle animated fadeIn" style="-webkit-animation-delay: 0.6s; animation-delay: 0.6s;" href="../#" role="button" data-bs-toggle="dropdown" data-bs-display="static"  aria-expanded="false">
+                Type
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="../documentaries.html">Documentaries</a></li>
+                <li><a class="dropdown-item" href="../essays.html">Essays</a></li>
+                <li><a class="dropdown-item" href="../films.html">Films</a></li>
+                <li><a class="dropdown-item" href="../footage.html">Footage</a></li>
+                <li><a class="dropdown-item" href="../lectures.html">Lectures</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle animated fadeIn" style="-webkit-animation-delay: 0.7s; animation-delay: 0.7s;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Location
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="../location/borobudur.html">Borobudur</a></li>
+                <li><a class="dropdown-item" href="../location/bremen.html">Bremen</a></li>
+                <li><a class="dropdown-item" href="../location/england.html">England</a></li>
+                <li><a class="dropdown-item" href="../location/germany.html">Germany</a></li>
+                <li><a class="dropdown-item" href="../location/goettingen.html">Goettingen</a></li>
+                <li><a class="dropdown-item" href="../location/indonesia.html">Indonesia</a></li>
+                <li><a class="dropdown-item" href="../location/italy.html">Italy</a></li>
+                <li><a class="dropdown-item" href="../location/java.html">Java</a></li>
+                <li><a class="dropdown-item" href="../location/kaliurang.html">Kaliurang</a></li>
+                <li><a class="dropdown-item" href="../location/kampar-river.html">Kampar River</a></li>
+                <li><a class="dropdown-item" href="../location/kotagede.html">Kotagede</a></li>
+                <li><a class="dropdown-item" href="../location/naples.html">Naples</a></li>
+                <li><a class="dropdown-item" href="../location/parangtritis-beach.html">Parangtritis Beach</a></li>
+                <li><a class="dropdown-item" href="../location/progo-river.html">Progo River</a></li>
+                <li><a class="dropdown-item" href="../location/riau.html">Riau</a></li>
+                <li><a class="dropdown-item" href="../location/stonehenge.html">Stonehenge</a></li>
+                <li><a class="dropdown-item" href="../location/sumatra.html">Sumatra</a></li>
+                <li><a class="dropdown-item" href="../location/weser-river.html">Weser River</a></li>
+                <li><a class="dropdown-item" href="../location/yogyakarta.html">Yogyakarta</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle animated fadeIn" style="-webkit-animation-delay: 0.7s; animation-delay: 0.7s;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tag
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="../tag/animals.html">Animals</a></li>
+                <li><a class="dropdown-item" href="../tag/ants.html">Ants</a></li>
+                <li><a class="dropdown-item" href="../tag/beach.html">Beach</a></li>
+                <li><a class="dropdown-item" href="../tag/birds.html">Birds</a></li>
+                <li><a class="dropdown-item" href="../tag/boat.html">Boat</a></li>
+                <li><a class="dropdown-item" href="../tag/bokeh.html">Bokeh</a></li>
+                <li><a class="dropdown-item" href="../tag/city.html">City</a></li>
+                <li><a class="dropdown-item" href="../tag/ducks.html">Ducks</a></li>
+                <li><a class="dropdown-item" href="../tag/ecology.html">Ecology</a></li>
+                <li><a class="dropdown-item" href="../tag/field.html">Field</a></li>
+                <li><a class="dropdown-item" href="../tag/flowers.html">Flowers</a></li>
+                <li><a class="dropdown-item" href="../tag/forest.html">Forest</a></li>
+                <li><a class="dropdown-item" href="../tag/graffiti.html">Graffiti</a></li>
+                <li><a class="dropdown-item" href="../tag/house.html">House</a></li>
+                <li><a class="dropdown-item" href="../tag/insects.html">Insects</a></li>
+                <li><a class="dropdown-item" href="../tag/lake.html">Lake</a></li>
+                <li><a class="dropdown-item" href="../tag/light.html">Light</a></li>
+                <li><a class="dropdown-item" href="../tag/monochrome.html">Monochrome</a></li>
+                <li><a class="dropdown-item" href="../tag/moss.html">Moss</a></li>
+                <li><a class="dropdown-item" href="../tag/mountain.html">Mountain</a></li>
+                <li><a class="dropdown-item" href="../tag/ocean.html">Ocean</a></li>
+                <li><a class="dropdown-item" href="../tag/pollution.html">Pollution</a></li>
+                <li><a class="dropdown-item" href="../tag/publication.html">Publication</a></li>
+                <li><a class="dropdown-item" href="../tag/rain.html">Rain</a></li>
+                <li><a class="dropdown-item" href="../tag/river.html">River</a></li>
+                <li><a class="dropdown-item" href="../tag/sheep.html">Sheep</a></li>
+                <li><a class="dropdown-item" href="../tag/shore.html">Shore</a></li>
+                <li><a class="dropdown-item" href="../tag/sky.html">Sky</a></li>
+                <li><a class="dropdown-item" href="../tag/snakes.html">Snakes</a></li>
+                <li><a class="dropdown-item" href="../tag/spring.html">Spring</a></li>
+                <li><a class="dropdown-item" href="../tag/stone.html">Stone</a></li>
+                <li><a class="dropdown-item" href="../tag/sunrise.html">Sunrise</a></li>
+                <li><a class="dropdown-item" href="../tag/sunset.html">Sunset</a></li>
+                <li><a class="dropdown-item" href="../tag/toads.html">Toads</a></li>
+                <li><a class="dropdown-item" href="../tag/trees.html">Trees</a></li>
+                <li><a class="dropdown-item" href="../tag/vegetation.html">Vegetation</a></li>
+                <li><a class="dropdown-item" href="../tag/water.html">Water</a></li>
+                <li><a class="dropdown-item" href="../tag/waves.html">Waves</a></li>
+                <li><a class="dropdown-item" href="../tag/wind.html">Wind</a></li>
+                <li><a class="dropdown-item" href="../tag/winter.html">Winter</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link animated fadeIn" style="-webkit-animation-delay: 0.8s; animation-delay: 0.8s;" href="../archive.html">Full archive</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-4">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <h1 class="text-center mb-5">Introduction to Population Genetics</h1>
+
+          <div class="row mb-1">
+            <div class="col-12">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://youtube.com/embed/Pcg2YNPzrrs" allowfullscreen=""></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-6 pe-1 text-muted">
+              <p><i class="fa-solid fa-clock-rotate-left" title="Duration"></i> 1:35:45 <i class="fa-solid fa-display ps-3" title="Resolution"></i> 1080</p>
+            </div>
+
+            <div class="col-6 ps-1 text-end text-muted">
+              <p>Elsewhere <a href="https://allisfoundintime.com/lectures/ecology-series.html" title="All is Found... in Time"><i class="fa-solid fa-crow"></i></a><a href="https://archive.org/details/introduction-to-population-genetics" title="Watch on the Internet Archive"><i class="fas fa-university pe-2"></i></a><a href="https://www.youtube.com/watch?v=Pcg2YNPzrrs" title="Watch on YouTube"><i class="fab fa-youtube"></i></a></p>
+            </div>
+          </div>
+
+          <div class="row mt-5 mb-4">
+            <div class="col-12">
+              <p class="description">Evolutionary processes and patterns, evolutionary mechanisms, adaptation.</p>
+            </div>
+          </div>
+
+          <div class="row my-5">
+            <div class="col-sm-8 pe-md-5 mb-3">
+              <h4 class="mb-3">Credits</h4>
+
+              <p class="license">"River Meditation" by Jason Shaw, <a href="https://freemusicarchive.org/music/Jason_Shaw/Audionautix_Acoustic/RIVER_MEDITATION___________2-58">https://freemusicarchive.org/music/Jason_Shaw/Audionautix_Acoustic/RIVER_MEDITATION___________2-58</a>, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+
+              <h4 class="mt-5 mb-3">License & Attribution</h4>
+
+              <p class="license"><a href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons pe-1"></i><i class="fab fa-creative-commons-by"></i></a> By Lelly Marliana. This video and the files associated with it are licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a> license. You are free to distribute, remix, adapt, and build upon it in any medium or format, provided it is for noncommercial purposes, <a href="https://wiki.creativecommons.org/wiki/Best_practices_for_attribution#This_is_an_ideal_attribution">appropriate credit</a> is given to Lelly Marliana, you indicate if changes were made, and redistribute any derivative work under the same license.</p>
+
+              <p class="license"><b>Example attribution:</b> "Introduction to Population Genetics" by Lelly Marliana, <a href="https://scenoptica.com/lecture/introduction-to-population-genetics.html">https://scenoptica.com/lecture/introduction-to-population-genetics.html</a>, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a>.</p>
+            </div>
+
+            <div class="col-sm-4 mb-3 sidebar">
+              <h4 class="mb-4">Download files</h4>
+
+              <div class="btn-group-vertical w-100 pb-4" role="group" aria-label="Download files">
+                
+                <a class="btn btn-download top bottom" href="https://archive.org/download/introduction-to-population-genetics/Introduction%20to%20population%20genetics.mp4">Lecture video (mp4, 2.8 GB) <i class="far fa-save"></i></a>
+                
+                <a class="btn btn-download top" href="../downloads/pdf/bioma-fisiognomi.pdf">Lecture slides (pdf, 11.2 MB) <i class="far fa-save"></i></a>
+                
+                <a class="btn btn-download backup" href="https://allisfoundintime.com/downloads/lectures/ecology-series/bioma-fisiognomi.pdf"><i class="fa-solid fa-arrow-turn-up fa-rotate-90 ps-3 pe-2"></i>Backup 1 (All is Found... in Time) <i class="far fa-save"></i></a>
+                
+                <a class="btn btn-download backup bottom" href="https://archive.org/download/struktur-populasi/bioma-fisiognomi.pdf"><i class="fa-solid fa-arrow-turn-up fa-rotate-90 ps-3 pe-2"></i>Backup 2 (Internet Archive) <i class="far fa-save"></i></a>
+                
+                <a class="btn btn-download top bottom" href="https://archive.org/download/struktur-populasi/struktur-populasi_archive.torrent">Torrent file (torrent, 8.0 KB) <i class="far fa-save"></i></a>
+
+              </div>
+              
+              <h4 class="mt-3 mb-3">Metadata</h4>
+              
+              <ul class="fa-ul mt-1">
+                <li><span class="fa-li text-muted"><i class="fas fa-calendar-alt"></i></span>6 April 2022</li>
+                <li><span class="fa-li text-muted"><i class="fa-solid fa-clock-rotate-left" title="Duration"></i></span>1:35:45</li>
+                <li><span class="fa-li text-muted"><i class="fa-solid fa-display"></i></span>1920 × 1080</li>
+                <li><span class="fa-li text-muted"><i class="fas fa-hashtag"></i></span><a href="../tag/ecology.html">ecology</a></li>
+                <li><span class="fa-li text-muted"><i class="fa-solid fa-chart-bar"></i></span>video id: 38</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mt-5 pt-5">
+      <div class="jumbotron d-flex" style="border-radius: 0; margin-bottom: 0; height: 35vh; background: url('../images/lecture/introduction-to-population-genetics.jpg') center center no-repeat; background-size: cover; filter: grayscale(1);">
+      </div>
+      <div class="container-fluid" style="background-image: linear-gradient(to right, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e, #fddb83, #fece7d, #febe79, #fdb076, #fda172); height: 1px;">
+      </div>
+      <div class="container-fluid p-5">
+        <div class="row">
+          <div class="col-sm-3">
+            <h5>Browse</h5>
+            <ul class="fa-ul ms-4">
+              <li><span class="fa-li"><i class="fa-solid fa-box-archive"></i></span> <a href="../archive.html">Archive</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-tower-cell"></i></span> <a href="../documentaries.html">Documentaries</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-message"></i></span> <a href="../essays.html">Essays</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-clapperboard"></i></span> <a href="../films.html">Films</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-film"></i></span> <a href="../footage.html">Footage</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-leaf"></i></span> <a href="../lectures.html">Lectures</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h5>Read</h5>
+            <ul class="fa-ul ms-4">
+              <li><span class="fa-li"><i class="fa-brands fa-readme"></i></span> <a href="../updates.html">Updates</a></li>
+            </ul>
+
+            <h5>Support us</h5>
+            <ul class="fa-ul ms-4">
+              <li><span class="fa-li"><i class="fa-solid fa-heart"></i></span> <a href="../support-us.html">How you can help us</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-patreon"></i></span> <a href="https://www.patreon.com/scenoptica">Support us on Patreon</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-mug-hot"></i></span> <a href="https://ko-fi.com/scenoptica">Donate via Ko-fi</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-hand-holding-heart"></i></span> <a href="https://liberapay.com/Scenoptica/donate">Donate using Liberapay</a></li>
+            </ul>          
+          </div>
+          <div class="col-sm-3">
+            <h5>The people behind Scenoptica</h5>
+            <ul class="fa-ul ms-4">
+              <li><span class="fa-li"><i class="fa-solid fa-person-rays"></i></span> <a href="../about.html">About us</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-diamond"></i></span> <a href="https://joaquimbaeta.com">joaquimbaeta.com</a></li>
+              <li><span class="fa-li"><i class="fa-solid fa-crow"></i></span> <a href="https://allisfoundintime.com">allisfoundintime.com</a></li>              
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h5>Find us elsewhere</h5>
+            <ul class="fa-ul ms-4">
+              <li><span class="fa-li"><i class="fas fa-university"></i></span> <a href="https://archive.org/search.php?query=creator%3A%22Joaquim+Baeta%22">Internet Archive</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-youtube"></i></span> <a href="https://www.youtube.com/channel/UCamCRa-eXHjIePPzcLuzoxQ">YouTube</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-twitter"></i></span> <a href="https://twitter.com/scenoptica">@scenoptica</a></li>
+              <li><span class="fa-li"><i class="fa-brands fa-mastodon"></i></span> <a rel="me" href="https://mastodon.social/@jaybaeta">@jaybaeta</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row pt-3 mt-3">
+          <div class="col-sm-12">
+            <p style="margin-bottom: 0;">Copyright 2014–2022 Joaquim Baeta and Lelly Marliana. Except where otherwise stated, the content of this website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website itself is licensed under the terms of the <a href="https://github.com/jaybaeta/scenoptica.com/blob/master/LICENSE">GNU General Public License v3.0</a>. For bugs and issues, please <a href="mailto:contact@scenoptica.com"><i class="fas fa-paper-plane"></i> contact us</a>, <a href="https://twitter.com/scenoptica"><i class="fab fa-twitter"></i> @ us</a>, or <a href="https://github.com/jaybaeta/scenoptica.com/issues"><i class="fab fa-github"></i> create an issue</a>.</p>   
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/video.js"></script>
+    <script src="../js/silvermine-videojs-quality-selector.min.js"></script>
+    <script>
+      videojs("video-1", {}, function() {
+        var player = this;
+
+        player.controlBar.addChild('QualitySelector');
+      });
+    </script>
+  </body>
+</html>
