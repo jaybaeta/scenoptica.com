@@ -82,16 +82,6 @@ a:active {
   color: #fda172;
 }
 
-.index .nav-link {
-  padding: 0.5em;
-  color: #959595;
-  transition: all .3s ease-in-out;
-}
-
-.index .nav-link:hover {
-  color: #fff;
-}
-
 .items-list h6 a, footer a {
   background-image: linear-gradient(to right, #a1fc93, #c9fd99, #ebff9e);
   -webkit-background-clip: text;
@@ -329,81 +319,81 @@ a:active {
   }
 }
 
-.index .card, .tag .card, .location .card, .archive .card {
+.tag .card, .location .card, .archive .card {
   margin-bottom: 1.25rem;
 }
 
-.index .card-img, .film .card-img, .tag .card-img, .location .card-img, .archive .card-img {
+.film .card-img, .tag .card-img, .location .card-img, .archive .card-img {
   opacity: 0.4;
   transition: all .2s linear;
 }
 
-.index .card:hover .card-img, .film .card:hover .card-img, .tag .card:hover .card-img, .location .card:hover .card-img, .archive .card:hover .card-img {
+.film .card:hover .card-img, .tag .card:hover .card-img, .location .card:hover .card-img, .archive .card:hover .card-img {
   opacity: 0.2;
 }
 
-.index .card a, .film .card a, .tag .card a, .location .card a, .archive .card a {
-  color: #fff;
-}
-
-.index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+.film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
   font-family: 'Share Tech', sans-serif;
   font-size: 1.5rem;
   text-shadow: #00000080 3px 3px 0px;
 }
 
 @media (min-width: 768px) {
-  .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+  .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
     font-size: 1rem !important;
   }
 }
 
 @media (min-width: 800px) {
-  .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+  .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
     font-size: 1.1rem !important;
   }
 }
 
 @media (min-width: 874px) {
-  .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+  .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
     font-size: 1.2rem !important;
   }
 }
 
 @media (min-width: 948px) {
-  .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+  .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
     font-size: 1.4rem !important;
   }
 }
 
 @media (min-width: 992px) {
-  .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+  .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
     font-size: 1rem !important;
   }
 }
 
 @media (min-width: 1120px) {
-  .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+  .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
     font-size: 1.1rem !important;
   }
 }
 
 @media (min-width: 1200px) {
-  .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+  .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
     font-size: 1.4rem !important;
   }
 }
 
 @media (min-width: 1280px) {
-  .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+  .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
     font-size: 1.5rem !important;
   }
 }
 
 @media (min-width: 1400px) {
-  .index .card-title, .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+  .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
     font-size: 1.7rem !important;
   }
+}
+
+.index .card a, .film .card a, .tag .card a, .location .card a, .archive .card a {
+  color: #fff;
 }
 
 /* 4. Global */
@@ -450,11 +440,15 @@ footer a:hover {
 
 .jumbotron {
   background-color: #000;
+  border-radius: 0;
+  margin-bottom: 0;
+  height: 100vh;
+  box-shadow: inset 0 0 200px #111213;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .jumbotron .frame {
-/*  padding-top: 25vh;*/
-/*  padding-bottom: 25vh;*/
   height: 70vh;
   border: 3px solid #ffffff;
   align-items: end;
@@ -468,6 +462,14 @@ footer a:hover {
 }
 
 @media (max-width: 991px) {
+  .jumbotron {
+    height: 50vh;
+  }
+
+.jumbotron .frame {
+  height: 30vh;
+}
+
   .jumbotron h1 {
     font-size: 4rem !important;
   }
@@ -496,6 +498,16 @@ footer a:hover {
   text-align: right;
 }
 
+.index .nav-link {
+  padding: 0.5em;
+  color: #959595;
+  transition: all .3s ease-in-out;
+}
+
+.index .nav-link:hover {
+  color: #fff;
+}
+
 .index .dropdown-item {
         font-size: 1rem !important;
 }
@@ -504,7 +516,120 @@ footer a:hover {
   max-height: 50vh;
 }
 
-.index .card p {
+.index .card {
+  margin-bottom: 1.25rem;
+}
+
+.index .videos .col-xl-3,
+.index .videos .col-lg-4,
+.index .videos .col-lg-3,
+.index .videos .col-lg-2 {
+  padding: 0.25rem;
+}
+
+.index .videos .card {
+  margin-bottom: 0;
+}
+
+.index .videos .card-img,
+.index .videos .card-img-overlay {
+  border-radius: 0;
+}
+
+.index .card-img {
+  opacity: 0.4;
+  transition: all .2s linear;
+}
+
+.index .col-lg-2 .card-img {
+  opacity: 0.3;
+}
+
+.index .card:hover .card-img {
+  opacity: 0.2;
+}
+
+.index .card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.index .card-img-overlay p {
+  margin-bottom: 0;
+}
+
+.index .videos .card-title {
+  font-family: 'Share Tech', sans-serif;
+  font-size: 1rem;
+  text-shadow: #00000080 3px 3px 0px;
+}
+
+.index .first-showcase .card-title {
+  font-size: 1.5rem;
+}
+
+.index .second-showcase .card-title {
+  font-size: 1.5rem;
+}
+
+/*
+@media (min-width: 768px) {
+  .index .col-lg-3 .card-title {
+    font-size: 1rem !important;
+  }
+}
+
+@media (min-width: 800px) {
+  .index .col-lg-3 .card-title {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media (min-width: 874px) {
+  .index .col-lg-3 .card-title {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (min-width: 948px) {
+  .index .col-lg-3 .card-title {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .index .col-lg-3 .card-title {
+    font-size: 1rem !important;
+  }
+}
+
+@media (min-width: 1120px) {
+  .index .col-lg-3 .card-title {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .index .col-lg-3 .card-title {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .index .col-lg-3 .card-title {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .index .col-lg-3 .card-title {
+    font-size: 1.7rem !important;
+  }
+}*/
+
+.index .videos .card p {
+  font-size: 0.9rem;
   color: #b5b5b5;
   text-shadow: #00000080 3px 3px 0px;
 }

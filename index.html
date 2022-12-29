@@ -41,7 +41,7 @@
 
   <body class="index bg-dark">
     <!-- JUMBOTRON -->
-    <div id="jumbotron" class="jumbotron d-flex animated fadeIn" style="border-radius: 0; margin-bottom: 0; height: 100vh; box-shadow: inset 0 0 200px #111213; -webkit-animation-delay: 1s; animation-delay: 1s;">
+    <div id="jumbotron" class="jumbotron d-flex animated fadeIn">
       <div class="container align-self-center">
         <div class="row">
           <div class="col-12 ps-sm-0">
@@ -67,7 +67,7 @@
             <a class="nav-link dropdown-toggle animated fadeIn" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static"  aria-expanded="false">
               Type
             </a>
-            <ul class="dropdown-menu dropdown-menu-end">
+            <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="documentaries.html">Documentaries</a></li>
               <li><a class="dropdown-item" href="essays.html">Essays</a></li>
               <li><a class="dropdown-item" href="films.html">Films</a></li>
@@ -79,7 +79,7 @@
             <a class="nav-link dropdown-toggle animated fadeIn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Location
             </a>
-            <ul class="dropdown-menu dropdown-menu-end">
+            <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="location/borobudur.html">Borobudur</a></li>
               <li><a class="dropdown-item" href="location/bremen.html">Bremen</a></li>
               <li><a class="dropdown-item" href="location/england.html">England</a></li>
@@ -105,7 +105,7 @@
             <a class="nav-link dropdown-toggle animated fadeIn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Tag
             </a>
-            <ul class="dropdown-menu dropdown-menu-end">
+            <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="tag/animals.html">Animals</a></li>
               <li><a class="dropdown-item" href="tag/ants.html">Ants</a></li>
               <li><a class="dropdown-item" href="tag/beach.html">Beach</a></li>
@@ -167,338 +167,424 @@
     </div>
 
     <main class="container-fluid mb-5">
-      <div class="row">
+      <div class="row videos px-1">
+        <div class="col-lg-4 col-md-6 col-sm-12 showcase">
+          <div class="card bg-dark text-white">
+            <a href="lecture/evolution-and-adaptation.html">
+              <img src="images/lecture/thumbnails/evolution-and-adaptation.jpg" class="card-img" alt="Evolution and Adaptation">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Evolution and Adaptation</h5>
+                <p><i class="fa-solid fa-leaf pe-1" title="Lecture"></i> lecture <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 1:47:15 <i class="fa-solid fa-language ps-3 pe-1" title="Bahasa Indonesia"></i> id</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 showcase">
+          <div class="card bg-dark text-white">
+            <a href="lecture/dinamika-populasi.html">
+              <img src="images/lecture/thumbnails/dinamika-populasi.jpg" class="card-img" alt="Dinamika Populasi">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Dinamika Populasi</h5>
+                <p><i class="fa-solid fa-leaf pe-1" title="Lecture"></i> lecture <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 42:40 <i class="fa-solid fa-language ps-3 pe-1" title="Bahasa Indonesia"></i> id</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 showcase">
+          <div class="card bg-dark text-white">
+            <a href="lecture/energy-flow-in-the-ecosystem.html">
+              <img src="images/lecture/thumbnails/energy-flow-in-the-ecosystem.jpg" class="card-img" alt="Energy Flow in the Ecosystem">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Energy Flow in the Ecosystem</h5>
+                <p><i class="fa-solid fa-leaf pe-1" title="Lecture"></i> lecture <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 1:08:55 <i class="fa-solid fa-language ps-3 pe-1" title="Bahasa Indonesia"></i> id</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-4">
+          <div class="card bg-dark text-white">
+            <a href="lecture/sejarah-hidup.html">
+              <img src="images/lecture/thumbnails/sejarah-hidup.jpg" class="card-img" alt="Sejarah Hidup">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Sejarah Hidup</h5>
+                <p><i class="fa-solid fa-leaf pe-1" title="Lecture"></i> lecture <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 52:16 <i class="fa-solid fa-language ps-3 pe-1" title="Bahasa Indonesia"></i> id</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-4">
+          <div class="card bg-dark text-white">
+            <a href="lecture/struktur-populasi.html">
+              <img src="images/lecture/thumbnails/struktur-populasi.jpg" class="card-img" alt="Struktur Populasi">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Struktur Populasi</h5>
+                <p><i class="fa-solid fa-leaf pe-1" title="Lecture"></i> lecture <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 42:06</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-4">
+          <div class="card bg-dark text-white">
+            <a href="lecture/introduction-to-population-genetics.html">
+              <img src="images/lecture/thumbnails/introduction-to-population-genetics.jpg" class="card-img" alt="Introduction to Population Genetics">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Introduction to Population Genetics</h5>
+                <p><i class="fa-solid fa-leaf pe-1" title="Lecture"></i> lecture <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 1:35:45</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
         <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card bg-dark text-white">
+            <a href="lecture/predator-prey-interactions.html">
+              <img src="images/lecture/thumbnails/predator-prey-interactions.jpg" class="card-img" alt="Predator-prey Interactions">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Predator-prey Interactions</h5>
+                <p><i class="fa-solid fa-leaf pe-1" title="Lecture"></i> lecture <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 1:28:28</p>
+              </div>
+            </a>
+          </div>
+        </div>        
+
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card bg-dark text-white">
+            <a href="lecture/competition.html">
+              <img src="images/lecture/thumbnails/competition.jpg" class="card-img" alt="Competition">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Competition</h5>
+                <p><i class="fa-solid fa-leaf pe-1" title="Lecture"></i> lecture <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 1:15:25</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/sarangan-lake.html">
               <img src="images/footage/thumbnails/sarangan-lake.jpg" class="card-img" alt="Sarangan Lake">
               <div class="card-img-overlay">
                 <h5 class="card-title">Sarangan Lake</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 1 minute</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 1:00</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/bokeh-in-motion.html">
               <img src="images/footage/thumbnails/bokeh-in-motion.jpg" class="card-img" alt="Bokeh in Motion">
               <div class="card-img-overlay">
                 <h5 class="card-title">Bokeh in Motion</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 1:45 minutes</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 1:45</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="lecture/biogeochemical-cycle.html">
               <img src="images/lecture/thumbnails/biogeochemical-cycle.jpg" class="card-img" alt="Biogeochemical Cycle">
               <div class="card-img-overlay">
                 <h5 class="card-title">Biogeochemical Cycle</h5>
-                <p><i class="fa-solid fa-leaf pe-1" title="Lecture"></i> lecture <i class="fa-solid fa-language ps-3 pe-1" title="Bahasa Indonesia"></i> id <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 1:31:47 hours</p>
+                <p><i class="fa-solid fa-leaf pe-1" title="Lecture"></i> lecture <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 1:31:47</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-6 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/pycnonotus-goiavier.html">
               <img src="images/footage/thumbnails/pycnonotus-goiavier.jpg" class="card-img" alt="Pycnonotus goiavier (yellow-vented bulbul)">
               <div class="card-img-overlay">
                 <h5 class="card-title"><i>Pycnonotus goiavier</i> (yellow-vented bulbul)</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 31 seconds</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 0:31</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-6 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/duttaphrynus-melanostictus-individuals.html">
               <img src="images/footage/thumbnails/duttaphrynus-melanostictus-individuals.jpg" class="card-img" alt="Duttaphrynus melanostictus (Asian Common Toad), Individuals">
               <div class="card-img-overlay">
                 <h5 class="card-title"><i>Duttaphrynus melanostictus</i> (Asian Common Toad), Individuals</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 2:22 minutes</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 2:22</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="updates/2022-10-01-vlog.html">
               <img src="images/updates/thumbnails/2022-10-01-vlog.jpg" class="card-img" alt="VLOG, 1 October 2022">
               <div class="card-img-overlay">
                 <h5 class="card-title">VLOG, 1 October 2022</h5>
-                <p><i class="fa-brands fa-readme pe-1" title="Footage"></i> update <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 15:03 minutes</p>
+                <p><i class="fa-brands fa-readme pe-1" title="Footage"></i> update <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 15:03</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/duttaphrynus-melanostictus-mating.html">
               <img src="images/footage/thumbnails/duttaphrynus-melanostictus-mating.jpg" class="card-img" alt="Duttaphrynus melanostictus (Asian Common Toad), Mating">
               <div class="card-img-overlay">
                 <h5 class="card-title">Duttaphrynus melanostictus (Asian Common Toad), Mating</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 6:26 minutes</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 6:26</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="documentary/snake-milking.html">
               <img src="images/documentary/thumbnails/snake-milking.jpg" class="card-img" alt="Snake Milking: The Most Nerve-racking Aspect of Producing Antivenom">
               <div class="card-img-overlay">
                 <h5 class="card-title">Snake Milking: The Most Nerve-racking Aspect of Producing Antivenom</h5>
-                <p><i class="fa-solid fa-tower-cell pe-1" title="Documentary"></i> documentary <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 5:23 minutes</p>
+                <p><i class="fa-solid fa-tower-cell pe-1" title="Documentary"></i> documentary <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 5:23</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="essay/peer-review-and-its-many-practical-challenges.html">
               <img src="images/essay/thumbnails/peer-review-and-its-many-practical-challenges.jpg" class="card-img" alt="Peer Review and Its Many Practical Challenges">
               <div class="card-img-overlay">
                 <h5 class="card-title">Peer Review and Its Many Practical Challenges</h5>
-                <p><i class="fa-solid fa-message pe-1" title="Essay"></i> essay <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 24:24 minutes</p>
+                <p><i class="fa-solid fa-message pe-1" title="Essay"></i> essay <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 24:24</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="film/lellys-ecology-bootcamp.html">
               <img src="images/film/thumbnails/lellys-ecology-bootcamp.jpg" class="card-img" alt="Lelly's Ecology Bootcamp">
               <div class="card-img-overlay">
                 <h5 class="card-title">Lelly's Ecology Bootcamp</h5>
-                <p><i class="fa-solid fa-clapperboard pe-1" title="Film"></i> film <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 1:06 minutes</p>
+                <p><i class="fa-solid fa-clapperboard pe-1" title="Film"></i> film <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 1:06</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/boating-through-the-kampar-river.html">
               <img src="images/footage/thumbnails/boating-through-the-kampar-river.jpg" class="card-img" alt="Boating through the Kampar River">
               <div class="card-img-overlay">
                 <h5 class="card-title">Boating through the Kampar River</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 3:01 minutes</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 3:01</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="card bg-dark text-white">
-            <a href="lecture/bioma-dan-fisiognomi.html">
-              <img src="images/lecture/thumbnails/bioma-dan-fisiognomi.jpg" class="card-img" alt="Bioma & Fisiognomi">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Bioma & Fisiognomi</h5>
-                <p><i class="fa-solid fa-leaf pe-1" title="Lecture"></i> lecture <i class="fa-solid fa-language ps-3 pe-1" title="Bahasa Indonesia"></i> id <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 1:01:21 hours</p>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/morning-in-naples.html">
               <img src="images/footage/thumbnails/morning-in-naples.jpg" class="card-img" alt="Morning in Naples">
               <div class="card-img-overlay">
                 <h5 class="card-title">Morning in Naples</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 14 seconds</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 0:14</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/homalopsis-buccata.html">
               <img src="images/footage/thumbnails/homalopsis-buccata.jpg" class="card-img" alt="Homalopsis buccata">
               <div class="card-img-overlay">
                 <h5 class="card-title"><i>Homalopsis buccata</i></h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 41 seconds</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 0:41</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/the-sheep-of-stonehenge.html">
               <img src="images/footage/thumbnails/the-sheep-of-stonehenge.jpg" class="card-img" alt="The Sheep of Stonehenge">
               <div class="card-img-overlay">
                 <h5 class="card-title">The Sheep of Stonehenge</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 29 seconds</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 0:29</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-6 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/discarded-hat-on-bank-of-progo-river.html">
               <img src="images/footage/thumbnails/discarded-hat-on-bank-of-progo-river.jpg" class="card-img" alt="Discarded Hat on Bank of Progo River">
               <div class="card-img-overlay">
                 <h5 class="card-title">Discarded Hat on Bank of Progo River</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 23 seconds</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 0:23</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-6 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/fight.html">
               <img src="images/footage/thumbnails/fight.jpg" class="card-img" alt="Fight">
               <div class="card-img-overlay">
                 <h5 class="card-title">Fight</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 20 seconds</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 0:20</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/dry-banana-leaves-swaying-in-wind.html">
               <img src="images/footage/thumbnails/dry-banana-leaves-swaying-in-wind.jpg" class="card-img" alt="Dry Banana Leaves Swaying in Wind">
               <div class="card-img-overlay">
                 <h5 class="card-title">Dry Banana Leaves Swaying in Wind</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 29 seconds</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 0:29</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/reflections-on-stone-in-monochrome-one.html">
               <img src="images/footage/thumbnails/reflections-on-stone-in-monochrome-one.jpg" class="card-img" alt="Reflections on Stone in Monochrome, One">
               <div class="card-img-overlay">
                 <h5 class="card-title">Reflections on Stone in Monochrome, One</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 27 seconds</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 0:27</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/butterfly-amongst-vegetation-one.html">
               <img src="images/footage/thumbnails/butterfly-amongst-vegetation-one.jpg" class="card-img" alt="Butterfly amongst Vegetation, One">
               <div class="card-img-overlay">
                 <h5 class="card-title">Butterfly amongst Vegetation, One</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 26 seconds</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 0:26</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/wind-blowing-leaves-in-monochrome-one.html">
               <img src="images/footage/thumbnails/wind-blowing-leaves-in-monochrome-one.jpg" class="card-img" alt="Wind Blowing Leaves in Monochrome, One">
               <div class="card-img-overlay">
                 <h5 class="card-title">Wind Blowing Leaves in Monochrome, One</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 22 seconds</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 0:22</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/tropical-rain-and-banana-leaves-one.html">
               <img src="images/footage/thumbnails/tropical-rain-and-banana-leaves-one.jpg" class="card-img" alt="Tropical Rain and Banana Leaves, One">
               <div class="card-img-overlay">
                 <h5 class="card-title">Tropical Rain and Banana Leaves, One</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 11 seconds</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 0:11</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/rain-jackfruit-tree-and-bokeh-one.html">
               <img src="images/footage/thumbnails/rain-jackfruit-tree-and-bokeh-one.jpg" class="card-img" alt="Rain, Jackfruit Tree, and Bokeh, One">
               <div class="card-img-overlay">
                 <h5 class="card-title">Rain, Jackfruit Tree, and Bokeh, One</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 1:07 minutes</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 1:07</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/crepuscular-rays-through-fig-tree-and-house-one.html">
               <img src="images/footage/thumbnails/crepuscular-rays-through-fig-tree-and-house-one.jpg" class="card-img" alt="Crepuscular Rays through Fig Tree and House, One">
               <div class="card-img-overlay">
                 <h5 class="card-title">Crepuscular Rays through Fig Tree and House, One</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 19 seconds</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 0:19</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/tumultuous-shore.html">
               <img src="images/footage/thumbnails/tumultuous-shore.jpg" class="card-img" alt="Tumultuous Shore">
               <div class="card-img-overlay">
                 <h5 class="card-title">Tumultuous Shore</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 19 seconds</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 0:19</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/plants-in-tropical-montane-forest-one.html">
               <img src="images/footage/thumbnails/plants-in-tropical-montane-forest-one.jpg" class="card-img" alt="Plants in Tropical Montane Forest, One">
               <div class="card-img-overlay">
                 <h5 class="card-title">Plants in Tropical Montane Forest, One</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 10 seconds</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 0:10</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-6 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/orange-sunset-one.html">
               <img src="images/footage/thumbnails/orange-sunset-one.jpg" class="card-img" alt="Orange Sunset, One">
               <div class="card-img-overlay">
                 <h5 class="card-title">Orange Sunset, One</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 49 seconds</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 0:49</p>
               </div>
             </a>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="col-xl-2 col-lg-3 col-md-6 col-sm-4">
           <div class="card bg-dark text-white">
             <a href="footage/ants-transporting-object-one.html">
               <img src="images/footage/thumbnails/ants-transporting-object-one.jpg" class="card-img" alt="Ants Transporting Object, One">
               <div class="card-img-overlay">
                 <h5 class="card-title">Ants Transporting Object, One</h5>
-                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1"></i> 44 seconds</p>
+                <p><i class="fa-solid fa-film pe-1" title="Footage"></i> footage <i class="fa-solid fa-clock-rotate-left ps-3 pe-1" title="Duration"></i> 0:44</p>
               </div>
             </a>
           </div>
@@ -507,8 +593,8 @@
       <div class="row pt-5 stats">
         <div class="col-sm-2 text-center">
           <p><a href="archive.html"><i class="fa-solid fa-chart-simple"></i></a></p>
-          <p>33 videos <br>
-          <span class="text-muted">3:43:17 hours <br> 3:45:10 raw hours</span></p>
+          <p>43 videos <br>
+          <span class="text-muted">15:22:09 hours <br> 15:24:02 raw hours</span></p>
         </div>
 
         <div class="col-sm-2 text-center">
@@ -519,8 +605,8 @@
 
         <div class="col-sm-2 text-center">
           <p><a href="lectures.html"><i class="fa-solid fa-leaf"></i></a></p>
-          <p>2 lectures <br>
-          <span class="text-muted">2:33:08 hours</span></p>
+          <p>12 lectures <br>
+          <span class="text-muted">14:12:00 hours</span></p>
         </div>
 
         <div class="col-sm-2 text-center">
