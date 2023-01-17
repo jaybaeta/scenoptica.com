@@ -319,80 +319,80 @@ a:active {
   }
 }
 
-.tag .card, .location .card, .archive .card {
+.tag .card, .location .card {
   margin-bottom: 1.25rem;
 }
 
-.film .card-img, .tag .card-img, .location .card-img, .archive .card-img {
+.film .card-img, .tag .card-img, .location .card-img {
   opacity: 0.4;
   transition: all .2s linear;
 }
 
-.film .card:hover .card-img, .tag .card:hover .card-img, .location .card:hover .card-img, .archive .card:hover .card-img {
+.film .card:hover .card-img, .tag .card:hover .card-img, .location .card:hover .card-img {
   opacity: 0.2;
 }
 
-.film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+.film .card-title, .tag .card-title, .location .card-title {
   font-family: 'Share Tech', sans-serif;
   font-size: 1.5rem;
   text-shadow: #00000080 3px 3px 0px;
 }
 
 @media (min-width: 768px) {
-  .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+  .film .card-title, .tag .card-title, .location .card-title {
     font-size: 1rem !important;
   }
 }
 
 @media (min-width: 800px) {
-  .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+  .film .card-title, .tag .card-title, .location .card-title {
     font-size: 1.1rem !important;
   }
 }
 
 @media (min-width: 874px) {
-  .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+  .film .card-title, .tag .card-title, .location .card-title {
     font-size: 1.2rem !important;
   }
 }
 
 @media (min-width: 948px) {
-  .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+  .film .card-title, .tag .card-title, .location .card-title {
     font-size: 1.4rem !important;
   }
 }
 
 @media (min-width: 992px) {
-  .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+  .film .card-title, .tag .card-title, .location .card-title {
     font-size: 1rem !important;
   }
 }
 
 @media (min-width: 1120px) {
-  .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+  .film .card-title, .tag .card-title, .location .card-title {
     font-size: 1.1rem !important;
   }
 }
 
 @media (min-width: 1200px) {
-  .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+  .film .card-title, .tag .card-title, .location .card-title {
     font-size: 1.4rem !important;
   }
 }
 
 @media (min-width: 1280px) {
-  .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+  .film .card-title, .tag .card-title, .location .card-title {
     font-size: 1.5rem !important;
   }
 }
 
 @media (min-width: 1400px) {
-  .film .card-title, .tag .card-title, .location .card-title, .archive .card-title {
+  .film .card-title, .tag .card-title, .location .card-title {
     font-size: 1.7rem !important;
   }
 }
 
-.index .card a, .film .card a, .tag .card a, .location .card a, .archive .card a {
+.index .card a, .film .card a, .tag .card a, .location .card a {
   color: #fff;
 }
 
@@ -850,6 +850,84 @@ iframe.map {
   border-radius: 0;
   border-image-slice: 1;
   border-image-source: linear-gradient(100deg, #fece7d, #febe79, #fdb076, #fda172);
+}
+
+.archive .card {
+  margin-bottom: 0;
+}
+
+.archive .card-img {
+  opacity: 0.4;
+  border-radius: 0 !important;
+  transition: all .2s linear;
+}
+
+.archive .card:hover .card-img {
+  opacity: 0.2;
+}
+
+.archive .card-title {
+  font-family: 'Share Tech', sans-serif;
+  font-size: 1.5rem;
+  text-shadow: #00000080 3px 3px 0px;
+}
+
+@media (min-width: 768px) {
+  .archive .card-title {
+    font-size: 1rem !important;
+  }
+}
+
+@media (min-width: 800px) {
+  .archive .card-title {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media (min-width: 874px) {
+  .archive .card-title {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (min-width: 948px) {
+  .archive .card-title {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .archive .card-title {
+    font-size: 1rem !important;
+  }
+}
+
+@media (min-width: 1120px) {
+  .archive .card-title {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .archive .card-title {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .archive .card-title {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .archive .card-title {
+    font-size: 1.7rem !important;
+  }
+}
+
+.archive .card a {
+  color: #fff;
 }
 
 /* 5.4 Meta pages */
