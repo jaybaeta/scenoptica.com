@@ -443,7 +443,7 @@ footer a:hover {
   border-radius: 0;
   margin-bottom: 0;
   height: 100vh;
-  box-shadow: inset 0 0 200px #111213;
+  box-shadow: inset 0 0 200px #000;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
