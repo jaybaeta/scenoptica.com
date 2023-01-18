@@ -910,21 +910,21 @@ iframe.map {
 
 @media (min-width: 1200px) {
   .archive .card-title {
-    font-size: 1.4rem !important;
+    font-size: 1.15rem !important;
   }
 }
 
-@media (min-width: 1280px) {
+/*@media (min-width: 1280px) {
   .archive .card-title {
     font-size: 1.5rem !important;
   }
-}
+}*/
 
-@media (min-width: 1400px) {
+/*@media (min-width: 1400px) {
   .archive .card-title {
     font-size: 1.7rem !important;
   }
-}
+}*/
 
 .archive .card a {
   color: #fff;
