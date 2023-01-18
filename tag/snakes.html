@@ -192,10 +192,39 @@
           </div>
         </div>
       </div>
+
+      <div class="row"> <!-- When You Find a Spitting Cobra (Naja sputatrix) Hiding Behind Your Bag -->
+        <div class="col-md-2 mb-2 mb-lg-0">
+          <img src="../images/footage/thumbnails/when-you-find-a-spitting-cobra-naja-sputatrix-hiding-behind-your-bag.jpg" class="w-100" alt="When You Find a Spitting Cobra (Naja sputatrix) Hiding Behind Your Bag">
+        </div>
+        <div class="col-md-10 mb-5 mb-lg-0">
+          <h6><a href="../footage/when-you-find-a-spitting-cobra-naja-sputatrix-hiding-behind-your-bag.html">When You Find a Spitting Cobra (<i>Naja sputatrix</i>) Hiding Behind Your Bag</a></h6>
+          <div class="dropdown">
+            <i class="fa-solid fa-clock-rotate-left pe-1" title="Duration"></i> 03:39
+            <i class="fa-solid fa-display ps-3 pe-1" title="Resolution"></i> 1080
+            <a class="btn btn-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-regular fa-floppy-disk pe-1" title="Click to download"></i> Click to download
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://archive.org/compress/when-you-find-a-spitting-cobra-naja-sputatrix-hiding-behind-your-bag/formats=QUICKTIME&file=/when-you-find-a-spitting-cobra-naja-sputatrix-hiding-behind-your-bag.zip">raw zip (1.2 GB)</a></li>
+              <li><a class="dropdown-item" href="https://archive.org/download/when-you-find-a-spitting-cobra-naja-sputatrix-hiding-behind-your-bag/When%20You%20Find%20a%20Spitting%20Cobra%20%28Naja%20sputatrix%29%20Hiding%20Behind%20Your%20Bag.mkv">mkv (525.8 MB)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- FOOTER -->
     <footer class="mt-5 pt-5">
+      <div id="img-footer" class="img-footer jumbotron d-flex text-center" style="border-radius: 0; margin-bottom: 0; height: 35vh; align-items: center;">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <img src="../images/logos/wind.svg" style="height: 13vh;">
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="container-fluid" style="background-image: linear-gradient(to right, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e, #fddb83, #fece7d, #febe79, #fdb076, #fda172); height: 1px;">
       </div>
       <div class="container-fluid p-5">
@@ -255,5 +284,23 @@
     <script src="../js/jquery-3.6.1.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      // <![CDATA[
+      var image_array = new Array();
+          image_array[0] = "../images/jumbotron/borobudur-relief.jpg";
+          image_array[1] = "../images/jumbotron/plants.jpg";
+          image_array[2] = "../images/jumbotron/venice-gull.jpg";
+          image_array[3] = "../images/jumbotron/wave.jpg";
+          image_array[4] = "../images/jumbotron/mirror.jpg";
+
+      var rand_path = image_array[Math.floor(Math.random() * image_array.length)];
+       
+      $(document).ready(function() {
+          $("#jumbotron").css("background", "url("+rand_path+") center center fixed no-repeat");
+          $(".jumbotron").css("background-size", "cover");
+          $("#img-footer").css("background", "url("+rand_path+") center center no-repeat");
+          });
+      // ]]>
+    </script>
   </body>
 </html>
