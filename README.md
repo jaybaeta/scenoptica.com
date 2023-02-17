@@ -2,7 +2,9 @@
 
 ![Venice gull](https://scenoptica.com/images/jumbotron/venice-gull.jpg)
 
-This is the [official website](https://scenoptica.com) of Scenoptica, an "open source filmmaking" project with the dual focus of producing thoughtful films, documentaries, lectures, essays, and discussions that also have their reusable source content released for further reuse. All videos are released under a Creative Commons license, usually CC BY (source content) or CC BY-SA (produced works). I have to note, though, that the videos are not *fully* open source; things like interviews in documentaries, which might have private portions or interactions, may be not be released or are otherwise released in edited form, while video essays contain a lot of low-value takes that will take up more hard drive space than they're worth. This website, meanwhile, is naturally also open source, and can be forked in accordance with the [GPLv3 license](https://github.com/jaybaeta/scenoptica.com/blob/master/LICENSE).
+This is the [official website](https://scenoptica.com) of Scenoptica, an "open source filmmaking" project with the dual focus of producing thoughtful films, documentaries, lectures, essays, and discussions that also have their reusable source content released for further reuse. All videos are released under a Creative Commons license, usually CC BY (source content) or CC BY-SA (produced works).
+
+I have to note, though, that the videos are not *fully* open source; things like interviews in documentaries, which might have private portions or interactions, may be not be released or are otherwise released in edited form, while video essays contain a lot of low-value takes that will take up more hard drive space than they're worth. This website, meanwhile, is naturally also open source, and can be forked in accordance with the [GPLv3 license](https://github.com/jaybaeta/scenoptica.com/blob/master/LICENSE).
 
 In keeping with the spirit of the project, we also try to use and promote other open source projects that share our philosophy, including [Linux](https://github.com/torvalds/linux) and [KDE](https://github.com/KDE), [Kdenlive](https://github.com/KDE/kdenlive), [Magic Lantern](https://magiclantern.fm/), [Reaper](https://www.reaper.fm) (not truly free/libre but has very helpfully navigated us out of some disasters), and the [Internet Archive](https://github.com/internetarchive).
 
@@ -30,11 +32,23 @@ An experimental exploration of grief, loss, the agony of death, and agonising mo
 
 ### Lelly's Ecology Series
 
+<img src="https://scenoptica.com/images/lecture/evolution-and-adaptation.jpg" width="400">
+
 Twelve ecology lectures spread out over 14+ hours, with more to come.
 
 [On Scenoptica](https://scenoptica.com/lectures.html) | [On All is Found... in Time](https://allisfoundintime.com/lectures/ecology-series.html)
 
+### Peer Review and Its Many Practical Challenges
+
+<img src="https://scenoptica.com/images/essay/peer-review-and-its-many-practical-challenges.jpg" width="400">
+
+An essay on the traditional peer review, its numerous foibles, and how it's undermined by the demands of modern academia. (Yes, it also stars my bunny, Puffball.)
+
+[On Scenoptica](https://scenoptica.com/essay/peer-review-and-its-many-practical-challenges.html) | [YouTube](https://youtu.be/zIAyQuI7ypU) | [PeerTube](https://p.lu/w/jeK178yA9xFhbz18HTb7Nr) | [Internet Archive](https://archive.org/details/peer-review-and-its-many-practical-challenges)
+
 ### Footage
+
+<img src="https://scenoptica.com/images/footage/crepuscular-rays-through-fig-tree-and-house-one.jpg" width="400">
 
 As of February 2023, 86 raw footage files totaling 35:28 raw minutes and 11.431 GB.
 
