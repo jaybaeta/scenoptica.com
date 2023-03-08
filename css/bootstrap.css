@@ -88,7 +88,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+/*  font-family: var(--bs-body-font-family);*/
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -2355,6 +2355,7 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
+
 .btn-check[disabled] + .btn, .btn-check:disabled + .btn {
   pointer-events: none;
   filter: none;

@@ -1,8 +1,15 @@
 /* ====================================================
 
+   Scenoptica v3.01
+     by Joaquim Baeta
+
+   ----------------------------------------------------
+
    Table of contents
 
-   1......Typography
+   1......Root   
+   2......Typography
+
    2......Colours
    2.1.......Text colours
    2.2.......Background colours
@@ -11,6 +18,9 @@
    3.2.......Buttons
    3.3.......Dropdowns
    3.4.......Cards
+   3.5.......Modals
+   3.6.......Selects
+   3.7.......Accessibility options
    4......Global
    4.1.......Navbar
    4.2.......Footer 
@@ -25,10 +35,42 @@
 
    ==================================================== */
 
-/* 1. Typography */
+/* 1 Root */
+
+:root,
+  :root.dark {
+    --bg-color: #000;
+    --text-color: #fff;
+    --text-muted: #959595;
+    --transition: all .3s ease-in-out;
+  }
+
+  :root.light {
+    --bg-color: #fff;
+    --text-color: #000;
+    --text-muted: #959595;
+  }
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Share Tech';
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* 2. Typography */
 
 h1 {
-  font-family: 'Share Tech', "Source Sans Pro", sans-serif;
+/*  font-family: 'Share Tech', "Source Sans Pro", sans-serif; */
   font-size: 2.5rem !important;
 }
 
@@ -43,7 +85,7 @@ h1 {
 }
 
 .text-muted { 
-  color: #959595;
+  color: var(--text-muted);
 }
 
 .text-heart {
@@ -82,24 +124,25 @@ a:active {
   color: #fda172;
 }
 
-.items-list h6 a, footer a {
+.showcase-text a, .items-list h6 a, footer a {
   background-image: linear-gradient(to right, #a1fc93, #c9fd99, #ebff9e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: var(--transition);
 }
 
-.items-list h6 a:hover, footer a:hover {
+.showcase-text a:hover, .items-list h6 a:hover, footer a:hover {
   background-image: linear-gradient(to right, #ebff9e, #f7f598, #fae88e);
 }
 
-.items-list h6 a:active, .items-list h6 a:focus, footer a:active, footer a:focus {
+.showcase-text a:active, .items-list h6 a:active, .items-list h6 a:focus, footer a:active, footer a:focus {
   background-image: linear-gradient(to right, #fae88e, #fddb83, #fece7d);
 }
 
 /* 3.2 Buttons */
 
 .btn {
-  font-family: 'Share Tech', sans-serif;
+/*  font-family: 'Share Tech', sans-serif;*/
 }
 
 .btn-check:checked + .btn:focus, .btn-check:active + .btn:focus, .btn:active:focus, .btn.active:focus, .btn.show:focus {
@@ -166,16 +209,16 @@ a:active {
 }
 
 .btn-empty:hover {
-  color: #959595;
+  color: var(--text-muted);
 }
 
 .btn-empty:not(:disabled):not(.disabled):active, .btn-empty:not(:disabled):not(.disabled).active, .show > .btn-empty.dropdown-toggle {
 /*  border-image-source: linear-gradient(100deg, #fddb83, #fece7d, #febe79, #fdb076, #fda172);*/
-  color: #959595;
+  color: var(--text-muted);
 }
 
 .btn-empty:not(:disabled):not(.disabled):active:focus, .btn-empty:not(:disabled):not(.disabled).active:focus, .show > .btn-empty.dropdown-toggle:focus, .btn-empty:focus, .btn-empty.focus {
-    color: #959595;
+    color: var(--text-muted);
     border-color: none;
     box-shadow: none;
 }
@@ -253,15 +296,15 @@ a:active {
 }
 
 .btn-download.backup {
-  color: #959595;
+  color: var(--text-muted);
 }
 
 .btn-link {
-  font-family: 'Share Tech', sans-serif;
-  bg: transparent;
+  background: transparent;
   border-color: transparent;
   hover-color: #fc0;
   hover-border-color: transparent;
+  color: var(--text-color);
   active-color: #fff;
   active-border-color: transparent;
   disabled-color: #6c757d;
@@ -294,7 +337,7 @@ a:active {
 }
 
 .dropdown-item {
-  font-family: 'Share Tech', sans-serif;
+/*  font-family: 'Share Tech', sans-serif;*/
   color: #fff;
 }
 
@@ -333,7 +376,7 @@ a:active {
 }
 
 .film .card-title, .tag .card-title, .location .card-title {
-  font-family: 'Share Tech', sans-serif;
+/*  font-family: 'Share Tech', sans-serif;*/
   font-size: 1.5rem;
   text-shadow: #00000080 3px 3px 0px;
 }
@@ -396,22 +439,70 @@ a:active {
   color: #fff;
 }
 
+/* 3.5 Modals */
+
+.modal-content {
+  background-color: var(--bg-color);
+  border-radius: 0;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(100deg, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e, #fddb83, #fece7d, #febe79, #fdb076, #fda172);
+}
+
+.modal-header, .modal-footer {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(100deg, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e, #fddb83, #fece7d, #febe79, #fdb076, #fda172);
+}
+
+.btn-close, .btn-close:hover {
+  color: var(--text-color);
+}
+
+/* 3.6 Selects */
+
+select {
+  color: var(--text-color);
+  border-radius: 0;
+  background: transparent;
+  padding: 10px;
+  border-width: 1px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(100deg, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e, #fddb83, #fece7d, #febe79, #fdb076, #fda172);
+}
+
+/* 3.7 Accessibility options */
+
+.font-options .fa-sun {
+  background-image: linear-gradient(to right, #febe79, #fdb076);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.font-options .fa-moon {
+  background-image: linear-gradient(to right, #a1fc93, #c9fd99);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* 4. Global */
 
-body {
+/*body {
   font-family: 'Share Tech', sans-serif;
   color: #FFF;
   background-color: #2a2b2d;
-}
+}*/
 
 /* 4.1 Navbar */
 
 .navbar-brand {
-  font-family: 'Montserrat Alternates', 'Share Tech', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .navbar .dropdown-toggle::after, .nav .dropdown-toggle::after {
   display: none;
+}
+
+.nav-item:hover {
+  cursor: pointer;
 }
 
 /* 4.2 Footer */
@@ -437,6 +528,8 @@ footer a:hover {
 /* 5. Page-specific */
 
 /* 5.1 Homepage */
+
+/* 5.1.1 Jumbotron */
 
 .jumbotron {
   background-color: #000;
@@ -498,9 +591,11 @@ footer a:hover {
   text-align: right;
 }
 
+/* 5.1.1 Index navbar */
+
 .index .nav-link {
   padding: 0.5em;
-  color: #959595;
+  color: var(--text-muted);
   transition: all .3s ease-in-out;
 }
 
@@ -516,24 +611,30 @@ footer a:hover {
   max-height: 50vh;
 }
 
-.index .card {
-  margin-bottom: 1.25rem;
-}
+/* 5.1.3 Index videos */
 
-.index .videos .col-xl-3,
+/*.index .videos .col-xl-3,
 .index .videos .col-lg-4,
 .index .videos .col-lg-3,
-.index .videos .col-lg-2 {
+.index .videos .col-lg-2,
+.index .videos .col-lg-6 {
   padding: 0.25rem;
-}
+}*/
 
-.index .videos .card {
+/*.index .videos .card {
   margin-bottom: 0;
+}*/
+
+.showcase-thumbnail .card-img, .showcase-thumbnail .card-img-overlay, .featured-videos .card-img,
+.featured-videos .card-img-overlay {
+  border-radius: 0;
 }
 
-.index .videos .card-img,
-.index .videos .card-img-overlay {
-  border-radius: 0;
+
+@media (max-width: 991px) {
+  .showcase-text p {
+    font-size: 1rem;
+  }
 }
 
 .index .card-img {
@@ -560,79 +661,34 @@ footer a:hover {
 }
 
 .index .videos .card-title {
-  font-family: 'Share Tech', sans-serif;
-  font-size: 1rem;
-  text-shadow: #00000080 3px 3px 0px;
+/*  font-family: 'Share Tech', sans-serif;*/
+/*  font-size: 1rem;*/
+/*  text-shadow: #00000080 3px 3px 0px;*/
 }
-
-.index .showcase .card-title {
-  font-size: 1.5rem;
-}
-
-.index .second-showcase .card-title {
-  font-size: 1.5rem;
-}
-
-/*
-@media (min-width: 768px) {
-  .index .col-lg-3 .card-title {
-    font-size: 1rem !important;
-  }
-}
-
-@media (min-width: 800px) {
-  .index .col-lg-3 .card-title {
-    font-size: 1.1rem !important;
-  }
-}
-
-@media (min-width: 874px) {
-  .index .col-lg-3 .card-title {
-    font-size: 1.2rem !important;
-  }
-}
-
-@media (min-width: 948px) {
-  .index .col-lg-3 .card-title {
-    font-size: 1.4rem !important;
-  }
-}
-
-@media (min-width: 992px) {
-  .index .col-lg-3 .card-title {
-    font-size: 1rem !important;
-  }
-}
-
-@media (min-width: 1120px) {
-  .index .col-lg-3 .card-title {
-    font-size: 1.1rem !important;
-  }
-}
-
-@media (min-width: 1200px) {
-  .index .col-lg-3 .card-title {
-    font-size: 1.4rem !important;
-  }
-}
-
-@media (min-width: 1280px) {
-  .index .col-lg-3 .card-title {
-    font-size: 1.5rem !important;
-  }
-}
-
-@media (min-width: 1400px) {
-  .index .col-lg-3 .card-title {
-    font-size: 1.7rem !important;
-  }
-}*/
 
 .index .videos .card p {
-  font-size: 0.9rem;
-  color: #b5b5b5;
-  text-shadow: #00000080 3px 3px 0px;
+/*  font-size: 0.9rem;*/
+/*  color: #b5b5b5;*/
+/*  text-shadow: #00000080 3px 3px 0px;*/
 }
+
+/* 5.1.4 View all links */
+
+.view-all {
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.view-all a {
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.view-all a:hover {
+  color: var(--text-color);
+}
+
+/* 5.1.5 Explore link */
 
 @media (max-width: 767px) {
   .explore-full {
@@ -642,7 +698,7 @@ footer a:hover {
 
 .explore-full-text {
   text-transform: uppercase;
-  color: #959595;
+  color: var(--text-muted);
   transition: all .3s ease-in-out;
 }
 
@@ -665,16 +721,18 @@ footer a:hover {
 }
 
 .explore-full .fa-chevron-right {
-  background-image: linear-gradient(to right, #fece7d, #febe79);
+  background-image: linear-gradient(to right, #fdb076, #fda172);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .explore-full .fa-angle-right {
-  background-image: linear-gradient(to right, #fdb076, #fda172);
+  background-image: linear-gradient(to right, #fece7d, #febe79);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* 5.1.6 Stats */
 
 .stats .fa-chart-simple {
   background-image: linear-gradient(to right, #a1fc93, #c9fd99);
@@ -683,50 +741,46 @@ footer a:hover {
 }
 
 .stats .fa-film {
-  background-image: linear-gradient(to right, #c9fd99, #ebff9e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.stats .fa-leaf {
-  background-image: linear-gradient(to right, #f7f598, #fae88e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.stats .fa-message {
-  background-image: linear-gradient(to right, #fddb83, #fece7d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.stats .fa-tower-cell {
   background-image: linear-gradient(to right, #febe79, #fdb076);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.stats .fa-clapperboard {
+.stats .fa-leaf {
   background-image: linear-gradient(to right, #fdb076, #fda172);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stats .fa-message {
+  background-image: linear-gradient(to right, #f7f598, #fae88e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stats .fa-tower-cell {
+  background-image: linear-gradient(to right, #c9fd99, #ebff9e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stats .fa-clapperboard {
+  background-image: linear-gradient(to right, #fddb83, #fece7d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* 5.2 Film */
 
-.film {
-  font-family: 'Share Tech', sans-serif;
-}
-
 .film p.description {
-  font-family: 'Share Tech', sans-serif;
+/*  font-family: 'Share Tech', sans-serif;*/
   font-size: 1.25rem;
   font-weight: 300;
 }
 
 .sidebar ul {
   margin-left: 1.5rem;
-  font-family: 'Share Tech', sans-serif;
+/*  font-family: 'Share Tech', sans-serif;*/
 }
 
 .sidebar ul li {
@@ -734,14 +788,14 @@ footer a:hover {
 }
 
 .film p.license {
-  font-family: 'Share Tech', sans-serif;
+/*  font-family: 'Share Tech', sans-serif;*/
   font-size: 1rem;
   font-weight: 400;
 }
 
 .film .sidebar {
   font-size: 1rem;
-  font-family: 'Share Tech', sans-serif;
+/*  font-family: 'Share Tech', sans-serif;*/
 }
 
 iframe.map {
@@ -867,7 +921,7 @@ iframe.map {
 }
 
 .archive .card-title {
-  font-family: 'Share Tech', sans-serif;
+/*  font-family: 'Share Tech', sans-serif;*/
   font-size: 1.5rem;
   text-shadow: #00000080 3px 3px 0px;
 }
@@ -934,7 +988,7 @@ iframe.map {
 
 .items-list .dropdown {
   margin-top: 0rem;
-  color: #959595;
+  color: var(--text-muted);
 }
 
 .items-list .btn {
@@ -943,7 +997,7 @@ iframe.map {
 }
 
 .items-list .btn:hover, .items-list .btn:active, .items-list .btn:focus {
-  color: #959595 !important;
+  color: var(--text-muted) !important;
 }
 
 /* 5.5 Support */
