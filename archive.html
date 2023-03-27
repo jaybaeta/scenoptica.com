@@ -72,6 +72,7 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item" href="location/alas-purwo-national-park.html">Alas Purwo National Park</a></li>
+                <li><a class="dropdown-item" href="location/berlin.html">Berlin</a></li>
                 <li><a class="dropdown-item" href="location/borobudur.html">Borobudur</a></li>
                 <li><a class="dropdown-item" href="location/bremen.html">Bremen</a></li>
                 <li><a class="dropdown-item" href="location/england.html">England</a></li>
@@ -105,9 +106,13 @@
                 <li><a class="dropdown-item" href="tag/birds.html">Birds</a></li>
                 <li><a class="dropdown-item" href="tag/boat.html">Boat</a></li>
                 <li><a class="dropdown-item" href="tag/bokeh.html">Bokeh</a></li>
+                <li><a class="dropdown-item" href="tag/cats.html">Cats</a></li>
                 <li><a class="dropdown-item" href="tag/city.html">City</a></li>
+                <li><a class="dropdown-item" href="tag/clouds.html">Clouds</a></li>
+                <li><a class="dropdown-item" href="tag/commentary.html">Commentary</a></li>
                 <li><a class="dropdown-item" href="tag/ducks.html">Ducks</a></li>
                 <li><a class="dropdown-item" href="tag/ecology.html">Ecology</a></li>
+                <li><a class="dropdown-item" href="tag/feet.html">Feet</a></li>
                 <li><a class="dropdown-item" href="tag/field.html">Field</a></li>
                 <li><a class="dropdown-item" href="tag/fish.html">Fish</a></li>
                 <li><a class="dropdown-item" href="tag/flowers.html">Flowers</a></li>
@@ -116,6 +121,7 @@
                 <li><a class="dropdown-item" href="tag/house.html">House</a></li>
                 <li><a class="dropdown-item" href="tag/insects.html">Insects</a></li>
                 <li><a class="dropdown-item" href="tag/lake.html">Lake</a></li>
+                <li><a class="dropdown-item" href="tag/landscape.html">Landscape</a></li>
                 <li><a class="dropdown-item" href="tag/light.html">Light</a></li>
                 <li><a class="dropdown-item" href="tag/macro.html">Macro</a></li>
                 <li><a class="dropdown-item" href="tag/monochrome.html">Monochrome</a></li>
@@ -131,9 +137,11 @@
                 <li><a class="dropdown-item" href="tag/rain.html">Rain</a></li>
                 <li><a class="dropdown-item" href="tag/research.html">Research</a></li>
                 <li><a class="dropdown-item" href="tag/river.html">River</a></li>
+                <li><a class="dropdown-item" href="tag/self.html">Self</a></li>
                 <li><a class="dropdown-item" href="tag/sheep.html">Sheep</a></li>
                 <li><a class="dropdown-item" href="tag/shore.html">Shore</a></li>
                 <li><a class="dropdown-item" href="tag/sky.html">Sky</a></li>
+                <li><a class="dropdown-item" href="tag/slow-motion.html">Slow motion</a></li>
                 <li><a class="dropdown-item" href="tag/snakes.html">Snakes</a></li>
                 <li><a class="dropdown-item" href="tag/spring.html">Spring</a></li>
                 <li><a class="dropdown-item" href="tag/stone.html">Stone</a></li>
@@ -215,11 +223,13 @@
                 <button class="dropdown-item" data-filter=".birds">birds</button>
                 <button class="dropdown-item" data-filter=".boat">boat</button>
                 <button class="dropdown-item" data-filter=".bokeh">bokeh</button>
+                <button class="dropdown-item" data-filter=".cats">cats</button>
                 <button class="dropdown-item" data-filter=".city">city</button>
                 <button class="dropdown-item" data-filter=".clouds">clouds</button>
                 <button class="dropdown-item" data-filter=".commentary">commentary</button>
                 <button class="dropdown-item" data-filter=".ducks">ducks</button>
                 <button class="dropdown-item" data-filter=".ecology">ecology</button>
+                <button class="dropdown-item" data-filter=".feet">feet</button>
                 <button class="dropdown-item" data-filter=".field">field</button>
                 <button class="dropdown-item" data-filter=".fish">fish</button>
                 <button class="dropdown-item" data-filter=".flowers">flowers</button>
@@ -228,6 +238,7 @@
                 <button class="dropdown-item" data-filter=".house">house</button>
                 <button class="dropdown-item" data-filter=".insects">insects</button>
                 <button class="dropdown-item" data-filter=".lake">lake</button>
+                <button class="dropdown-item" data-filter=".landscape">landscape</button>
                 <button class="dropdown-item" data-filter=".light">light</button>
                 <button class="dropdown-item" data-filter=".macro">macro</button>
                 <button class="dropdown-item" data-filter=".monochrome">monochrome</button>
@@ -240,13 +251,14 @@
                 <button class="dropdown-item" data-filter=".pom-poko">pom poko</button>
                 <button class="dropdown-item" data-filter=".pond">pond</button>
                 <button class="dropdown-item" data-filter=".publication">publication</button>
-                <button class="dropdown-item" data-filter=".research">research</button>
                 <button class="dropdown-item" data-filter=".rain">rain</button>
+                <button class="dropdown-item" data-filter=".research">research</button>
                 <button class="dropdown-item" data-filter=".river">river</button>
                 <button class="dropdown-item" data-filter=".self">self</button>
                 <button class="dropdown-item" data-filter=".sheep">sheep</button>
                 <button class="dropdown-item" data-filter=".shore">shore</button>
                 <button class="dropdown-item" data-filter=".sky">sky</button>
+                <button class="dropdown-item" data-filter=".slow-motion">slow motion</button>
                 <button class="dropdown-item" data-filter=".snakes">snakes</button>
                 <button class="dropdown-item" data-filter=".spring">spring</button>
                 <button class="dropdown-item" data-filter=".stone">stone</button>
@@ -289,6 +301,84 @@
     <main class="container-fluid archive-content my-5 pb-5">
       <div id="video" class="grid">
         <div class="grid-sizer col-sm-6 col-md-4 col-lg-3 col-xl-2"></div>
+
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 col-xl-2 archive-item indonesia clouds feet landscape mountain sky sunrise wind q-1080 footage">
+          <div class="grid-item-content">
+            <div class="card bg-dark text-white">
+              <a href="footage/looking-over-a-cliff-in-the-dieng-mountains.html">
+                <img src="images/footage/thumbnails/looking-over-a-cliff-in-the-dieng-mountains.jpg" class="card-img" alt="Looking Over a Cliff in the Dieng Mountains">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Looking Over a Cliff in the Dieng Mountains</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 col-xl-2 archive-item indonesia animals slow-motion snakes q-1080 footage">
+          <div class="grid-item-content">
+            <div class="card bg-dark text-white">
+              <a href="footage/milking-juvenile-malayan-pit-viper-calloselasma-rhodostoma-venom-in-slow-motion.html">
+                <img src="images/footage/thumbnails/milking-juvenile-malayan-pit-viper-calloselasma-rhodostoma-venom-in-slow-motion.jpg" class="card-img" alt="Milking Juvenile Malayan Pit Viper (Calloselasma rhodostoma) Venom, in Slow Motion">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Milking Juvenile Malayan Pit Viper (<i>Calloselasma rhodostoma</i>) Venom, in Slow Motion</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 col-xl-2 archive-item germany animals fish q-720 footage">
+          <div class="grid-item-content">
+            <div class="card bg-dark text-white">
+              <a href="footage/manatee-tank-in-tierpark-berlin.html">
+                <img src="images/footage/thumbnails/manatee-tank-in-tierpark-berlin.jpg" class="card-img" alt="Manatee Tank in Tierpark Berlin">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Manatee Tank in Tierpark Berlin</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 col-xl-2 archive-item indonesia animals slow-motion snakes q-1080 footage">
+          <div class="grid-item-content">
+            <div class="card bg-dark text-white">
+              <a href="footage/milking-banded-krait-bungarus-fasciatus-venom-in-slow-motion.html">
+                <img src="images/footage/thumbnails/milking-banded-krait-bungarus-fasciatus-venom-in-slow-motion.jpg" class="card-img" alt="Milking Banded Krait (Bungarus fasciatus) Venom, in Slow Motion">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Milking Banded Krait (<i>Bungarus fasciatus</i>) Venom, in Slow Motion</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 col-xl-2 archive-item indonesia animals cats monochrome q-1080 footage">
+          <div class="grid-item-content">
+            <div class="card bg-dark text-white">
+              <a href="footage/mother-cat-feeds-newborn-kittens.html">
+                <img src="images/footage/thumbnails/mother-cat-feeds-newborn-kittens.jpg" class="card-img" alt="Mother Cat Feeds Newborn Kittens">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Mother Cat Feeds Newborn Kittens</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 col-xl-2 archive-item indonesia flowers macro vegetation q-1080 footage">
+          <div class="grid-item-content">
+            <div class="card bg-dark text-white">
+              <a href="footage/yellow-rose-through-a-macro-lens-one.html">
+                <img src="images/footage/thumbnails/yellow-rose-through-a-macro-lens-one.jpg" class="card-img" alt="Yellow Rose through a Macro Lens, One">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Yellow Rose through a Macro Lens, One</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
 
         <div class="grid-item col-sm-6 col-md-4 col-lg-3 col-xl-2 archive-item indonesia people publication research q-1080 film">
           <div class="grid-item-content">
@@ -394,7 +484,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 col-xl-2 archive-item indonesia clouds mountain sky vegetation q-1080 footage">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 col-xl-2 archive-item indonesia clouds landscape mountain sky vegetation q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white">
               <a href="footage/mount-merapi-landscape.html">
@@ -615,7 +705,7 @@
           </div>
         </div>
 
-        <div class="grid-item col-sm-6 col-md-4 col-lg-3 col-xl-2 archive-item indonesia lake mountain water q-1080 footage">
+        <div class="grid-item col-sm-6 col-md-4 col-lg-3 col-xl-2 archive-item indonesia lake landscape mountain water q-1080 footage">
           <div class="grid-item-content">
             <div class="card bg-dark text-white">
               <a href="footage/sarangan-lake.html">
