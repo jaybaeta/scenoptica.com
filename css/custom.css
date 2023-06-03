@@ -1,6 +1,6 @@
 /* ====================================================
 
-   Scenoptica v3.01
+   Scenoptica v3.02.0
      by Joaquim Baeta
 
    ----------------------------------------------------
@@ -818,8 +818,8 @@ footer a:hover {
 /*  font-family: 'Share Tech', sans-serif;*/
 }
 
-.sidebar ul li {
-  margin-bottom: 10px;
+.sidebar ul li, ul.elsewhere li {
+  margin-bottom: 0.6rem;
 }
 
 .film p.license {
