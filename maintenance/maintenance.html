@@ -1,0 +1,11 @@
+<!-- code for video.js content -->
+
+    <script src="../js/video.js"></script>
+    <script src="../js/silvermine-videojs-quality-selector.min.js"></script>
+    <script>
+      videojs("video-1", {}, function() {
+        var player = this;
+
+        player.controlBar.addChild('QualitySelector');
+      });
+    </script>
