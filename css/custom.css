@@ -763,14 +763,20 @@ footer a:hover {
   -webkit-text-fill-color: transparent;
 }*/
 
-.stats .fa-tower-cell {
+.stats .fa-people-arrows {
   background-image: linear-gradient(to right, var(--gradient-s), var(--gradient-c1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.stats .fa-tower-cell {
+  background-image: linear-gradient(to right, var(--gradient-e), var(--gradient-e));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .stats .fa-message {
-  background-image: linear-gradient(to right, var(--gradient-e), var(--gradient-n));
+  background-image: linear-gradient(to right, var(--gradient-n), var(--gradient-n));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
