@@ -4,10 +4,10 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="tag: Anas platyrhynchos">
+    <meta name="description" content="Scenoptica: our planet, as we know it">
     <meta name="author" content="Joaquim Baeta">
 
-    <title>tag: <i>Anas platyrhynchos</i> | Scenoptica</title>
+    <title>location: Papua | Scenoptica</title>
 
     <!-- FONTS -->
     <link rel="stylesheet" href="../fonts/font-awesome/css/all.css">
@@ -38,7 +38,7 @@
     <meta name="theme-color" content="#ffffff">
   </head>
 
-  <body class="tag bg-dark">
+  <body class="location bg-dark">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">
@@ -86,6 +86,7 @@
                 <li><a class="dropdown-item" href="../location/kampar-river.html">Kampar River</a></li>
                 <li><a class="dropdown-item" href="../location/kotagede.html">Kotagede</a></li>
                 <li><a class="dropdown-item" href="../location/naples.html">Naples</a></li>
+                <li><a class="dropdown-item" href="../location/papua.html">Papua</a></li>
                 <li><a class="dropdown-item" href="../location/parangtritis-beach.html">Parangtritis Beach</a></li>
                 <li><a class="dropdown-item" href="../location/progo-river.html">Progo River</a></li>
                 <li><a class="dropdown-item" href="../location/riau.html">Riau</a></li>
@@ -176,22 +177,25 @@
       </div>
     </nav>
 
-    <main class="container my-4">
-      <div class="row">
-        <div class="col-md-10 offset-md-1">
-          <h2 class="my-5">tag: <i>Anas platyrhynchos</i></h2>
+    <main class="container items-list py-5 mb-5">
+      <h1 class="text-center mb-5">location: Papua</h1>
 
-          <div class="card-columns">
-
-            <div class="card bg-dark text-white">
-              <a href="../footage/male-mallard-amongst-pond-vegetation.html">
-                <img src="../images/footage/thumbnails/male-mallard-amongst-pond-vegetation.jpg" class="card-img" alt="Male Mallard amongst Pond Vegetation">
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Male Mallard amongst Pond Vegetation</h5>
-                </div>
-              </a>
-            </div>
-
+      <div class="row"> <!-- A Happy Dog on a Papuan Beach -->
+        <div class="col-md-2 mb-2 mb-lg-0">
+          <img src="../images/footage/thumbnails/a-happy-dog-on-a-papuan-beach.jpg" class="w-100" alt="A Happy Dog on a Papuan Beach">
+        </div>
+        <div class="col-md-10 mb-5 mb-lg-0">
+          <h6><a href="../footage/a-happy-dog-on-a-papuan-beach.html">A Happy Dog on a Papuan Beach</a></h6>
+          <div class="dropdown">
+            <i class="fa-solid fa-clock-rotate-left pe-1" title="Duration"></i> 01:38 (01:37 raw)
+            <i class="fa-solid fa-display ps-3 pe-1" title="Resolution"></i> 1920 × 1080
+            <a class="btn btn-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-regular fa-floppy-disk pe-1" title="Download"></i> Download
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://archive.org/compress/a-happy-dog-on-a-papuan-beach/formats=QUICKTIME&file=/a-happy-dog-on-a-papuan-beach.zip">raw zip (522.8 MB)</a></li>
+              <li><a class="dropdown-item" href="https://archive.org/download/a-happy-dog-on-a-papuan-beach/A%20Happy%20Dog%20on%20a%20Papuan%20Beach.mkv">mkv (168.7 MB)</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -199,6 +203,15 @@
 
     <!-- FOOTER -->
     <footer class="mt-5 pt-5">
+      <div id="img-footer" class="img-footer jumbotron d-flex text-center" style="border-radius: 0; margin-bottom: 0; height: 35vh; align-items: center;">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <img src="../images/logos/wind.svg" style="height: 13vh;">
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="container-fluid" style="background-image: linear-gradient(to right, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e, #fddb83, #fece7d, #febe79, #fdb076, #fda172); height: 1px;">
       </div>
       <div class="container-fluid p-5">
@@ -261,5 +274,23 @@
     <script src="../js/jquery-3.6.1.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      // <![CDATA[
+      var image_array = new Array();
+          image_array[0] = "../images/jumbotron/borobudur-relief.jpg";
+          image_array[1] = "../images/jumbotron/plants.jpg";
+          image_array[2] = "../images/jumbotron/venice-gull.jpg";
+          image_array[3] = "../images/jumbotron/wave.jpg";
+          image_array[4] = "../images/jumbotron/mirror.jpg";
+
+      var rand_path = image_array[Math.floor(Math.random() * image_array.length)];
+       
+      $(document).ready(function() {
+          $("#jumbotron").css("background", "url("+rand_path+") center center fixed no-repeat");
+          $(".jumbotron").css("background-size", "cover");
+          $("#img-footer").css("background", "url("+rand_path+") center center no-repeat");
+          });
+      // ]]>
+    </script>
   </body>
 </html>
