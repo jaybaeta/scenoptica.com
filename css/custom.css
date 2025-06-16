@@ -1,41 +1,46 @@
-/* ====================================================
+/*  =================================================
 
-   Scenoptica v3.02.0
-     by Joaquim Baeta
+    Scenoptica v3.3.0
+      by Joaquim Baeta
 
-   ----------------------------------------------------
+    -------------------------------------------------
 
-   Table of contents
+    Table of contents
 
-   1......Root   
-   2......Typography
+    1.......Root   
+    2.......Typography
+    3........Colours
+    3.1.....Text colours
+    3.2.....Background colours
+    4.......Global
+    4.1.....Navbar
+    4.2.....Footer 
+    5.......Styling
+    5.1.....Links
+    5.2.....Buttons
+    5.3.....Dropdowns
+    5.4.....Cards
+    5.5.....Modals
+    5.6.....Selects
+    5.7.....Accessibility options   
+    6.......Page-specific
+    6.1.....Homepage
+    6.1.1...Jumbotron 
+    6.1.2...Index navbar
+    6.1.3...Index videos
+    6.1.4...View all links
+    6.1.5...Explore link
+    6.1.6...Stats
+    6.2.....Film
+    6.3.....Archive
+    6.4.....Meta pages
+    6.5.....Support
+    6.6.....Sound
+    7.......Tools
+    7.1.....Video.js
+    7.2.....Green Audio Player
 
-   2......Colours
-   2.1.......Text colours
-   2.2.......Background colours
-   3......Styling
-   3.1.......Links
-   3.2.......Buttons
-   3.3.......Dropdowns
-   3.4.......Cards
-   3.5.......Modals
-   3.6.......Selects
-   3.7.......Accessibility options
-   4......Global
-   4.1.......Navbar
-   4.2.......Footer 
-   5......Page-specific
-   5.1.......Homepage
-   5.1.6........Stats
-   5.2.......Film
-   5.3.......Archive
-   5.4.......Meta pages
-   5.5.......Support
-   6......Tools
-   6.1.......Video.js
-   6.2.......Green Audio Player
-
-   ==================================================== */
+    ================================================= */
 
 /* 1 Root */
 
@@ -69,16 +74,6 @@ body {
   font-family: 'Share Tech';
   }
 
-
-
-
-
-
-
-
-
-
-
 /* 2. Typography */
 
 h1 {
@@ -86,9 +81,9 @@ h1 {
   font-size: 2.5rem !important;
 }
 
-/* 2. Colours */
+/* 3. Colours */
 
-/* 2.1 Text colours */
+/* 3.1 Text colours */
 
 .text-gradient {
   background-image: linear-gradient(to right, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e, #fddb83, #fece7d, #febe79, #fdb076, #fda172);
@@ -104,7 +99,7 @@ h1 {
   color: #c12a5c;
 }
 
-/* 2.2 Background colours*/
+/* 3.2 Background colours*/
 
 .bg-light {
   background-color: #fff;
@@ -114,9 +109,51 @@ h1 {
   background-color: #000 !important;
 }
 
-/* 3. Styling */
+/* 4. Global */
 
-/* 3.1 Links */
+/*body {
+  font-family: 'Share Tech', sans-serif;
+  color: #FFF;
+  background-color: #2a2b2d;
+}*/
+
+/* 4.1 Navbar */
+
+.navbar-brand {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.navbar .dropdown-toggle::after, .nav .dropdown-toggle::after {
+  display: none;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+}
+
+/* 4.2 Footer */
+
+footer {
+  font-size: 0.9rem;
+  background: #000;
+}
+
+footer h5 {
+  color: #83868B;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #a1fc93;
+}
+
+footer a:hover {
+  color: #f7f598;
+}
+
+/* 5. Styling */
+
+/* 5.1 Links */
 
 a {
   color: #a1fc93;
@@ -162,7 +199,7 @@ a.read-more:hover {
   color: var(--text-color);
 }
 
-/* 3.2 Buttons */
+/* 5.2 Buttons */
 
 .btn {
 /*  font-family: 'Share Tech', sans-serif;*/
@@ -346,7 +383,7 @@ a.read-more:hover {
   color: 
 }
 
-/* 3.3 Dropdowns */
+/* 5.3 Dropdowns */
 
 .dropdown-menu {
   margin: 10px auto;
@@ -375,7 +412,7 @@ a.read-more:hover {
   border-image-source: linear-gradient(100deg, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e);
 }
 
-/* 3.4 Cards */
+/* 5.4 Cards */
 
 @media (min-width: 576px) {
   .film .card-columns, .tag .card-columns, .location .card-columns {
@@ -462,7 +499,7 @@ a.read-more:hover {
   color: #fff;
 }
 
-/* 3.5 Modals */
+/* 5.5 Modals */
 
 .modal-content {
   background-color: var(--bg-color);
@@ -480,7 +517,7 @@ a.read-more:hover {
   color: var(--text-color);
 }
 
-/* 3.6 Selects */
+/* 5.6 Selects */
 
 select {
   color: var(--text-color);
@@ -492,7 +529,7 @@ select {
   border-image-source: linear-gradient(100deg, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e, #fddb83, #fece7d, #febe79, #fdb076, #fda172);
 }
 
-/* 3.7 Accessibility options */
+/* 5.7 Accessibility options */
 
 .font-options .fa-sun {
   background-image: linear-gradient(to right, #febe79, #fdb076);
@@ -506,53 +543,11 @@ select {
   -webkit-text-fill-color: transparent;
 }
 
-/* 4. Global */
+/* 6. Page-specific */
 
-/*body {
-  font-family: 'Share Tech', sans-serif;
-  color: #FFF;
-  background-color: #2a2b2d;
-}*/
+/* 6.1 Homepage */
 
-/* 4.1 Navbar */
-
-.navbar-brand {
-  font-family: 'Montserrat Alternates', sans-serif;
-}
-
-.navbar .dropdown-toggle::after, .nav .dropdown-toggle::after {
-  display: none;
-}
-
-.nav-item:hover {
-  cursor: pointer;
-}
-
-/* 4.2 Footer */
-
-footer {
-  font-size: 0.9rem;
-  background: #000;
-}
-
-footer h5 {
-  color: #83868B;
-  font-size: 1rem;
-}
-
-footer a {
-  color: #a1fc93;
-}
-
-footer a:hover {
-  color: #f7f598;
-}
-
-/* 5. Page-specific */
-
-/* 5.1 Homepage */
-
-/* 5.1.1 Jumbotron */
+/* 6.1.1 Jumbotron */
 
 .jumbotron {
   background-color: #000;
@@ -614,7 +609,7 @@ footer a:hover {
   text-align: right;
 }
 
-/* 5.1.1 Index navbar */
+/* 6.1.2 Index navbar */
 
 .index .nav-link {
   padding: 0.5em;
@@ -634,7 +629,7 @@ footer a:hover {
   max-height: 50vh;
 }
 
-/* 5.1.3 Index videos */
+/* 6.1.3 Index videos */
 
 /*.index .videos .col-xl-3,
 .index .videos .col-lg-4,
@@ -695,7 +690,7 @@ footer a:hover {
 /*  text-shadow: #00000080 3px 3px 0px;*/
 }
 
-/* 5.1.4 View all links */
+/* 6.1.4 View all links */
 
 .view-all {
   text-transform: uppercase;
@@ -711,7 +706,7 @@ footer a:hover {
   color: var(--text-color);
 }
 
-/* 5.1.5 Explore link */
+/* 6.1.5 Explore link */
 
 @media (max-width: 767px) {
   .explore-full {
@@ -755,7 +750,7 @@ footer a:hover {
   -webkit-text-fill-color: transparent;
 }
 
-/* 5.1.6 Stats */
+/* 6.1.6 Stats */
 
 /*.stats .fa-chart-simple {
   background-image: linear-gradient(to right, var(--gradient-s), var(--gradient-c1));
@@ -811,7 +806,7 @@ footer a:hover {
   -webkit-text-fill-color: transparent;
 }
 
-/* 5.2 Film */
+/* 6.2 Film */
 
 .film p.description {
 /*  font-family: 'Share Tech', sans-serif;*/
@@ -860,7 +855,7 @@ iframe.map {
   color: #fff;
 }
 
-/* 5.3 Archive */
+/* 6.3 Archive */
 
 .btn-location, .btn-location .dropdown-menu {
   border: 1px solid;
@@ -881,7 +876,7 @@ iframe.map {
 }
 
 .btn-location:not(:disabled):not(.disabled):active:focus, .btn-location:not(:disabled):not(.disabled).active:focus, .show > .btn-location.dropdown-toggle:focus, .btn-location:focus, .btn-location.focus {
-    color: #FFF;
+    color: #fff;
     background-color: #000;
     border-color: none;
     box-shadow: none;
@@ -910,7 +905,7 @@ iframe.map {
 }
 
 .btn-tag:not(:disabled):not(.disabled):active:focus, .btn-tag:not(:disabled):not(.disabled).active:focus, .show > .btn-tag.dropdown-toggle:focus, .btn-tag:focus, .btn-tag.focus {
-    color: #FFF;
+    color: #fff;
     background-color: #000;
     border-color: none;
     box-shadow: none;
@@ -939,7 +934,7 @@ iframe.map {
 }
 
 .btn-quality:not(:disabled):not(.disabled):active:focus, .btn-quality:not(:disabled):not(.disabled).active:focus, .show > .btn-quality.dropdown-toggle:focus, .btn-quality:focus, .btn-quality.focus {
-    color: #FFF;
+    color: #fff;
     background-color: #000;
     border-color: none;
     box-shadow: none;
@@ -1039,7 +1034,7 @@ iframe.map {
   color: #fff;
 }
 
-/* 5.4 Meta pages */
+/* 6.4 Meta pages */
 
 .items-list .dropdown {
   margin-top: 0rem;
@@ -1055,7 +1050,7 @@ iframe.map {
   color: var(--text-muted) !important;
 }
 
-/* 5.5 Support */
+/* 6.5 Support */
 
 .support-location .fa-solid {
   background-image: linear-gradient(to right, #c9fd99ff, #fae88eff, #fece7dff);
@@ -1064,9 +1059,85 @@ iframe.map {
   padding-top: 0.45rem;
 }
 
-/* 6. Tools */
+/* 6.6 Sound */
 
-/* 6.1 Video.js */
+.audio-player .player-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.audio-player button {
+    color: white;
+    font-size: 1.25rem;
+    background-color: transparent;
+    border: none;
+  }
+
+.audio-player .volume-slider-popup {
+  display: none;
+  position: absolute;
+  background: transparent;
+  }
+
+.audio-player .volume-control.active .volume-slider-popup {
+  display: block;
+}
+
+.audio-player .playlist {
+  color: var(--text-muted);
+  font-size: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.audio-player .playlist li {
+  cursor: pointer;
+  padding: 0.5em;
+}
+
+.audio-player .playlist li:hover {
+  color: #bfbfbf;
+}
+
+.audio-player .playlist li.active {
+  color: #fff;
+  font-weight: bold;
+}
+
+.audio-player .playlist li.active:hover {
+  color: #fff;
+}
+
+.audio-player .progress-container {
+  height: 4px;
+  background-image: linear-gradient(to right, #a1fc93, #c9fd99, #ebff9e, #f7f598, #fae88e, #fddb83, #fece7d, #febe79, #fdb076, #fda172);
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.audio-player .progress-bar {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.audio-player .progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--text-muted);
+  transition: width 0.1s linear;
+}
+
+.audio-player .time-display {
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+/* 7. Tools */
+
+/* 7.1 Video.js */
 
 .video-js, .vjs-time-tooltip {
   font-family: 'Share Tech Mono' !important;
@@ -1166,7 +1237,7 @@ iframe.map {
     background-color: transparent !important;
 }
 
-/* 6.2 Green Audio Player, thanks to the work of Greg Hovanesyan (https://github.com/greghub/green-audio-player) */
+/* 7.2 Green Audio Player, thanks to the work of Greg Hovanesyan (https://github.com/greghub/green-audio-player) */
 
 @keyframes spin {
   from {
