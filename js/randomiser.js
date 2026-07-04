@@ -1,16 +1,16 @@
 const imageArray = [
-  'images/jumbotron/borobudur-relief.jpg',
-  'images/jumbotron/plants.jpg',
-  'images/jumbotron/venice-gull.jpg',
-  'images/jumbotron/wave.jpg',
-  'images/jumbotron/mirror.jpg',
-  'images/jumbotron/colosseum.jpg',
-  'images/jumbotron/forest.jpg',
-  'images/jumbotron/mountain.jpg',
-  'images/jumbotron/supri-walk.jpg',
-  'images/jumbotron/swimming-with-whale-shark.jpg',
-  'images/jumbotron/wave-crash.jpg',
-  'images/jumbotron/wave-crash-closeup.jpg'
+  'images/jumbotron/borobudur-relief.avif',
+  'images/jumbotron/plants.avif',
+  'images/jumbotron/venice-gull.avif',
+  'images/jumbotron/wave.avif',
+  'images/jumbotron/mirror.avif',
+  'images/jumbotron/colosseum.avif',
+  'images/jumbotron/forest.avif',
+  'images/jumbotron/mountain.avif',
+  'images/jumbotron/supri-walk.avif',
+  'images/jumbotron/swimming-with-whale-shark.avif',
+  'images/jumbotron/wave-crash.avif',
+  'images/jumbotron/wave-crash-closeup.avif'
 ];
 
 const fontClasses = [
