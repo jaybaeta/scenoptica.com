@@ -2,8 +2,7 @@
 
     The Scenoptica website
       (c) 2014–2026 Joaquim Baeta & Siti Nurleily Marliana
-      Website version: 3.3 (2025.06.18)
-      Latest page version: 1.3.2 (2025.06.18)
+      Website version: 3.3.1 (2026.07.04)
 
     -------------------------------------------------
 
@@ -77,6 +76,186 @@ body {
 
 /* 2. Typography */
 
+@font-face {
+  font-family: 'Atlas Regular';
+  src: url('../fonts/atlas-regular-webfont.woff2') format('woff2'),
+       url('../fonts/atlas-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Deliria Nouveau';
+  src: url('../fonts/deliria-nouveau-webfont.woff2') format('woff2'),
+       url('../fonts/deliria-nouveau-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Genzsch Et Heyse Regular';
+  src: url('../fonts/genzsch-et-heyse-webfont.woff2') format('woff2'),
+       url('../fonts/genzsch-et-heyse-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hazelnut Pro Black';
+  src: url('../fonts/hazelnut-pro-black-webfont.woff2') format('woff2'),
+       url('../fonts/hazelnut-pro-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Isidora Light';
+  src: url('../fonts/isidora-light-webfont.woff2') format('woff2'),
+       url('../fonts/isidora-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Le Havre Layers Primary';
+  src: url('../fonts/le-havre-layers-primary-webfont.woff2') format('woff2'),
+       url('../fonts/le-havre-layers-primary-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Macaronisans Regular';
+  src: url('../fonts/macaronisans-regular-webfont.woff2') format('woff2'),
+       url('../fonts/macaronisans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mazzard Soft M Light';
+  src: url('../fonts/mazzard-soft-m-light-webfont.woff2') format('woff2'),
+       url('../fonts/mazzard-soft-m-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sangu';
+  src: url('../fonts/sangu-webfont.woff2') format('woff2'),
+       url('../fonts/sangu-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vendura Semibold';
+  src: url('../fonts/vendura-semibold-webfont.woff2') format('woff2'),
+       url('../fonts/vendura-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-atlas-regular {
+  font-family: 'Atlas Regular';
+}
+
+.font-deliria-nouveau {
+  font-family: 'Deliria Nouveau';
+}
+
+.font-genzsch-et-heyse-regular {
+  font-family: 'Genzsch Et Heyse Regular';
+}
+
+.font-hazelnut-pro-black {
+  font-family: 'Hazelnut Pro Black';
+}
+
+.font-isidora-light {
+  font-family: 'Isidora Light';
+}
+
+.font-le-Havre-layers-primary {
+  font-family: 'Le Havre Layers Primary';
+}
+
+.font-macaronisans-regular {
+  font-family: 'Macaronisans Regular';
+}
+
+.font-mazzard-soft-m-light {
+  font-family: 'Mazzard Soft M Light';
+}
+
+.font-sangu {
+  font-family: 'Sangu';
+}
+
+.font-vendura-semibold {
+  font-family: 'Vendura Semibold';
+}
+
+.logo-s {
+  color: var(--gradient-s);
+  webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.logo-c1 {
+  color: var(--gradient-c1);
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.8s;
+}
+
+.logo-e {
+  color: var(--gradient-e);
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.logo-n {
+  color: var(--gradient-n);
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.logo-o {
+  color: var(--gradient-o);
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+.logo-p {
+  color: var(--gradient-p);
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.logo-t {
+  color: var(--gradient-t);
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.logo-i {
+  color: var(--gradient-i);
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.logo-c2 {
+  color: var(--gradient-c2);
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.logo-a {
+  color: var(--gradient-a);
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
 h1 {
 /*  font-family: 'Share Tech', "Source Sans Pro", sans-serif; */
   font-size: 2.5rem !important;
@@ -119,10 +298,6 @@ h1 {
 }*/
 
 /* 4.1 Navbar */
-
-.navbar-brand {
-  font-family: 'Montserrat Alternates', sans-serif;
-}
 
 .navbar .dropdown-toggle::after, .nav .dropdown-toggle::after {
   display: none;
@@ -556,8 +731,8 @@ select {
   margin-bottom: 0;
   height: 100vh;
   box-shadow: inset 0 0 200px #000;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .jumbotron .frame {
@@ -567,10 +742,10 @@ select {
 }
 
 .jumbotron h1 {
-  font-family: 'Montserrat Alternates', 'Share Tech', sans-serif;
+  /*font-family: 'Montserrat Alternates', 'Share Tech', sans-serif;*/
   font-size: 6rem !important;
-  font-weight: 700;
-  letter-spacing: 2px;
+  /*font-weight: 700;*/
+  /*letter-spacing: 2px;*/
 }
 
 @media (max-width: 991px) {
