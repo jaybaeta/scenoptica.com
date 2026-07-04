@@ -9,7 +9,7 @@
 
     Table of contents
 
-    1.......Root   
+    1.......Root
     2.......Typography
     3........Colours
     3.1.....Text colours
@@ -39,8 +39,7 @@
     6.5.....Support
     6.6.....Sound
     7.......Tools
-    7.1.....Video.js
-    7.2.....Green Audio Player
+    7.1.....Green Audio Player
 
     ================================================= */
 
@@ -262,7 +261,7 @@ a.read-more:hover {
     box-shadow: none;
 }
 
-.btn-empty, .jumbotron a, .jumbotron span {
+.btn-empty {
   font-size: 1.3rem;
   background: none;
   border: 0;
@@ -1140,107 +1139,7 @@ iframe.map {
 
 /* 7. Tools */
 
-/* 7.1 Video.js */
-
-.video-js, .vjs-time-tooltip {
-  font-family: 'Share Tech Mono' !important;
-  font-size: 15px !important;
-  color: #fff;
-}
-
-.vjs-scenoptica-skin .vjs-big-play-button {
-  font-size: 9em !important;
-  width: 0 !important; 
-  border: none !important;
-  left: 50% !important;
-  top: 50% !important;
-  margin-top: -0.751em !important;
-  margin-left: -0.44em !important;
-  color: #a1fc93;
-  /*text-shadow: #00000080 5px 5px 0px;*/
-  transition: all ease-in-out .25s;
-}
-
-.vjs-scenoptica-skin .vjs-big-play-button:hover {
-  color: #f7f598;
-}
-
-.vjs-icon-play::before, .video-js .vjs-play-control .vjs-icon-placeholder::before, .video-js .vjs-big-play-button .vjs-icon-placeholder::before {
-  font-family: "Font Awesome\ 5 Free" !important;
-  font-weight: 900 !important;
-  content: '\f04b' !important;
-}
-
-.vjs-icon-pause::before, .video-js .vjs-play-control.vjs-playing .vjs-icon-placeholder::before {
-  font-family: "Font Awesome\ 5 Free" !important;
-  font-weight: 900 !important;
-  content: '\f04c' !important;
-}
-
-.video-js .vjs-control-bar, .video-js .vjs-menu-button .vjs-menu-content {
-  background-color: transparent !important;
-  bottom: 10px !important;
-}
-
-.video-js .vjs-slider {
-  background-color: #f7f598 !important;
-}
-
-.video-js .vjs-volume-level, .video-js .vjs-play-progress, .video-js .vjs-slider-bar {
-  background: #fff;
-}
-
-.video-js .vjs-load-progress {
-  background: #febe79 !important;
-}
-
-.video-js .vjs-load-progress div {
-  background: #fda172 !important;
-}
-
-.vjs-icon-volume-high::before, .video-js .vjs-mute-control .vjs-icon-placeholder::before {
-  font-family: "Font Awesome\ 5 Free" !important;
-  font-weight: 900 !important;
-  content: '\f028' !important;
-}
-
-.vjs-remaining-time-display {
-  font-size: 1.25em !important;
-}
-
-.vjs-icon-fullscreen-enter::before, .video-js .vjs-fullscreen-control .vjs-icon-placeholder::before {
-  font-family: "Font Awesome\ 5 Free" !important;
-  font-weight: 900 !important;
-  content: '\f065' !important;
-}
-
-.vjs-quality-selector .vjs-icon-placeholder::before {
-  font-family: "Font Awesome\ 5 Free" !important;
-  font-weight: 900 !important;
-  content: '\f26c' !important;
-}
-
-.vjs-menu-button-popup .vjs-menu {
-  width: 8em !important;
-  left: -2em !important;
-  margin-bottom: 2em !important;
-}
-
-.vjs-menu li {
-  font-family: 'Share Tech Mono';
-}
-
-.vjs-menu li.vjs-menu-item:hover {
-  color: #fda172 !important;
-  background-color: transparent !important;
-}
-
-.vjs-menu li.vjs-selected, .vjs-menu li.vjs-selected:focus, .vjs-menu li.vjs-selected:hover, .js-focus-visible .vjs-menu li.vjs-selected:hover {
-    color: #f7f598 !important;
-    background-color: transparent !important;
-}
-
-/* 7.2 Green Audio Player, thanks to the work of Greg Hovanesyan (https://github.com/greghub/green-audio-player) */
+/* 7.1 Green Audio Player, thanks to the work of Greg Hovanesyan (https://github.com/greghub/green-audio-player) */
 
 @keyframes spin {
   from {
