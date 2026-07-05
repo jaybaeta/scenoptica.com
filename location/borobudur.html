@@ -198,7 +198,7 @@
 
             <div class="card bg-dark text-white">
               <a href="../footage/the-ants-of-borobudur-one.html">
-                <img src="../images/footage/thumbnails/the-ants-of-borobudur-one.jpg" class="card-img" alt="The Ants Of Borobudur, One">
+                <img src="../images/footage/thumbnails/the-ants-of-borobudur-one.avif" class="card-img" alt="The Ants Of Borobudur, One">
                 <div class="card-img-overlay">
                   <h5 class="card-title">The Ants of Borobudur, One</h5>
                 </div>
@@ -270,25 +270,7 @@
     </footer>
 
     <!-- JS -->
-    <script src="../js/jquery-3.6.1.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      // <![CDATA[
-      var image_array = new Array();
-          image_array[0] = "../images/jumbotron/borobudur-relief.jpg";
-          image_array[1] = "../images/jumbotron/plants.jpg";
-          image_array[2] = "../images/jumbotron/venice-gull.jpg";
-          image_array[3] = "../images/jumbotron/wave.jpg";
-          image_array[4] = "../images/jumbotron/mirror.jpg";
-
-      var rand_path = image_array[Math.floor(Math.random() * image_array.length)];
-       
-      $(document).ready(function() {
-          $("#jumbotron").css("background", "url("+rand_path+") center center fixed no-repeat");
-          $(".jumbotron").css("background-size", "cover");
-          $("#img-footer").css("background", "url("+rand_path+") center center no-repeat");
-          });
-      // ]]>
-    </script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/randomiser.js"></script>
   </body>
 </html>
