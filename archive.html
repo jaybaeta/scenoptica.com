@@ -2576,23 +2576,9 @@
       return value;
     }
     </script>
-    <script type="text/javascript">
-      // <![CDATA[
-      var image_array = new Array();
-          image_array[0] ="images/jumbotron/borobudur-relief.avif";
-          image_array[1] ="images/jumbotron/plants.avif";
-          image_array[2] ="images/jumbotron/venice-gull.avif";
-          image_array[3] ="images/jumbotron/wave.avif";
-          image_array[4] ="images/jumbotron/mirror.avif";
+    
+    <script src="js/randomiser.js"></script>
 
-      var rand_path = image_array[Math.floor(Math.random() * image_array.length)];
-       
-      $(document).ready(function() {
-          $("#jumbotron").css("background","url("+rand_path+") center center fixed no-repeat");
-          $(".jumbotron").css("background-size","cover");
-          $("#img-footer").css("background","url("+rand_path+") center center no-repeat");
-          });
-      // ]]>
-    </script>
+
   </body>
 </html>
