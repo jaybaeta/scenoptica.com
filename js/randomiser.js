@@ -3,7 +3,6 @@ const imageArray = [
   'images/jumbotron/plants.avif',
   'images/jumbotron/venice-gull.avif',
   'images/jumbotron/wave.avif',
-  'images/jumbotron/mirror.avif',
   'images/jumbotron/colosseum.avif',
   'images/jumbotron/forest.avif',
   'images/jumbotron/mountain.avif',
@@ -30,18 +29,24 @@ const randPath = imageArray[Math.floor(Math.random() * imageArray.length)];
 const randFont = fontClasses[Math.floor(Math.random() * fontClasses.length)];
 
 document.addEventListener('DOMContentLoaded', function () {
-  const jumbotron = document.getElementById('jumbotron');
-  if (jumbotron) {
-      jumbotron.style.background = `url(${randPath}) center center fixed no-repeat`;
-      jumbotron.style.backgroundSize = 'cover';
-  }
-
-  const footer = document.getElementById('img-footer');
-  if (footer) {
-      footer.style.background = `url(${randPath}) center center no-repeat`;
-  }
-
   document.querySelectorAll('.jumbotron h1, .navbar-brand').forEach(el => {
     el.classList.add(randFont);
   });
+
+  const img = new Image();
+
+  img.onload = function () {
+    const jumbotron = document.getElementById('jumbotron');
+    if (jumbotron) {
+      jumbotron.style.background = `url(${randPath}) center center fixed no-repeat`;
+      jumbotron.style.backgroundSize = 'cover';
+    }
+    const footer = document.getElementById('img-footer');
+    if (footer) {
+      footer.style.background = `url(${randPath}) center center no-repeat`;
+    }
+  };
+
+  img.src = randPath;
+
 });
