@@ -28,25 +28,26 @@ const fontClasses = [
 const randPath = imageArray[Math.floor(Math.random() * imageArray.length)];
 const randFont = fontClasses[Math.floor(Math.random() * fontClasses.length)];
 
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.jumbotron h1, .navbar-brand').forEach(el => {
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('#jumbotron h1, .navbar-brand').forEach(el => {
     el.classList.add(randFont);
   });
 
-  const img = new Image();
+  const jumbotronImage = document.getElementById('jumbotron-image');
 
-  img.onload = function () {
-    const jumbotron = document.getElementById('jumbotron');
-    if (jumbotron) {
-      jumbotron.style.background = `url(${randPath}) center center fixed no-repeat`;
-      jumbotron.style.backgroundSize = 'cover';
-    }
-    const footer = document.getElementById('img-footer');
-    if (footer) {
-      footer.style.background = `url(${randPath}) center center no-repeat`;
-    }
-  };
+  if (jumbotronImage) {
+    jumbotronImage.onload = () => {
+      jumbotronImage.classList.add('loaded');
+    };
+    jumbotronImage.onerror = () => {
+      console.error(`Couldn't load ${randPath}`);
+    };
+    jumbotronImage.src = randPath;
+  }
 
-  img.src = randPath;
+  const footer = document.getElementById('img-footer');
 
+  if (footer) {
+    footer.style.background = `url(${randPath}) center center no-repeat`;
+  }
 });

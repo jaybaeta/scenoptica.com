@@ -39,16 +39,19 @@
 
   <body class="index bg-dark">
     <!-- JUMBOTRON -->
-    <div id="jumbotron" class="jumbotron d-flex animated fadeIn">
+    <div id="jumbotron" class="jumbotron d-flex">
+      <img id="jumbotron-image" class="jumbotron-image" aria-hidden="true">
       <div class="container align-self-center">
         <div class="row">
-          <div class="col-12 ps-sm-0">
-            <h3 class="text-white text-uppercase mb-0 ms-sm-0 animated fadeIn delay-1s">Our planet, as we know it</h3>
+          <div class="col-12 ps-sm-0" style="z-index: 999;">
+            <h3 class="mb-0 ms-sm-0">
+              Our planet, as we know it
+            </h3>
           </div>
         </div>
         <div class="row frame align-items-center">
           <div class="col-12">
-            <h1 class="ps-sm-4 mb-0"><span class="logo-s animated fadeIn">S</span><span class="logo-c1 animated fadeIn">c</span><span class="logo-e animated fadeIn">e</span><span class="logo-n animated fadeIn">n</span><span class="logo-o animated fadeIn">o</span><span class="logo-p animated fadeIn">p</span><span class="logo-t animated fadeIn">t</span><span class="logo-i animated fadeIn">i</span><span class="logo-c2 animated fadeIn">c</span><span class="logo-a animated fadeIn">a</span></h1>
+            <h1 class="ps-sm-4 mb-0"><span class="logo-s">S</span><span class="logo-c1">c</span><span class="logo-e">e</span><span class="logo-n">n</span><span class="logo-o">o</span><span class="logo-p">p</span><span class="logo-t">t</span><span class="logo-i">i</span><span class="logo-c2">c</span><span class="logo-a">a</span></h1>
           </div>
         </div>
       </div>
@@ -57,12 +60,12 @@
     <div class="container-fluid">
       <header class="d-flex flex-wrap px-1 py-3">
         <ul class="nav me-sm-auto">
-          <li class="nav-item animated fadeIn py-2 pe-2">
+          <li class="nav-item py-2 pe-2">
             browse by:
           </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle animated fadeIn" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static"  aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static"  aria-expanded="false">
                 Type
               </a>
               <ul class="dropdown-menu">
@@ -76,7 +79,7 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle animated fadeIn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Location
               </a>
               <ul class="dropdown-menu">
@@ -108,7 +111,7 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle animated fadeIn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Tag
               </a>
               <ul class="dropdown-menu">
@@ -188,7 +191,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link animated fadeIn" href="archive.html">Full archive</a>
+              <a class="nav-link" href="archive.html">Full archive</a>
             </li>
           </ul>
           <ul class="nav ms-sm-auto">
