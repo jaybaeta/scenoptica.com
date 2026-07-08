@@ -194,10 +194,38 @@
 
           <div class="row">
             <div class="col-12">
-              <div class="audio-player">
-                <audio crossorigin preload="none">
-                  <source src="https://archive.org/download/watching-the-fish-in-masjid-gedhe-mataram-while-children-practise-gamelan/Watching%20the%20Fish%20in%20Masjid%20Gedhe%20Mataram%20while%20Children%20Practise%20Gamelan.mp3" type="audio/mpeg">
-                </audio>
+              <div class="row audio-player">
+                <div class="col-sm-3">
+                  <img class="img-fluid" src="../images/sound/watching-the-fish-in-masjid-gedhe-mataram-while-children-practise-gamelan.avif">
+
+                  <div class="progress-container">
+                    <div class="progress-bar">
+                      <div class="progress-fill"></div>
+                    </div>
+                  </div>
+
+                  <div class="player-controls mt-3 mb-1 d-flex align-items-center gap-2">
+                    <button class="prev"><i class="fa-solid fa-backward"></i></button>
+                    <button class="play-pause"><i class="fa-solid fa-play play-icon"></i></button>
+                    <button class="next"><i class="fa-solid fa-forward"></i></button>
+
+                    <div class="volume-control ">
+                      <button class="volume-button"><i class="fa-solid fa-volume-low fa-fw"></i></button>
+                      <div class="volume-slider-popup">
+                        <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="time-display text-center text-muted">00:00 / 00:00</div>
+                </div>
+                <div class="col-sm-9">
+                  <ul class="playlist">
+                    <li data-src="https://archive.org/download/watching-the-fish-in-masjid-gedhe-mataram-while-children-practise-gamelan/Watching%20the%20Fish%20in%20Masjid%20Gedhe%20Mataram%20while%20Children%20Practise%20Gamelan.mp3">01. Watching the Fish in Masjid Gedhe Mataram while Children Practise Gamelan</li>
+                  </ul>
+                
+                  <audio class="audio" preload="metadata"></audio>
+                </div>
               </div>
             </div>
           </div>
@@ -323,5 +351,6 @@
     <!-- JS -->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/randomiser.js"></script>
+      <script src="../js/audio-player.js"></script>
   </body>
 </html>
