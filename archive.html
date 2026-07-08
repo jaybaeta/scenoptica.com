@@ -2518,65 +2518,71 @@
       </div>
     </footer>
 
-    <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/imagesloaded.js"></script>
+    <!-- JS -->
+    <script src="js/randomiser.js"></script>
     <script src="js/isotope.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script> // Search
-    $(document).ready(function(){
-      $("#video").on("keyup", function() {
-        var value = $(this).val().toLowerCase();
-        $("#video *").filter(function() {
-          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Search
+        const searchInput = document.querySelector("#video");
+        const grid = document.querySelector(".grid");
+
+        // Initialise Isotope
+        const iso = new Isotope(grid, {
+          itemSelector: ".grid-item",
+          layoutMode: "fitRows",
         });
+
+        // Store filter for each group
+        const filters = {};
+
+        // Search filter
+        let searchValue = "";
+
+        searchInput?.addEventListener("keyup", (e) => {
+          searchValue = e.target.value.toLowerCase();
+          applyFilters();
+        });
+
+        // Category filters
+        document.querySelectorAll(".filters").forEach((filtersContainer) => {
+          filtersContainer.addEventListener("click", (e) => {
+            const button = e.target.closest(".dropdown-item");
+            if (!button) return;
+
+            const buttonGroup = button.closest(".dropdown-menu");
+            const filterGroup = buttonGroup.dataset.filterGroup;
+
+            filters[filterGroup] = button.dataset.filter;
+
+            // Update active class
+            buttonGroup
+              .querySelectorAll(".is-checked")
+              .forEach((el) => el.classList.remove("is-checked"));
+
+            button.classList.add("is-checked");
+
+            applyFilters();
+          });
+        });
+
+        function applyFilters() {
+          const filterValue = Object.values(filters).join("");
+
+          iso.arrange({
+            filter(itemElem) {
+              const matchesCategory =
+                !filterValue || itemElem.matches(filterValue);
+
+              const matchesSearch =
+                itemElem.textContent.toLowerCase().includes(searchValue);
+
+              return matchesCategory && matchesSearch;
+            },
+          });
+        }
       });
-    });
-    </script>
-    <script type="text/javascript">
-    // init Isotope
-    var $grid = $('.grid').isotope({
-      itemSelector: '.grid-item',
-      layoutMode: 'fitRows',
-    });
-
-    // store filter for each group
-    var filters = {};
-
-    $('.filters').on( 'click', '.dropdown-item', function( event ) {
-      var $button = $( event.currentTarget );
-      // get group key
-      var $buttonGroup = $button.parents('.dropdown-menu');
-      var filterGroup = $buttonGroup.attr('data-filter-group');
-      // set filter for group
-      filters[ filterGroup ] = $button.attr('data-filter');
-      // combine filters
-      var filterValue = concatValues( filters );
-      // set filter for Isotope
-      $grid.isotope({ filter: filterValue });
-    });
-
-    // change is-checked class on buttons
-    $('.dropdown-menu').each( function( i, buttonGroup ) {
-      var $buttonGroup = $( buttonGroup );
-      $buttonGroup.on( 'click', 'button', function( event ) {
-        $buttonGroup.find('.is-checked').removeClass('is-checked');
-        var $button = $( event.currentTarget );
-        $button.addClass('is-checked');
-      });
-    });
-      
-    // flatten object by concatting values
-    function concatValues( obj ) {
-      var value = '';
-      for ( var prop in obj ) {
-        value += obj[ prop ];
-      }
-      return value;
-    }
-    </script>
-    
-    <script src="js/randomiser.js"></script>
-
-
+    </script> 
   </body>
 </html>
