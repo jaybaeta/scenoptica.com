@@ -21,7 +21,7 @@ const fontClasses = [
   'font-le-Havre-layers-primary',
   'font-macaronisans-regular',
   'font-mazzard-soft-m-light',
-  'font-sangu',
+  'font-sanguine',
   'font-vendura-semibold'
 ];
 

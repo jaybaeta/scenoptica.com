@@ -143,9 +143,9 @@ body {
 }
 
 @font-face {
-  font-family: 'Sangu';
-  src: url('../fonts/sangu-webfont.woff2') format('woff2'),
-       url('../fonts/sangu-webfont.woff') format('woff');
+  font-family: 'Sanguine';
+  src: url('../fonts/sanguine-webfont.woff2') format('woff2'),
+       url('../fonts/sanguine-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -206,8 +206,8 @@ body {
   font-family: 'Mazzard Soft M Light';
 }
 
-.font-sangu {
-  font-family: 'Sangu';
+.font-sanguine {
+  font-family: 'Sanguine';
 }
 
 .font-vendura-semibold {
