@@ -8,7 +8,7 @@
     <meta name="author" content="Joaquim Baeta">
     <meta name="version" content="3.3.2">
 
-    <title>Two videos for download and some housekeeping | Scenoptica</title>
+    <title>Version 3.3 of Scenoptica | Scenoptica</title>
 
     <!-- FONTS -->
     <link rel="stylesheet" href="../fonts/font-awesome/css/all.css"> 
@@ -190,47 +190,56 @@
     <main class="container my-4">  
       <div class="row">
         <div class="col-md-10 offset-md-1"> 
-          <h1 class="text-center mb-2">Two videos for download and some housekeeping</h1>
+          <h1 class="text-center mb-2">Version 3.3 of Scenoptica</h1>
 
-          <h5 class="text-center text-muted mb-5 pb-5">18 June 2025</h5>
+          <h5 class="text-center text-muted mb-5 pb-5">Joaquim Baeta // 30 July 2026</h5>
 
-          <p>A while back—2019, to be exact—a friend asked if I could direct some videos on snake handling, to satisfy a grant he'd received. I was happy to help, but my condition was that they be released under a Creative Commons license. In the end, I got my wish, we made the videos, they got released, and that was that. I'd always wanted to make them downloadable, but since it was a joint undertaking, it wasn't my lone decision to make. (It's also likely that the funding body didn't understand the terms of the license and what it entailed, but that's another problem.)</p>
+          <p>After a prolonged period of relative stasis, the time has finally come to upgrade the Scenoptica website’s backend. Actually… that sounds a bit more involved than it really is. All we’ve done is update to Bootstrap 5.3.8 (which truthfully didn’t require too much refactoring), drop jQuery as a dependency (hopefully saving people some bandwidth), and consequently switching to a vanilla implementation of the site’s slim amount of JavaScript. In consideration of my limited skill with js, the archive page should now also be a bit smoother, and cards shouldn’t lose their images when the filter is used (with imagesLoaded no longer being used, although that wasn’t the reason). Oh, and very late to the HTML5 (HTML4?!) party: the font tag is no longer used for the wordmark in the header(s); apparently, I missed that this has long been deprecated!</p>
 
-          <p>Six years later, I felt it was time we made these videos available on an open platform. Both are worthwhile, and worth being seen by more people who can actually make use of their content. Now, that is the case, and I'm re-releasing them as part of the Scenoptica project. Both are in Indonesian, but that shouldn't diminish their value to the people who need them most—Indonesians who encounter snakes.</p>
+          <p>Even though most of these changes will never be noticed (if all goes well), they’re just little quality of life improvements that were overdue—just some regular grunt work to make using the website faster and smoother.</p>
 
-          <div class="row mt-4 mb-1"> <!-- Pengenalan Jenis Ular (Introduction to Types of Snakes) -->
-            <div class="col-md-3 mb-2 mb-lg-0">
-              <img src="../images/documentary/thumbnails/pengenalan-jenis-ular.avif" class="w-100" alt="Pengenalan Jenis Ular (Introduction to Types of Snakes)">
+          <p>Conversely, there have also been some visible changes, most obviously to the jumbotron (another apparently deprecated term as “hero images” are preferred now) to better reflect the typographical elements of the films we’ve made. There was also the issue of the background image never loading gracefully enough, instead appearing rather jarringly even when a fade in was used. This was caused by the image randomiser feature, wherein every page load results in a different background image being shown, actually has the image loading too late in the process. Fading it in from black was a way of mitigating that, but the actual impact was that it just seemed like everything was slow and/or a mistake was playing out. Now, in addition to preloading, it comes in from a blur, implying the image is coming to focus. The frame is also a floating box rather than a simply rectangle, making the title stand out more.</p>
+
+          <p>Since you're reading this on the website already, which is the current one shouldn't be news to you:</p>
+
+          <div class="row my-4">
+            <div class="col-sm-6">
+              <img src="../images/updates/2026-07-30-1.avif" class="img-fluid">
             </div>
-            <div class="col-md-9 mb-lg-0">
-              <h5><a href="../documentary/pengenalan-jenis-ular.html">Pengenalan Jenis Ular (Introduction to Types of Snakes)</a></h5>
-              <p>The first video is an introduction to various types of snakes a person may encounter, in a variety of habitats.</p>
-            </div>
-          </div>
-
-          <div class="row mt-2 mb-lg-4"> <!-- Penanganan Ular Masuk Rumah (Handling Snakes that Enter Your Home) -->
-            <div class="col-md-3 mb-2 mb-lg-0">
-              <img src="../images/documentary/thumbnails/penanganan-ular-masuk-rumah.avif" class="w-100" alt="Penanganan Ular Masuk Rumah (Handling Snakes that Enter Your Home)">
-            </div>
-            <div class="col-md-9 mb-lg-0">
-              <h5><a href="../documentary/penanganan-ular-masuk-rumah.html">Penanganan Ular Masuk Rumah (Handling Snakes that Enter Your Home)</a></h5>
-              <p>This second one details how to handle a snake encounter, specifically in your home.</p>
+            <div class="col-sm-6">
+              <img src="../images/updates/2026-07-30-2.avif" class="img-fluid">
             </div>
           </div>
 
-          <p>Among our examples in the second video was encountering a cobra while sweeping, and how to approach and encourage it into a bin for later relocation. Frankly, meeting a random cobra would be much more dangerous than it was us putting this snake in various annoying scenarios, because it was... if you can believe... a sweetheart! No kidding! This cobra was so docile and easy to handle that I was comfortable sharing a corner with it and having it approach me. I never thought I'd be in that scenario but it was an extremely likeable cobra.</p>
+          <p>Finally and again, there is also the typography. Firstly, for privacy reasons, fonts are no longer loaded from a third party (Google Fonts). Secondly, alongside the random image appearing with every load, a random typeface (out of ten) will be shown. Scenoptica no longer uses Montserrat Alternates as part of its identity, and in fact has no fixed typeface for it in general, for both better and worse, and we’ll see in time where the scales balance there.</p>
 
-          <p>Now, the other cobra we filmed, not so much. I've covered it before, and <a href="../footage/when-you-find-a-spitting-cobra-naja-sputatrix-hiding-behind-your-bag.html">this snake was full of hate</a>. These snakes are the encapsulation of why you just generally don't want to meet a cobra. Most times they'll tolerate you just long enough to escape to safety, and other times they'll try to murder you. The problem is that you never know which you'll get when you're innocently sweeping behind the fridge!</p>
+          <img src="../images/updates/2026-07-30-3.avif" class="img-fluid">
 
-          <h2>Some housekeeping</h2>
+          <img src="../images/updates/2026-07-30-4.avif" class="img-fluid">
 
-          <p>A few extra notes I'd like to make are that I've updated the website to fully acknowledge supporters on the item page. Before, it was that credit was shown according to the credits of a video, but this wasn't the case for footage, which doesn't have a formal credits roll. Now, that's been changed, if you're supported the project for a long time, that support will be noted many, many, many times.</p>
+          <img src="../images/updates/2026-07-30-5.avif" class="img-fluid mb-2">
 
-          <p>(Note: the only time this grant appears is for the specific two videos.)</p>
+          <p>For the interested, the typefaces you can expect will be:</p>
 
-          <p>Some other optimisations have been made that include more images added to the jumbotron (see above), all old pages updated to fit newer versions (1.3.2 if you want to check the <head> tag in video pages), and finally the footer rewritten to remove old references to Twitter/X for reporting issue. I should have noticed it earlier, but I deleted all my accounts on that site long ago, so if you want to report issues, it'll have to be through Github or Mastodon. The latter is my preference, because tooting is great.</p>
+          <ul>
+            <li><a href=”https://www.haroldsfonts.com/font/atlas”>Atlas</a>, Harold Lohner’s remake of Fatima Versalien.</li>
+            <li><a href=”https://www.fontspring.com/fonts/pedroglifos/deliria/deliria-nouveau”>Deliria Nouveau</a>, Pedro Leandry’s lovely, liquid take on an Art Nouveau typeface.</li>
+            <li><a href=”https://www.fontsquirrel.com/fonts/Genzsch-Et-Heyse”>Genzsch Et Heyse</a>, Paul Lloyd’s free blackletter, which I’ve always liked.</li>
+            <li><a href=”https://www.fontspring.com/fonts/eimantas-paskonis/hazelnut-pro”>Hazelnut Pro</a>, a slabbish, fat typeface (in the Black variant) by Eimantas Paskonis.</li>
+            <li><a href=”https://www.fontspring.com/fonts/latinotype/isidora”>Isidora</a>, a pretty and pleasing geometric typeface by Enrique Hernandez.</li>
+            <li><a href=”https://www.fontspring.com/fonts/insigne/le-havre-layers”>Le Havre Layers</a>, a sharp, uppercase display font by Insigne Design.</li>
+            <li><a href=”https://www.fontspring.com/fonts/type-associates/macaroni-sans”>Macaroni Sans</a>, another round (extremely round) sans serif with lots of character, designed by Russell Bean.</li>
+            <li><a href=”https://www.fontspring.com/fonts/pepper-type/mazzard-soft-m”>Mazzard Soft M</a>, Pepper Type’s rounder version of their own Mazzard grotesque.</li>
+            <li><a href=”https://www.fontspring.com/fonts/type-associates/sanguine”>Sanguine </a>, a loose, hand-drawn typeface by Type Associates.</li>
+            <li><a href=”https://fonts.google.com/specimen/Share+Tech?preview.script=Latn”>Share Tech</a> and <a href=”https://fonts.google.com/specimen/Share+Tech+Mono?preview.script=Latn”>Share Tech Mono</a>, the default family for the website’s body text for a long time now (and by Carrois Apostrophe).</li>
+            <li><a href=”https://www.fontspring.com/fonts/marc-lohner/vendura”>Vendura</a>, Marc Lohner’s exceedingly elegant approach to Didone.</li>
+          </ul>
 
-          <p>That's it for now. The next big video planned is still my foray into Yogyakarta's rivers across two seasons, but I'm working through 8 hours of footage for it, and that's a lot of GBs for my aging laptop. The next video should be a discussion on a study recently published in <i>Oryx</i> (co-authored by Lelly), but I'm waiting for both authors to agree to interviews, one of which has to be online. We'll see how it goes!</p>
+          <p>And that said, Mazzard Soft M will serve as the end point for the new title card animation on videos, starting with the upcoming An Ecology Field Practical. This animation has been remade, too, evoking the website’s cycling of typefaces but all at once. The original stalks also remain but now expand into a ‘field’ as the typefaces cycle, before they all disappear together.</p>
+
+          <img src="../images/updates/2026-07-30-6.avif" class="img-fluid mt-2 mb-4">
+
+          <p>I'm not sure we're yet at the 'right' point for the logo. As always, it is an ongoing process, but overall I believe what we have today represents the project better than what we had yesterday.</p>
         </div>
       </div>
     </main>
