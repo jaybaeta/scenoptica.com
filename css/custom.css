@@ -2,7 +2,7 @@
 
     The Scenoptica website
       (c) 2014–2026 Joaquim Baeta & Siti Nurleily Marliana
-      Website version: 3.3.2 (2026.07.06)
+      Website version: 3.3.3 (2026.08.06)
 
     -------------------------------------------------
 
@@ -1318,6 +1318,25 @@ iframe.map {
 
 .items-list .btn:hover, .items-list .btn:active, .items-list .btn:focus {
   color: var(--text-light-grey) !important;
+}
+
+.item-img {
+  position: relative;
+}
+
+.item-img img {
+  transition: var(--transition);
+}
+
+.item-img:hover img, .items-list .row:has(h6 a:hover) .item-img img {
+  filter: grayscale(100%) contrast(110%) brightness(90%);
+}
+
+.item-img i {
+  color: var(--text-color);
+  position: absolute;
+  left: 0;
+  margin: 0.5rem !important;
 }
 
 /* 6.5 Support */
