@@ -66,7 +66,7 @@ Directing and editing the films; soundwork; uploading and other handling of medi
 
 🦣 [@jaybaeta](https://mastodon.social/@jaybaeta) on Mastodon
 
-#### Lelly Marliana
+#### Siti Nurleily Marliana
 
 Producing the films and coordinating production; the entire creation of lectures.
 
